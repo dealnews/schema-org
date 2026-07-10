@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version: ['8.2', '8.3', '8.4']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up PHP ${{ matrix.php-version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: none
+          tools: composer:v2
+
+      - name: Validate composer.json
+        run: composer validate --strict --no-check-version
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-interaction
+
+      - name: Lint PHP syntax
+        run: |
+          find src bin tests -name '*.php' -print0 |
+            xargs -0 -n1 php -l
+
+      - name: Confirm generated types match the vocabulary snapshot
+        run: |
+          composer generate
+          if ! git diff --exit-code -- src/Type; then
+            echo '::error::src/Type is stale -- run `composer generate` and commit the result.'
+            exit 1
+          fi
+
+      - name: Run test suite
+        run: composer test

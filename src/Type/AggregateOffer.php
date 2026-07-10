@@ -1,0 +1,80 @@
+<?php
+
+declare(strict_types=1);
+
+namespace DealNews\SchemaOrg\Type;
+
+/**
+ * AggregateOffer.
+ *
+ * When a single product is associated with multiple offers (for example, the
+ * same pair of shoes is offered by different merchants), then AggregateOffer
+ * can be used.
+ *
+ * Note: AggregateOffers are normally expected to associate multiple offers
+ * that all share the same defined [[businessFunction]] value, or default to
+ * http://purl.org/goodrelations/v1#Sell if businessFunction is not explicitly
+ * defined.
+ *
+ * @see https://schema.org/AggregateOffer
+ */
+class AggregateOffer extends Offer {
+
+    public const SCHEMA_TYPE = 'AggregateOffer';
+
+    /**
+     * The highest price of all offers available.
+     *
+     * Usage guidelines:
+     *
+     * * Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
+     * (U+0039)) rather than superficially similar Unicode symbols.
+     * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
+     * decimal point. Avoid using these symbols as a readability separator.
+     *
+     * @var int|float|string|array|null
+     *
+     * @see https://schema.org/highPrice
+     */
+    public int|float|string|array|null $highPrice = null;
+
+    /**
+     * The lowest price of all offers available.
+     *
+     * Usage guidelines:
+     *
+     * * Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
+     * (U+0039)) rather than superficially similar Unicode symbols.
+     * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
+     * decimal point. Avoid using these symbols as a readability separator.
+     *
+     * @var int|float|string|array|null
+     *
+     * @see https://schema.org/lowPrice
+     */
+    public int|float|string|array|null $lowPrice = null;
+
+    /**
+     * The number of offers for the product.
+     *
+     * @var int|array|null
+     *
+     * @see https://schema.org/offerCount
+     */
+    public int|array|null $offerCount = null;
+
+    /**
+     * An offer to provide this item&#x2014;for example, an offer to sell a
+     * product, rent the DVD of a movie, perform a service, or give away tickets to
+     * an event. Use [[businessFunction]] to indicate the kind of transaction
+     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * [[Demand]]. While this property is listed as expected on a number of common
+     * types, it can be used in others. In that case, using a second type, such as
+     * Product or a subtype of Product, can clarify the nature of the offer.
+     *
+     * @var Demand|Offer|array|null
+     *
+     * @see https://schema.org/offers
+     */
+    public Demand|Offer|array|null $offers = null;
+}
