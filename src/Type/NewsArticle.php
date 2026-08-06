@@ -35,7 +35,7 @@ class NewsArticle extends Article {
      * Lebanon, June 2.", "Paris, France", "December 19, 2017 11:43AM Reporting
      * from Washington", "Beijing/Moscow", "QUEZON CITY, Philippines".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateline
      */
@@ -45,7 +45,7 @@ class NewsArticle extends Article {
      * The number of the column in which the NewsArticle appears in the print
      * edition.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/printColumn
      */
@@ -54,7 +54,7 @@ class NewsArticle extends Article {
     /**
      * The edition of the print product in which the NewsArticle appears.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/printEdition
      */
@@ -65,7 +65,7 @@ class NewsArticle extends Article {
      * page on which the article is found. Please note that this field is intended
      * for the exact page name (e.g. A5, B18).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/printPage
      */
@@ -75,7 +75,7 @@ class NewsArticle extends Article {
      * If this NewsArticle appears in print, this field indicates the print section
      * in which the article appeared.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/printSection
      */

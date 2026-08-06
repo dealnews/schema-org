@@ -29,7 +29,7 @@ class MonetaryAmount extends StructuredValue {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/currency
      */
@@ -38,7 +38,7 @@ class MonetaryAmount extends StructuredValue {
     /**
      * The upper value of some characteristic or property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/maxValue
      */
@@ -47,7 +47,7 @@ class MonetaryAmount extends StructuredValue {
     /**
      * The lower value of some characteristic or property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/minValue
      */
@@ -56,7 +56,7 @@ class MonetaryAmount extends StructuredValue {
     /**
      * The date when the item becomes valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validFrom
      */
@@ -66,7 +66,7 @@ class MonetaryAmount extends StructuredValue {
      * The date after when the item is not valid. For example the end of an offer,
      * salary period, or a period of opening hours.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validThrough
      */
@@ -85,7 +85,7 @@ class MonetaryAmount extends StructuredValue {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var bool|int|float|StructuredValue|string|array|null
+     * @var bool|int|float|StructuredValue|string|bool[]|int[]|float[]|StructuredValue[]|string[]|null
      *
      * @see https://schema.org/value
      */

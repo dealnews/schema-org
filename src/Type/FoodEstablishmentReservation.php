@@ -30,7 +30,7 @@ class FoodEstablishmentReservation extends Reservation {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endTime
      */
@@ -39,7 +39,7 @@ class FoodEstablishmentReservation extends Reservation {
     /**
      * Number of people the reservation should accommodate.
      *
-     * @var int|QuantitativeValue|array|null
+     * @var int|QuantitativeValue|int[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/partySize
      */
@@ -56,7 +56,7 @@ class FoodEstablishmentReservation extends Reservation {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startTime
      */

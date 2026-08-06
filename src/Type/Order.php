@@ -21,7 +21,7 @@ class Order extends Intangible {
      * The offer(s) -- e.g., product, quantity and price combinations -- included
      * in the order.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/acceptedOffer
      */
@@ -30,7 +30,7 @@ class Order extends Intangible {
     /**
      * The billing address for the order.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/billingAddress
      */
@@ -42,7 +42,7 @@ class Order extends Intangible {
      * service involved in an exchange.  If it is not clear whether an entity is a
      * broker, seller, or buyer, the latter two terms are preferred.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/broker
      */
@@ -51,7 +51,7 @@ class Order extends Intangible {
     /**
      * A number that confirms the given order or payment has been received.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/confirmationNumber
      */
@@ -60,7 +60,7 @@ class Order extends Intangible {
     /**
      * Party placing the order or paying the invoice.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/customer
      */
@@ -69,7 +69,7 @@ class Order extends Intangible {
     /**
      * Any discount applied (to an Order).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/discount
      */
@@ -78,7 +78,7 @@ class Order extends Intangible {
     /**
      * Code used to redeem a discount.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/discountCode
      */
@@ -94,7 +94,7 @@ class Order extends Intangible {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/discountCurrency
      */
@@ -104,7 +104,7 @@ class Order extends Intangible {
      * Indicates whether the offer was accepted as a gift for someone other than
      * the buyer.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isGift
      */
@@ -113,7 +113,7 @@ class Order extends Intangible {
     /**
      * Date order was placed.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/orderDate
      */
@@ -122,7 +122,7 @@ class Order extends Intangible {
     /**
      * The delivery of the parcel related to this order or order item.
      *
-     * @var ParcelDelivery|array|null
+     * @var ParcelDelivery|ParcelDelivery[]|null
      *
      * @see https://schema.org/orderDelivery
      */
@@ -131,7 +131,7 @@ class Order extends Intangible {
     /**
      * The identifier of the transaction.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/orderNumber
      */
@@ -140,7 +140,7 @@ class Order extends Intangible {
     /**
      * The current status of the order.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/orderStatus
      */
@@ -149,7 +149,7 @@ class Order extends Intangible {
     /**
      * The item ordered.
      *
-     * @var OrderItem|Product|Service|array|null
+     * @var OrderItem|Product|Service|OrderItem[]|Product[]|Service[]|null
      *
      * @see https://schema.org/orderedItem
      */
@@ -158,7 +158,7 @@ class Order extends Intangible {
     /**
      * The order is being paid as part of the referenced Invoice.
      *
-     * @var Invoice|array|null
+     * @var Invoice|Invoice[]|null
      *
      * @see https://schema.org/partOfInvoice
      */
@@ -167,7 +167,7 @@ class Order extends Intangible {
     /**
      * The date that payment is due.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentDueDate
      */
@@ -176,7 +176,7 @@ class Order extends Intangible {
     /**
      * The name of the credit card or other method of payment for the order.
      *
-     * @var PaymentMethod|string|array|null
+     * @var PaymentMethod|string|PaymentMethod[]|string[]|null
      *
      * @see https://schema.org/paymentMethod
      */
@@ -186,7 +186,7 @@ class Order extends Intangible {
      * An identifier for the method of payment used (e.g. the last 4 digits of the
      * credit card).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentMethodId
      */
@@ -195,7 +195,7 @@ class Order extends Intangible {
     /**
      * The URL for sending a payment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentUrl
      */
@@ -205,7 +205,7 @@ class Order extends Intangible {
      * An entity which offers (sells / leases / lends / loans) the services /
      * goods.  A seller may also be a provider.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/seller
      */

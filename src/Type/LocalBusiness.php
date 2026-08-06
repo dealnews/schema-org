@@ -28,7 +28,7 @@ class LocalBusiness extends Organization {
      * expect such data to be provided using those properties, rather than using
      * the generic property/value mechanism.
      *
-     * @var PropertyValue|array|null
+     * @var PropertyValue|PropertyValue[]|null
      *
      * @see https://schema.org/additionalProperty
      */
@@ -39,7 +39,7 @@ class LocalBusiness extends Organization {
      * This generic property does not make a statement about whether the feature is
      * included in an offer for the main accommodation or available at extra costs.
      *
-     * @var LocationFeatureSpecification|array|null
+     * @var LocationFeatureSpecification|LocationFeatureSpecification[]|null
      *
      * @see https://schema.org/amenityFeature
      */
@@ -54,7 +54,7 @@ class LocalBusiness extends Organization {
      * http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code "3047" is
      * a branchCode for a particular branch.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/branchCode
      */
@@ -63,7 +63,7 @@ class LocalBusiness extends Organization {
     /**
      * The basic containment relation between a place and one that contains it.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/containedInPlace
      */
@@ -72,7 +72,7 @@ class LocalBusiness extends Organization {
     /**
      * The basic containment relation between a place and another that it contains.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/containsPlace
      */
@@ -88,7 +88,7 @@ class LocalBusiness extends Organization {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/currenciesAccepted
      */
@@ -97,7 +97,7 @@ class LocalBusiness extends Organization {
     /**
      * The geo coordinates of the place.
      *
-     * @var GeoCoordinates|GeoShape|array|null
+     * @var GeoCoordinates|GeoShape|GeoCoordinates[]|GeoShape[]|null
      *
      * @see https://schema.org/geo
      */
@@ -110,7 +110,7 @@ class LocalBusiness extends Organization {
      * point of the interior of b lies in the interior of a". As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoContains
      */
@@ -121,7 +121,7 @@ class LocalBusiness extends Organization {
      * represent), relating a geometry to another that covers it. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoCoveredBy
      */
@@ -133,7 +133,7 @@ class LocalBusiness extends Organization {
      * of b is a point of (the interior or boundary of) a". As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoCovers
      */
@@ -146,7 +146,7 @@ class LocalBusiness extends Organization {
      * the intersection is less than that of at least one of them". As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoCrosses
      */
@@ -158,7 +158,7 @@ class LocalBusiness extends Organization {
      * form a set of disconnected geometries." (A symmetric relationship, as
      * defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoDisjoint
      */
@@ -172,7 +172,7 @@ class LocalBusiness extends Organization {
      * or boundary of one geometry intersects the exterior of the other" (a
      * symmetric relationship).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoEquals
      */
@@ -183,7 +183,7 @@ class LocalBusiness extends Organization {
      * represent) have at least one point in common. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoIntersects
      */
@@ -195,7 +195,7 @@ class LocalBusiness extends Organization {
      * i.e. they have some but not all points in common. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoOverlaps
      */
@@ -207,7 +207,7 @@ class LocalBusiness extends Organization {
      * interior points." (A symmetric relationship, as defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoTouches
      */
@@ -219,7 +219,7 @@ class LocalBusiness extends Organization {
      * (i.e. within) its interior. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoWithin
      */
@@ -228,7 +228,7 @@ class LocalBusiness extends Organization {
     /**
      * A URL to a map of the place.
      *
-     * @var Map|string|array|null
+     * @var Map|string|Map[]|string[]|null
      *
      * @see https://schema.org/hasMap
      */
@@ -237,7 +237,7 @@ class LocalBusiness extends Organization {
     /**
      * A flag to signal that the item, event, or place is accessible for free.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isAccessibleForFree
      */
@@ -247,7 +247,7 @@ class LocalBusiness extends Organization {
      * The latitude of a location. For example ```37.42242``` ([WGS
      * 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/latitude
      */
@@ -257,7 +257,7 @@ class LocalBusiness extends Organization {
      * The longitude of a location. For example ```-122.08585``` ([WGS
      * 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/longitude
      */
@@ -266,7 +266,7 @@ class LocalBusiness extends Organization {
     /**
      * The total number of individuals that may attend an event or venue.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/maximumAttendeeCapacity
      */
@@ -282,15 +282,13 @@ class LocalBusiness extends Organization {
      * ```Tu```, ```We```, ```Th```, ```Fr```, ```Sa```, ```Su```.
      * * Times are specified using 24:00 format. For example, 3pm is specified as
      * ```15:00```, 10am as ```10:00```.
-     * * Here is an example: <code>&lt;time itemprop="openingHours"
-     * datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays
-     * 4-8pm&lt;/time&gt;</code>.
-     * * If a business is open 7 days a week, then it can be specified as
-     * <code>&lt;time itemprop=&quot;openingHours&quot;
-     * datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all
-     * day&lt;/time&gt;</code>.
+     * * Here is an example: `<time itemprop="openingHours" datetime="Tu,Th
+     * 16:00-20:00">Tuesdays and Thursdays 4-8pm</time>`.
+     * * If a business is open 7 days a week, then it can be specified as `<time
+     * itemprop="openingHours" datetime="Mo-Su">Monday through Sunday, all
+     * day</time>`.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/openingHours
      */
@@ -299,7 +297,7 @@ class LocalBusiness extends Organization {
     /**
      * The opening hours of a certain place.
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/openingHoursSpecification
      */
@@ -308,7 +306,7 @@ class LocalBusiness extends Organization {
     /**
      * Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentAccepted
      */
@@ -317,7 +315,7 @@ class LocalBusiness extends Organization {
     /**
      * A photograph of this place.
      *
-     * @var ImageObject|Photograph|array|null
+     * @var ImageObject|Photograph|ImageObject[]|Photograph[]|null
      *
      * @see https://schema.org/photo
      */
@@ -326,7 +324,7 @@ class LocalBusiness extends Organization {
     /**
      * The price range of the business, for example ```$$$```.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceRange
      */
@@ -336,7 +334,7 @@ class LocalBusiness extends Organization {
      * A flag to signal that the [[Place]] is open to public visitors.  If this
      * property is omitted there is no assumed default boolean value.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/publicAccess
      */
@@ -346,7 +344,7 @@ class LocalBusiness extends Organization {
      * Indicates whether it is allowed to smoke in the place, e.g. in the
      * restaurant, hotel or hotel room.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/smokingAllowed
      */
@@ -358,7 +356,7 @@ class LocalBusiness extends Organization {
      * Use this to explicitly override general opening hours brought in scope by
      * [[openingHoursSpecification]] or [[openingHours]].
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/specialOpeningHoursSpecification
      */

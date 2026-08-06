@@ -26,7 +26,7 @@ class Action extends Thing {
     /**
      * Description of the process by which the action was performed.
      *
-     * @var HowTo|array|null
+     * @var HowTo|HowTo[]|null
      *
      * @see https://schema.org/actionProcess
      */
@@ -35,7 +35,7 @@ class Action extends Thing {
     /**
      * Indicates the current disposition of the Action.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/actionStatus
      */
@@ -45,7 +45,7 @@ class Action extends Thing {
      * The direct performer or driver of the action (animate or inanimate). E.g.
      * *John* wrote a book.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/agent
      */
@@ -62,7 +62,7 @@ class Action extends Thing {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endTime
      */
@@ -72,7 +72,7 @@ class Action extends Thing {
      * For failed actions, more information on the cause of the failure. Consider
      * using the Error type.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/error
      */
@@ -82,7 +82,7 @@ class Action extends Thing {
      * The object that helped the agent perform the action. E.g. John wrote a book
      * with *a pen*.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/instrument
      */
@@ -92,7 +92,7 @@ class Action extends Thing {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/location
      */
@@ -104,7 +104,7 @@ class Action extends Thing {
      * (which change their state) or theme (which doesn't). E.g. John read *a
      * book*.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/object
      */
@@ -114,7 +114,7 @@ class Action extends Thing {
      * Other co-agents that participated in the action indirectly. E.g. John wrote
      * a book with *Steve*.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/participant
      */
@@ -123,7 +123,7 @@ class Action extends Thing {
     /**
      * The result produced in the action. E.g. John wrote *a book*.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/result
      */
@@ -140,7 +140,7 @@ class Action extends Thing {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startTime
      */
@@ -149,7 +149,7 @@ class Action extends Thing {
     /**
      * Indicates a target EntryPoint, or url, for an Action.
      *
-     * @var EntryPoint|string|array|null
+     * @var EntryPoint|string|EntryPoint[]|string[]|null
      *
      * @see https://schema.org/target
      */

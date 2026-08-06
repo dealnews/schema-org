@@ -19,7 +19,7 @@ class ParentAudience extends PeopleAudience {
     /**
      * Maximal age of the child.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/childMaxAge
      */
@@ -28,7 +28,7 @@ class ParentAudience extends PeopleAudience {
     /**
      * Minimal age of the child.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/childMinAge
      */

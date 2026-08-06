@@ -21,7 +21,7 @@ class Game extends CreativeWork {
      * A piece of data that represents a particular aspect of a fictional character
      * (skill, power, character points, advantage, disadvantage).
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/characterAttribute
      */
@@ -31,7 +31,7 @@ class Game extends CreativeWork {
      * An item is an object within the game world that can be collected by a player
      * or, occasionally, a non-player character.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/gameItem
      */
@@ -40,7 +40,7 @@ class Game extends CreativeWork {
     /**
      * Real or fictional location of the game (or part of game).
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/gameLocation
      */
@@ -49,7 +49,7 @@ class Game extends CreativeWork {
     /**
      * Indicate how many people can play this game (minimum, maximum, or range).
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfPlayers
      */
@@ -59,7 +59,7 @@ class Game extends CreativeWork {
      * The task that a player-controlled character, or group of characters may
      * complete in order to gain a reward.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/quest
      */

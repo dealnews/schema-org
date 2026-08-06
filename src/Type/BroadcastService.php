@@ -19,7 +19,7 @@ class BroadcastService extends Service {
     /**
      * The media network(s) whose content is broadcast on this station.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/broadcastAffiliateOf
      */
@@ -29,7 +29,7 @@ class BroadcastService extends Service {
      * The name displayed in the channel guide. For many US affiliates, it is the
      * network name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/broadcastDisplayName
      */
@@ -40,7 +40,7 @@ class BroadcastService extends Service {
      * ranges, e.g. 87-99. In addition a shortcut idiom is supported for
      * frequencies of AM and FM radio channels, e.g. "87 FM".
      *
-     * @var BroadcastFrequencySpecification|string|array|null
+     * @var BroadcastFrequencySpecification|string|BroadcastFrequencySpecification[]|string[]|null
      *
      * @see https://schema.org/broadcastFrequency
      */
@@ -50,7 +50,7 @@ class BroadcastService extends Service {
      * The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601) for
      * which the service bases its broadcasts.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/broadcastTimezone
      */
@@ -59,7 +59,7 @@ class BroadcastService extends Service {
     /**
      * The organization owning or operating the broadcast service.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/broadcaster
      */
@@ -68,7 +68,7 @@ class BroadcastService extends Service {
     /**
      * A broadcast channel of a broadcast service.
      *
-     * @var BroadcastChannel|array|null
+     * @var BroadcastChannel|BroadcastChannel[]|null
      *
      * @see https://schema.org/hasBroadcastChannel
      */
@@ -79,7 +79,7 @@ class BroadcastService extends Service {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/inLanguage
      */
@@ -89,7 +89,7 @@ class BroadcastService extends Service {
      * A broadcast service to which the broadcast service may belong to such as
      * regional variations of a national channel.
      *
-     * @var BroadcastService|array|null
+     * @var BroadcastService|BroadcastService[]|null
      *
      * @see https://schema.org/parentService
      */
@@ -98,7 +98,7 @@ class BroadcastService extends Service {
     /**
      * The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/videoFormat
      */

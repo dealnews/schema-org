@@ -22,7 +22,7 @@ class RentalCarReservation extends Reservation {
     /**
      * Where a rental car can be dropped off.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/dropoffLocation
      */
@@ -31,7 +31,7 @@ class RentalCarReservation extends Reservation {
     /**
      * When a rental car can be dropped off.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dropoffTime
      */
@@ -40,7 +40,7 @@ class RentalCarReservation extends Reservation {
     /**
      * Where a taxi will pick up a passenger or a rental car can be picked up.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/pickupLocation
      */
@@ -49,7 +49,7 @@ class RentalCarReservation extends Reservation {
     /**
      * When a taxi will pick up a passenger or a rental car can be picked up.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/pickupTime
      */

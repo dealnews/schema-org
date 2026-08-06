@@ -20,7 +20,7 @@ class ConsumeAction extends Action {
      * If more than one value is specified, fulfilling one set of requirements will
      * allow the Action to be performed.
      *
-     * @var ActionAccessSpecification|array|null
+     * @var ActionAccessSpecification|ActionAccessSpecification[]|null
      *
      * @see https://schema.org/actionAccessibilityRequirement
      */
@@ -30,7 +30,7 @@ class ConsumeAction extends Action {
      * An Offer which must be accepted before the user can perform the Action. For
      * example, the user may need to buy a movie before being able to watch it.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/expectsAcceptanceOf
      */

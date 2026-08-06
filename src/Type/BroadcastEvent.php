@@ -18,7 +18,7 @@ class BroadcastEvent extends PublicationEvent {
     /**
      * The event being broadcast such as a sporting event or awards ceremony.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/broadcastOfEvent
      */
@@ -27,7 +27,7 @@ class BroadcastEvent extends PublicationEvent {
     /**
      * True if the broadcast is of a live event.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isLiveBroadcast
      */
@@ -36,7 +36,7 @@ class BroadcastEvent extends PublicationEvent {
     /**
      * The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/videoFormat
      */

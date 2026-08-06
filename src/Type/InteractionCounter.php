@@ -28,7 +28,7 @@ class InteractionCounter extends StructuredValue {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endTime
      */
@@ -37,7 +37,7 @@ class InteractionCounter extends StructuredValue {
     /**
      * The WebSite or SoftwareApplication where the interactions took place.
      *
-     * @var SoftwareApplication|WebSite|array|null
+     * @var SoftwareApplication|WebSite|SoftwareApplication[]|WebSite[]|null
      *
      * @see https://schema.org/interactionService
      */
@@ -48,7 +48,7 @@ class InteractionCounter extends StructuredValue {
      * [[LikeAction]]. For down votes use [[DislikeAction]]. Otherwise, use the
      * most specific Action.
      *
-     * @var Action|array|null
+     * @var Action|Action[]|null
      *
      * @see https://schema.org/interactionType
      */
@@ -58,7 +58,7 @@ class InteractionCounter extends StructuredValue {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/location
      */
@@ -75,7 +75,7 @@ class InteractionCounter extends StructuredValue {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startTime
      */
@@ -85,7 +85,7 @@ class InteractionCounter extends StructuredValue {
      * The number of interactions for the CreativeWork using the WebSite or
      * SoftwareApplication.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/userInteractionCount
      */

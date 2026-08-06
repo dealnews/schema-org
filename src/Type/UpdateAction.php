@@ -18,7 +18,7 @@ class UpdateAction extends Action {
     /**
      * A sub property of object. The collection target of the action.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/targetCollection
      */

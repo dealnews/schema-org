@@ -28,7 +28,7 @@ class PlayAction extends Action {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -37,7 +37,7 @@ class PlayAction extends Action {
     /**
      * Upcoming or past event associated with this place, organization, or action.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/event
      */

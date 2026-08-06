@@ -23,7 +23,7 @@ class MediaObject extends CreativeWork {
     /**
      * A NewsArticle associated with the Media Object.
      *
-     * @var NewsArticle|array|null
+     * @var NewsArticle|NewsArticle[]|null
      *
      * @see https://schema.org/associatedArticle
      */
@@ -32,7 +32,7 @@ class MediaObject extends CreativeWork {
     /**
      * The bitrate of the media object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/bitrate
      */
@@ -41,7 +41,7 @@ class MediaObject extends CreativeWork {
     /**
      * File size in (mega/kilo)bytes.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/contentSize
      */
@@ -50,7 +50,7 @@ class MediaObject extends CreativeWork {
     /**
      * Actual bytes of the media object, for example the image file or video file.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/contentUrl
      */
@@ -60,7 +60,7 @@ class MediaObject extends CreativeWork {
      * The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
      * duration format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/duration
      */
@@ -71,7 +71,7 @@ class MediaObject extends CreativeWork {
      * information in the ```src``` element of an ```embed``` tag and should not be
      * the same as the content of the ```loc``` tag.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/embedUrl
      */
@@ -80,7 +80,7 @@ class MediaObject extends CreativeWork {
     /**
      * The CreativeWork encoded by this media object.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/encodesCreativeWork
      */
@@ -97,7 +97,7 @@ class MediaObject extends CreativeWork {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endTime
      */
@@ -106,16 +106,16 @@ class MediaObject extends CreativeWork {
     /**
      * The height of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/height
      */
     public string|QuantitativeValue|array|null $height = null;
 
     /**
-     * Player type required&#x2014;for example, Flash or Silverlight.
+     * Player type required—for example, Flash or Silverlight.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/playerType
      */
@@ -125,7 +125,7 @@ class MediaObject extends CreativeWork {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -136,7 +136,7 @@ class MediaObject extends CreativeWork {
      * to be allowed everywhere. Specify the countries in [ISO 3166
      * format](http://en.wikipedia.org/wiki/ISO_3166).
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/regionsAllowed
      */
@@ -147,7 +147,7 @@ class MediaObject extends CreativeWork {
      * Allowed values are ```true``` or ```false``` (note that an earlier version
      * had 'yes', 'no').
      *
-     * @var bool|MediaSubscription|array|null
+     * @var bool|MediaSubscription|bool[]|MediaSubscription[]|null
      *
      * @see https://schema.org/requiresSubscription
      */
@@ -164,7 +164,7 @@ class MediaObject extends CreativeWork {
      * when describing dates with times. This situation may be clarified in future
      * revisions.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startTime
      */
@@ -174,7 +174,7 @@ class MediaObject extends CreativeWork {
      * Date (including time if available) when this media object was uploaded to
      * this site.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/uploadDate
      */
@@ -183,7 +183,7 @@ class MediaObject extends CreativeWork {
     /**
      * The width of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/width
      */

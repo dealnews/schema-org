@@ -23,7 +23,7 @@ class SpeakableSpecification extends Intangible {
      * In the latter case, multiple matches within a page can constitute a single
      * conceptual "Web page element".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/cssSelector
      */
@@ -34,7 +34,7 @@ class SpeakableSpecification extends Intangible {
      * latter case, multiple matches within a page can constitute a single
      * conceptual "Web page element".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/xpath
      */

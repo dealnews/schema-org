@@ -21,7 +21,7 @@ class SellAction extends TradeAction {
      * A sub property of participant. The participant/person/organization that
      * bought the object.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/buyer
      */

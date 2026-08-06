@@ -7,9 +7,9 @@ namespace DealNews\SchemaOrg\Type;
 /**
  * ItemList.
  *
- * A list of items of any sort&#x2014;for example, Top 10 Movies About
- * Weathermen, or Top 100 Party Songs. Not to be confused with HTML lists,
- * which are often used only for formatting.
+ * A list of items of any sort—for example, Top 10 Movies About Weathermen,
+ * or Top 100 Party Songs. Not to be confused with HTML lists, which are often
+ * used only for formatting.
  *
  * @see https://schema.org/ItemList
  */
@@ -31,7 +31,7 @@ class ItemList extends Intangible {
      * the order or elements.  Use ListItem with a 'position' property in such
      * cases.
      *
-     * @var ListItem|string|Thing|array|null
+     * @var ListItem|string|Thing|ListItem[]|string[]|Thing[]|null
      *
      * @see https://schema.org/itemListElement
      */
@@ -40,7 +40,7 @@ class ItemList extends Intangible {
     /**
      * Type of ordering (e.g. Ascending, Descending, Unordered).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/itemListOrder
      */
@@ -51,7 +51,7 @@ class ItemList extends Intangible {
      * fully describe all items in a list (e.g., multi-page pagination); in such
      * cases, the numberOfItems would be for the entire list.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfItems
      */

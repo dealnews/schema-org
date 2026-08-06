@@ -19,7 +19,7 @@ class ParcelDelivery extends Intangible {
     /**
      * Destination address.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/deliveryAddress
      */
@@ -29,7 +29,7 @@ class ParcelDelivery extends Intangible {
      * New entry added as the package passes through each leg of its journey (from
      * shipment to final delivery).
      *
-     * @var DeliveryEvent|array|null
+     * @var DeliveryEvent|DeliveryEvent[]|null
      *
      * @see https://schema.org/deliveryStatus
      */
@@ -38,7 +38,7 @@ class ParcelDelivery extends Intangible {
     /**
      * The earliest date the package may arrive.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/expectedArrivalFrom
      */
@@ -47,7 +47,7 @@ class ParcelDelivery extends Intangible {
     /**
      * The latest date the package may arrive.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/expectedArrivalUntil
      */
@@ -56,7 +56,7 @@ class ParcelDelivery extends Intangible {
     /**
      * Method used for delivery or shipping.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasDeliveryMethod
      */
@@ -65,7 +65,7 @@ class ParcelDelivery extends Intangible {
     /**
      * Item(s) being shipped.
      *
-     * @var Product|array|null
+     * @var Product|Product[]|null
      *
      * @see https://schema.org/itemShipped
      */
@@ -74,7 +74,7 @@ class ParcelDelivery extends Intangible {
     /**
      * Shipper's address.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/originAddress
      */
@@ -83,7 +83,7 @@ class ParcelDelivery extends Intangible {
     /**
      * The overall order the items in this delivery were included in.
      *
-     * @var Order|array|null
+     * @var Order|Order[]|null
      *
      * @see https://schema.org/partOfOrder
      */
@@ -92,7 +92,7 @@ class ParcelDelivery extends Intangible {
     /**
      * Shipper tracking number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/trackingNumber
      */
@@ -101,7 +101,7 @@ class ParcelDelivery extends Intangible {
     /**
      * Tracking url for the parcel delivery.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/trackingUrl
      */

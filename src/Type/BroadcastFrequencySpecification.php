@@ -19,7 +19,7 @@ class BroadcastFrequencySpecification extends Intangible {
     /**
      * The frequency in MHz for a particular broadcast.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/broadcastFrequencyValue
      */

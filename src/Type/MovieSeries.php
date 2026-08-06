@@ -21,7 +21,7 @@ class MovieSeries extends CreativeWorkSeries {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -32,7 +32,7 @@ class MovieSeries extends CreativeWorkSeries {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -41,7 +41,7 @@ class MovieSeries extends CreativeWorkSeries {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -51,7 +51,7 @@ class MovieSeries extends CreativeWorkSeries {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -60,7 +60,7 @@ class MovieSeries extends CreativeWorkSeries {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

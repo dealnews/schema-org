@@ -19,7 +19,7 @@ class Organization extends Thing {
      * The payment method(s) that are accepted in general by an organization, or
      * for some specific demand or offer.
      *
-     * @var LoanOrCredit|PaymentMethod|string|array|null
+     * @var LoanOrCredit|PaymentMethod|string|LoanOrCredit[]|PaymentMethod[]|string[]|null
      *
      * @see https://schema.org/acceptedPaymentMethod
      */
@@ -28,7 +28,7 @@ class Organization extends Thing {
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress|string|array|null
+     * @var PostalAddress|string|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/address
      */
@@ -38,7 +38,7 @@ class Organization extends Thing {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -47,7 +47,7 @@ class Organization extends Thing {
     /**
      * Alumni of an organization.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/alumni
      */
@@ -56,7 +56,7 @@ class Organization extends Thing {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
@@ -65,7 +65,7 @@ class Organization extends Thing {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -75,7 +75,7 @@ class Organization extends Thing {
      * The brand(s) associated with a product or service, or the brand(s)
      * maintained by an organization or business person.
      *
-     * @var Brand|Organization|array|null
+     * @var Brand|Organization|Brand[]|Organization[]|null
      *
      * @see https://schema.org/brand
      */
@@ -86,7 +86,7 @@ class Organization extends Thing {
      * organization that issued it such as Company House or Chamber of Commerce in
      * form of a Certification.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/companyRegistration
      */
@@ -95,7 +95,7 @@ class Organization extends Thing {
     /**
      * A contact point for a person or organization.
      *
-     * @var ContactPoint|array|null
+     * @var ContactPoint|ContactPoint[]|null
      *
      * @see https://schema.org/contactPoint
      */
@@ -107,7 +107,7 @@ class Organization extends Thing {
      * logos, opening hours). For example: a store with a pharmacy, or a bakery
      * with a cafe.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/department
      */
@@ -116,7 +116,7 @@ class Organization extends Thing {
     /**
      * The date that this organization was dissolved.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dissolutionDate
      */
@@ -126,7 +126,7 @@ class Organization extends Thing {
      * The Dun & Bradstreet DUNS number for identifying an organization or business
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/duns
      */
@@ -135,7 +135,7 @@ class Organization extends Thing {
     /**
      * Email address.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/email
      */
@@ -144,7 +144,7 @@ class Organization extends Thing {
     /**
      * Someone working for this organization.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/employee
      */
@@ -153,7 +153,7 @@ class Organization extends Thing {
     /**
      * Upcoming or past event associated with this place, organization, or action.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/event
      */
@@ -162,7 +162,7 @@ class Organization extends Thing {
     /**
      * The fax number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/faxNumber
      */
@@ -171,7 +171,7 @@ class Organization extends Thing {
     /**
      * A person or organization who founded this organization.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/founder
      */
@@ -180,7 +180,7 @@ class Organization extends Thing {
     /**
      * The date that this organization was founded.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/foundingDate
      */
@@ -189,7 +189,7 @@ class Organization extends Thing {
     /**
      * The place where the Organization was founded.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/foundingLocation
      */
@@ -199,7 +199,7 @@ class Organization extends Thing {
      * A person or organization that supports (sponsors) something through some
      * kind of financial contribution.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/funder
      */
@@ -211,7 +211,7 @@ class Organization extends Thing {
      * organization, person, or place. The GLN is a 13-digit number used to
      * identify parties and physical locations.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/globalLocationNumber
      */
@@ -221,7 +221,7 @@ class Organization extends Thing {
      * Certification information about a product, organization, service, place, or
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasCertification
      */
@@ -231,7 +231,7 @@ class Organization extends Thing {
      * MemberProgram offered by an Organization, for example an eCommerce merchant
      * or an airline.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasMemberProgram
      */
@@ -240,7 +240,7 @@ class Organization extends Thing {
     /**
      * Indicates an OfferCatalog listing for this Organization, Person, or Service.
      *
-     * @var OfferCatalog|array|null
+     * @var OfferCatalog|OfferCatalog[]|null
      *
      * @see https://schema.org/hasOfferCatalog
      */
@@ -249,7 +249,7 @@ class Organization extends Thing {
     /**
      * Points-of-Sales operated by the organization or person.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/hasPOS
      */
@@ -260,7 +260,7 @@ class Organization extends Thing {
      * SoftwareApplication. The most specific child type of InteractionCounter
      * should be used.
      *
-     * @var InteractionCounter|array|null
+     * @var InteractionCounter|InteractionCounter[]|null
      *
      * @see https://schema.org/interactionStatistic
      */
@@ -271,7 +271,7 @@ class Organization extends Thing {
      * Activities (ISIC), Revision 4 code for a particular organization, business
      * person, or place.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/isicV4
      */
@@ -282,7 +282,7 @@ class Organization extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/keywords
      */
@@ -294,7 +294,7 @@ class Organization extends Thing {
      * from the place of operations of a business and other addresses can be part
      * of an organization.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/legalAddress
      */
@@ -303,7 +303,7 @@ class Organization extends Thing {
     /**
      * The official name of the organization, e.g. the registered company name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/legalName
      */
@@ -313,7 +313,7 @@ class Organization extends Thing {
      * One or multiple persons who represent this organization legally such as CEO
      * or sole administrator.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/legalRepresentative
      */
@@ -323,7 +323,7 @@ class Organization extends Thing {
      * An organization identifier that uniquely identifies a legal entity as
      * defined in ISO 17442.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/leiCode
      */
@@ -333,7 +333,7 @@ class Organization extends Thing {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/location
      */
@@ -342,7 +342,7 @@ class Organization extends Thing {
     /**
      * An associated logo.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/logo
      */
@@ -351,7 +351,7 @@ class Organization extends Thing {
     /**
      * A pointer to products or services offered by the organization or person.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/makesOffer
      */
@@ -361,7 +361,7 @@ class Organization extends Thing {
      * A member of an Organization or a ProgramMembership. Organizations can be
      * members of organizations; ProgramMembership is typically for individuals.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/member
      */
@@ -371,7 +371,7 @@ class Organization extends Thing {
      * An Organization (or ProgramMembership) to which this Person or Organization
      * belongs.
      *
-     * @var string|Organization|ProgramMembership|array|null
+     * @var string|Organization|ProgramMembership|string[]|Organization[]|ProgramMembership[]|null
      *
      * @see https://schema.org/memberOf
      */
@@ -381,7 +381,7 @@ class Organization extends Thing {
      * The North American Industry Classification System (NAICS) code for a
      * particular organization or business person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/naics
      */
@@ -390,7 +390,7 @@ class Organization extends Thing {
     /**
      * The number of employees in an organization, e.g. business.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfEmployees
      */
@@ -399,7 +399,7 @@ class Organization extends Thing {
     /**
      * Things owned by the organization or person.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/owns
      */
@@ -409,7 +409,7 @@ class Organization extends Thing {
      * The larger organization that this organization is a [[subOrganization]] of,
      * if any.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/parentOrganization
      */
@@ -427,7 +427,7 @@ class Organization extends Thing {
      * sometimes related information (e.g. indicating a [[funder]]) can be
      * expressed using schema.org terminology.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/publishingPrinciples
      */
@@ -436,7 +436,7 @@ class Organization extends Thing {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -446,7 +446,7 @@ class Organization extends Thing {
      * A pointer to products or services sought by the organization or person
      * (demand).
      *
-     * @var Demand|array|null
+     * @var Demand|Demand[]|null
      *
      * @see https://schema.org/seeks
      */
@@ -457,7 +457,7 @@ class Organization extends Thing {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/skills
      */
@@ -466,7 +466,7 @@ class Organization extends Thing {
     /**
      * A slogan or motto associated with the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/slogan
      */
@@ -477,7 +477,7 @@ class Organization extends Thing {
      * financial contribution. E.g. a sponsor of a Medical Study or a corporate
      * sponsor of an event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/sponsor
      */
@@ -488,7 +488,7 @@ class Organization extends Thing {
      * second, e.g., as a subsidiary. See also: the more specific 'department'
      * property.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/subOrganization
      */
@@ -498,7 +498,7 @@ class Organization extends Thing {
      * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or
      * the CIF/NIF in Spain.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/taxID
      */
@@ -507,7 +507,7 @@ class Organization extends Thing {
     /**
      * The telephone number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/telephone
      */
@@ -518,7 +518,7 @@ class Organization extends Thing {
      * (for example IT123456789). Can also be described as [[iso6523Code]] with
      * proper prefix.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vatID
      */

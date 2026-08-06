@@ -20,7 +20,7 @@ class ProgramMembership extends Intangible {
      * The Organization (airline, travelers' club, retailer, etc.) the membership
      * is made with or which offers the  MemberProgram.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/hostingOrganization
      */
@@ -30,7 +30,7 @@ class ProgramMembership extends Intangible {
      * A member of an Organization or a ProgramMembership. Organizations can be
      * members of organizations; ProgramMembership is typically for individuals.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/member
      */
@@ -39,7 +39,7 @@ class ProgramMembership extends Intangible {
     /**
      * A unique identifier for the membership.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/membershipNumber
      */
@@ -49,7 +49,7 @@ class ProgramMembership extends Intangible {
      * The [MemberProgram](https://schema.org/MemberProgram) associated with a
      * [ProgramMembership](https://schema.org/ProgramMembership).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/program
      */
@@ -59,7 +59,7 @@ class ProgramMembership extends Intangible {
      * The program providing the membership. It is preferable to use
      * [:program](https://schema.org/program) instead.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/programName
      */

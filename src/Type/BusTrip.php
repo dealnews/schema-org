@@ -18,7 +18,7 @@ class BusTrip extends Trip {
     /**
      * The stop or station from which the bus arrives.
      *
-     * @var BusStation|BusStop|array|null
+     * @var BusStation|BusStop|BusStation[]|BusStop[]|null
      *
      * @see https://schema.org/arrivalBusStop
      */
@@ -27,7 +27,7 @@ class BusTrip extends Trip {
     /**
      * The name of the bus (e.g. Bolt Express).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/busName
      */
@@ -36,7 +36,7 @@ class BusTrip extends Trip {
     /**
      * The unique identifier for the bus.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/busNumber
      */
@@ -45,7 +45,7 @@ class BusTrip extends Trip {
     /**
      * The stop or station from which the bus departs.
      *
-     * @var BusStation|BusStop|array|null
+     * @var BusStation|BusStop|BusStation[]|BusStop[]|null
      *
      * @see https://schema.org/departureBusStop
      */

@@ -22,7 +22,7 @@ class Corporation extends Organization {
      * we recommend using the controlled vocabulary of Market Identifier Codes
      * (MIC) specified in ISO 15022.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/tickerSymbol
      */

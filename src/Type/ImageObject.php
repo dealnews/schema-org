@@ -20,7 +20,7 @@ class ImageObject extends MediaObject {
      * caption, subtitles etc.) use MediaObject and indicate the
      * [[encodingFormat]].
      *
-     * @var MediaObject|string|array|null
+     * @var MediaObject|string|MediaObject[]|string[]|null
      *
      * @see https://schema.org/caption
      */
@@ -29,7 +29,7 @@ class ImageObject extends MediaObject {
     /**
      * exif data for this object.
      *
-     * @var PropertyValue|string|array|null
+     * @var PropertyValue|string|PropertyValue[]|string[]|null
      *
      * @see https://schema.org/exifData
      */
@@ -38,7 +38,7 @@ class ImageObject extends MediaObject {
     /**
      * Indicates whether this image is representative of the content of the page.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/representativeOfPage
      */

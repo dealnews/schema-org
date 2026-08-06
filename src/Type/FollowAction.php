@@ -33,7 +33,7 @@ class FollowAction extends InteractAction {
     /**
      * A sub property of object. The person or organization being followed.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/followee
      */

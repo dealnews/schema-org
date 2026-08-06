@@ -20,7 +20,7 @@ class FoodEstablishment extends LocalBusiness {
      * Boolean, an URL at which reservations can be made or (for backwards
      * compatibility) the strings ```Yes``` or ```No```.
      *
-     * @var bool|string|array|null
+     * @var bool|string|bool[]|string[]|null
      *
      * @see https://schema.org/acceptsReservations
      */
@@ -30,7 +30,7 @@ class FoodEstablishment extends LocalBusiness {
      * Either the actual menu as a structured representation, as text, or a URL of
      * the menu.
      *
-     * @var Menu|string|array|null
+     * @var Menu|string|Menu[]|string[]|null
      *
      * @see https://schema.org/hasMenu
      */
@@ -39,7 +39,7 @@ class FoodEstablishment extends LocalBusiness {
     /**
      * The cuisine of the restaurant.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/servesCuisine
      */
@@ -51,7 +51,7 @@ class FoodEstablishment extends LocalBusiness {
      * indicate the rating organization, e.g. as an Organization with name such as
      * (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
      *
-     * @var Rating|array|null
+     * @var Rating|Rating[]|null
      *
      * @see https://schema.org/starRating
      */

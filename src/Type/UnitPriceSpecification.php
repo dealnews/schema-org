@@ -20,7 +20,7 @@ class UnitPriceSpecification extends PriceSpecification {
      * will be the basis for the billing. The unit of measurement is specified by
      * the unitCode property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/billingIncrement
      */
@@ -36,7 +36,7 @@ class UnitPriceSpecification extends PriceSpecification {
      * string for price types that are not already predefined in
      * PriceTypeEnumeration.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceType
      */
@@ -47,7 +47,7 @@ class UnitPriceSpecification extends PriceSpecification {
      * kWh of electricity. This property is a replacement for unitOfMeasurement for
      * the advanced cases where the price does not relate to a standard unit.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/referenceQuantity
      */
@@ -58,7 +58,7 @@ class UnitPriceSpecification extends PriceSpecification {
      * or a URL. Other codes than the UN/CEFACT Common Code may be used with a
      * prefix followed by a colon.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unitCode
      */
@@ -67,9 +67,9 @@ class UnitPriceSpecification extends PriceSpecification {
     /**
      * A string or text indicating the unit of measurement. Useful if you cannot
      * provide a standard unit code for
-     * <a href='unitCode'>unitCode</a>.
+     * unitCode (unitCode).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unitText
      */

@@ -20,7 +20,7 @@ class LiveBlogPosting extends BlogPosting {
      * The time when the live blog will stop covering the Event. Note that coverage
      * may continue after the Event concludes.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/coverageEndTime
      */
@@ -31,7 +31,7 @@ class LiveBlogPosting extends BlogPosting {
      * coverage may begin before the Event's start time. The LiveBlogPosting may
      * also be created before coverage begins.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/coverageStartTime
      */
@@ -40,7 +40,7 @@ class LiveBlogPosting extends BlogPosting {
     /**
      * An update to the LiveBlog.
      *
-     * @var BlogPosting|array|null
+     * @var BlogPosting|BlogPosting[]|null
      *
      * @see https://schema.org/liveBlogUpdate
      */

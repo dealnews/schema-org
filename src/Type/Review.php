@@ -18,7 +18,7 @@ class Review extends CreativeWork {
     /**
      * The item that is being reviewed/rated.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/itemReviewed
      */
@@ -27,7 +27,7 @@ class Review extends CreativeWork {
     /**
      * This Review or Rating is relevant to this part or facet of the itemReviewed.
      *
-     * @var StructuredValue|string|array|null
+     * @var StructuredValue|string|StructuredValue[]|string[]|null
      *
      * @see https://schema.org/reviewAspect
      */
@@ -36,7 +36,7 @@ class Review extends CreativeWork {
     /**
      * The actual body of the review.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/reviewBody
      */
@@ -48,7 +48,7 @@ class Review extends CreativeWork {
      * [[aggregateRating]] property applies to the review itself, as a creative
      * work.
      *
-     * @var Rating|array|null
+     * @var Rating|Rating[]|null
      *
      * @see https://schema.org/reviewRating
      */

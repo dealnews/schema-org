@@ -19,7 +19,7 @@ class PerformAction extends PlayAction {
      * A sub property of location. The entertainment business where the action
      * occurred.
      *
-     * @var EntertainmentBusiness|array|null
+     * @var EntertainmentBusiness|EntertainmentBusiness[]|null
      *
      * @see https://schema.org/entertainmentBusiness
      */

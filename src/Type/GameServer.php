@@ -18,7 +18,7 @@ class GameServer extends Intangible {
     /**
      * Video game which is played on this server.
      *
-     * @var VideoGame|array|null
+     * @var VideoGame|VideoGame[]|null
      *
      * @see https://schema.org/game
      */
@@ -27,7 +27,7 @@ class GameServer extends Intangible {
     /**
      * Number of players on the server.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/playersOnline
      */
@@ -36,7 +36,7 @@ class GameServer extends Intangible {
     /**
      * Status of a game server.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/serverStatus
      */

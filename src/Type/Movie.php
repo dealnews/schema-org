@@ -20,7 +20,7 @@ class Movie extends CreativeWork {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -31,7 +31,7 @@ class Movie extends CreativeWork {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -41,7 +41,7 @@ class Movie extends CreativeWork {
      * The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
      * duration format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/duration
      */
@@ -50,7 +50,7 @@ class Movie extends CreativeWork {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -60,7 +60,7 @@ class Movie extends CreativeWork {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -69,7 +69,7 @@ class Movie extends CreativeWork {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

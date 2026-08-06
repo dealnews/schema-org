@@ -20,7 +20,7 @@ class HowToSupply extends HowToItem {
      * The estimated cost of the supply or supplies consumed when performing
      * instructions.
      *
-     * @var MonetaryAmount|string|array|null
+     * @var MonetaryAmount|string|MonetaryAmount[]|string[]|null
      *
      * @see https://schema.org/estimatedCost
      */

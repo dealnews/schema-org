@@ -28,7 +28,7 @@ class Product extends Thing {
      * expect such data to be provided using those properties, rather than using
      * the generic property/value mechanism.
      *
-     * @var PropertyValue|array|null
+     * @var PropertyValue|PropertyValue[]|null
      *
      * @see https://schema.org/additionalProperty
      */
@@ -38,7 +38,7 @@ class Product extends Thing {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -47,7 +47,7 @@ class Product extends Thing {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -56,7 +56,7 @@ class Product extends Thing {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -66,7 +66,7 @@ class Product extends Thing {
      * The brand(s) associated with a product or service, or the brand(s)
      * maintained by an organization or business person.
      *
-     * @var Brand|Organization|array|null
+     * @var Brand|Organization|Brand[]|Organization[]|null
      *
      * @see https://schema.org/brand
      */
@@ -76,7 +76,7 @@ class Product extends Thing {
      * A category for the item. Greater signs or slashes can be used to informally
      * indicate a category hierarchy.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/category
      */
@@ -85,7 +85,7 @@ class Product extends Thing {
     /**
      * The color of the product.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/color
      */
@@ -105,7 +105,7 @@ class Product extends Thing {
      * interpretation of this may vary by context and product type, and cannot be
      * fully enumerated here.
      *
-     * @var Country|array|null
+     * @var Country|Country[]|null
      *
      * @see https://schema.org/countryOfOrigin
      */
@@ -114,7 +114,7 @@ class Product extends Thing {
     /**
      * The depth of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/depth
      */
@@ -128,7 +128,7 @@ class Product extends Thing {
      * Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
      * details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin12
      */
@@ -142,7 +142,7 @@ class Product extends Thing {
      * Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
      * details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin13
      */
@@ -153,7 +153,7 @@ class Product extends Thing {
      * See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin)
      * for more details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin14
      */
@@ -165,7 +165,7 @@ class Product extends Thing {
      * Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
      * details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin8
      */
@@ -175,7 +175,7 @@ class Product extends Thing {
      * Certification information about a product, organization, service, place, or
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasCertification
      */
@@ -184,7 +184,7 @@ class Product extends Thing {
     /**
      * The height of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/height
      */
@@ -194,7 +194,7 @@ class Product extends Thing {
      * A pointer to another product (or multiple products) for which this product
      * is an accessory or spare part.
      *
-     * @var Product|array|null
+     * @var Product|Product[]|null
      *
      * @see https://schema.org/isAccessoryOrSparePartFor
      */
@@ -204,7 +204,7 @@ class Product extends Thing {
      * A pointer to another product (or multiple products) for which this product
      * is a consumable.
      *
-     * @var Product|array|null
+     * @var Product|Product[]|null
      *
      * @see https://schema.org/isConsumableFor
      */
@@ -213,7 +213,7 @@ class Product extends Thing {
     /**
      * Indicates whether this content is family friendly.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isFamilyFriendly
      */
@@ -222,7 +222,7 @@ class Product extends Thing {
     /**
      * A pointer to another, somehow related product (or multiple products).
      *
-     * @var Product|Service|array|null
+     * @var Product|Service|Product[]|Service[]|null
      *
      * @see https://schema.org/isRelatedTo
      */
@@ -231,7 +231,7 @@ class Product extends Thing {
     /**
      * A pointer to another, functionally similar product (or multiple products).
      *
-     * @var Product|Service|array|null
+     * @var Product|Service|Product[]|Service[]|null
      *
      * @see https://schema.org/isSimilarTo
      */
@@ -249,7 +249,7 @@ class Product extends Thing {
      * variants). When used with [[ProductGroup]], this property can apply to any
      * [[Product]] included in the group.
      *
-     * @var string|ProductModel|array|null
+     * @var string|ProductModel|string[]|ProductModel[]|null
      *
      * @see https://schema.org/isVariantOf
      */
@@ -261,7 +261,7 @@ class Product extends Thing {
      * used for product return policies to specify the condition of products
      * accepted for returns.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/itemCondition
      */
@@ -272,7 +272,7 @@ class Product extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/keywords
      */
@@ -281,7 +281,7 @@ class Product extends Thing {
     /**
      * An associated logo.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/logo
      */
@@ -290,7 +290,7 @@ class Product extends Thing {
     /**
      * The manufacturer of the product.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/manufacturer
      */
@@ -299,7 +299,7 @@ class Product extends Thing {
     /**
      * A material that something is made from, e.g. leather, wool, cotton, paper.
      *
-     * @var Product|string|array|null
+     * @var Product|string|Product[]|string[]|null
      *
      * @see https://schema.org/material
      */
@@ -311,7 +311,7 @@ class Product extends Thing {
      * from an external source. It is recommended to additionally provide strong
      * product identifiers via the gtin8/gtin13/gtin14 and mpn properties.
      *
-     * @var ProductModel|string|array|null
+     * @var ProductModel|string|ProductModel[]|string[]|null
      *
      * @see https://schema.org/model
      */
@@ -321,22 +321,22 @@ class Product extends Thing {
      * The Manufacturer Part Number (MPN) of the product, or the product to which
      * the offer refers.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/mpn
      */
     public string|array|null $mpn = null;
 
     /**
-     * An offer to provide this item&#x2014;for example, an offer to sell a
-     * product, rent the DVD of a movie, perform a service, or give away tickets to
-     * an event. Use [[businessFunction]] to indicate the kind of transaction
-     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * An offer to provide this item—for example, an offer to sell a product,
+     * rent the DVD of a movie, perform a service, or give away tickets to an
+     * event. Use [[businessFunction]] to indicate the kind of transaction offered,
+     * i.e. sell, lease, etc. This property can also be used to describe a
      * [[Demand]]. While this property is listed as expected on a number of common
      * types, it can be used in others. In that case, using a second type, such as
      * Product or a subtype of Product, can clarify the nature of the offer.
      *
-     * @var Demand|Offer|array|null
+     * @var Demand|Offer|Demand[]|Offer[]|null
      *
      * @see https://schema.org/offers
      */
@@ -346,7 +346,7 @@ class Product extends Thing {
      * The product identifier, such as ISBN. For example: ``` meta
      * itemprop="productID" content="isbn:123-456-789" ```.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/productID
      */
@@ -355,7 +355,7 @@ class Product extends Thing {
     /**
      * The date of production of the item, e.g. vehicle.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/productionDate
      */
@@ -364,7 +364,7 @@ class Product extends Thing {
     /**
      * The date the item, e.g. vehicle, was purchased by the current owner.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/purchaseDate
      */
@@ -374,7 +374,7 @@ class Product extends Thing {
      * The release date of a product or product model. This can be used to
      * distinguish the exact variant of a product.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/releaseDate
      */
@@ -383,7 +383,7 @@ class Product extends Thing {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -393,7 +393,7 @@ class Product extends Thing {
      * The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a
      * product or service, or the product to which the offer refers.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/sku
      */
@@ -402,7 +402,7 @@ class Product extends Thing {
     /**
      * A slogan or motto associated with the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/slogan
      */
@@ -411,7 +411,7 @@ class Product extends Thing {
     /**
      * The weight of the product or person.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/weight
      */
@@ -420,7 +420,7 @@ class Product extends Thing {
     /**
      * The width of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/width
      */

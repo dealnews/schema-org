@@ -26,7 +26,7 @@ class Place extends Thing {
      * expect such data to be provided using those properties, rather than using
      * the generic property/value mechanism.
      *
-     * @var PropertyValue|array|null
+     * @var PropertyValue|PropertyValue[]|null
      *
      * @see https://schema.org/additionalProperty
      */
@@ -35,7 +35,7 @@ class Place extends Thing {
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress|string|array|null
+     * @var PostalAddress|string|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/address
      */
@@ -45,7 +45,7 @@ class Place extends Thing {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -56,7 +56,7 @@ class Place extends Thing {
      * This generic property does not make a statement about whether the feature is
      * included in an offer for the main accommodation or available at extra costs.
      *
-     * @var LocationFeatureSpecification|array|null
+     * @var LocationFeatureSpecification|LocationFeatureSpecification[]|null
      *
      * @see https://schema.org/amenityFeature
      */
@@ -71,7 +71,7 @@ class Place extends Thing {
      * http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code "3047" is
      * a branchCode for a particular branch.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/branchCode
      */
@@ -80,7 +80,7 @@ class Place extends Thing {
     /**
      * The basic containment relation between a place and one that contains it.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/containedInPlace
      */
@@ -89,7 +89,7 @@ class Place extends Thing {
     /**
      * The basic containment relation between a place and another that it contains.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/containsPlace
      */
@@ -98,7 +98,7 @@ class Place extends Thing {
     /**
      * Upcoming or past event associated with this place, organization, or action.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/event
      */
@@ -107,7 +107,7 @@ class Place extends Thing {
     /**
      * The fax number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/faxNumber
      */
@@ -116,7 +116,7 @@ class Place extends Thing {
     /**
      * The geo coordinates of the place.
      *
-     * @var GeoCoordinates|GeoShape|array|null
+     * @var GeoCoordinates|GeoShape|GeoCoordinates[]|GeoShape[]|null
      *
      * @see https://schema.org/geo
      */
@@ -129,7 +129,7 @@ class Place extends Thing {
      * point of the interior of b lies in the interior of a". As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoContains
      */
@@ -140,7 +140,7 @@ class Place extends Thing {
      * represent), relating a geometry to another that covers it. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoCoveredBy
      */
@@ -152,7 +152,7 @@ class Place extends Thing {
      * of b is a point of (the interior or boundary of) a". As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoCovers
      */
@@ -165,7 +165,7 @@ class Place extends Thing {
      * the intersection is less than that of at least one of them". As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoCrosses
      */
@@ -177,7 +177,7 @@ class Place extends Thing {
      * form a set of disconnected geometries." (A symmetric relationship, as
      * defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoDisjoint
      */
@@ -191,7 +191,7 @@ class Place extends Thing {
      * or boundary of one geometry intersects the exterior of the other" (a
      * symmetric relationship).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoEquals
      */
@@ -202,7 +202,7 @@ class Place extends Thing {
      * represent) have at least one point in common. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoIntersects
      */
@@ -214,7 +214,7 @@ class Place extends Thing {
      * i.e. they have some but not all points in common. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoOverlaps
      */
@@ -226,7 +226,7 @@ class Place extends Thing {
      * interior points." (A symmetric relationship, as defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoTouches
      */
@@ -238,7 +238,7 @@ class Place extends Thing {
      * (i.e. within) its interior. As defined in
      * [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
      *
-     * @var string|Place|array|null
+     * @var string|Place|string[]|Place[]|null
      *
      * @see https://schema.org/geoWithin
      */
@@ -250,7 +250,7 @@ class Place extends Thing {
      * organization, person, or place. The GLN is a 13-digit number used to
      * identify parties and physical locations.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/globalLocationNumber
      */
@@ -260,7 +260,7 @@ class Place extends Thing {
      * Certification information about a product, organization, service, place, or
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasCertification
      */
@@ -269,7 +269,7 @@ class Place extends Thing {
     /**
      * A URL to a map of the place.
      *
-     * @var Map|string|array|null
+     * @var Map|string|Map[]|string[]|null
      *
      * @see https://schema.org/hasMap
      */
@@ -278,7 +278,7 @@ class Place extends Thing {
     /**
      * A flag to signal that the item, event, or place is accessible for free.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isAccessibleForFree
      */
@@ -289,7 +289,7 @@ class Place extends Thing {
      * Activities (ISIC), Revision 4 code for a particular organization, business
      * person, or place.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/isicV4
      */
@@ -300,7 +300,7 @@ class Place extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/keywords
      */
@@ -310,7 +310,7 @@ class Place extends Thing {
      * The latitude of a location. For example ```37.42242``` ([WGS
      * 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/latitude
      */
@@ -319,7 +319,7 @@ class Place extends Thing {
     /**
      * An associated logo.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/logo
      */
@@ -329,7 +329,7 @@ class Place extends Thing {
      * The longitude of a location. For example ```-122.08585``` ([WGS
      * 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/longitude
      */
@@ -338,7 +338,7 @@ class Place extends Thing {
     /**
      * The total number of individuals that may attend an event or venue.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/maximumAttendeeCapacity
      */
@@ -347,7 +347,7 @@ class Place extends Thing {
     /**
      * The opening hours of a certain place.
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/openingHoursSpecification
      */
@@ -356,7 +356,7 @@ class Place extends Thing {
     /**
      * A photograph of this place.
      *
-     * @var ImageObject|Photograph|array|null
+     * @var ImageObject|Photograph|ImageObject[]|Photograph[]|null
      *
      * @see https://schema.org/photo
      */
@@ -366,7 +366,7 @@ class Place extends Thing {
      * A flag to signal that the [[Place]] is open to public visitors.  If this
      * property is omitted there is no assumed default boolean value.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/publicAccess
      */
@@ -375,7 +375,7 @@ class Place extends Thing {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -384,7 +384,7 @@ class Place extends Thing {
     /**
      * A slogan or motto associated with the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/slogan
      */
@@ -394,7 +394,7 @@ class Place extends Thing {
      * Indicates whether it is allowed to smoke in the place, e.g. in the
      * restaurant, hotel or hotel room.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/smokingAllowed
      */
@@ -406,7 +406,7 @@ class Place extends Thing {
      * Use this to explicitly override general opening hours brought in scope by
      * [[openingHoursSpecification]] or [[openingHours]].
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/specialOpeningHoursSpecification
      */
@@ -415,7 +415,7 @@ class Place extends Thing {
     /**
      * The telephone number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/telephone
      */

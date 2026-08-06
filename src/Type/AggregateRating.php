@@ -18,7 +18,7 @@ class AggregateRating extends Rating {
     /**
      * The item that is being reviewed/rated.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/itemReviewed
      */
@@ -27,7 +27,7 @@ class AggregateRating extends Rating {
     /**
      * The count of total number of ratings.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/ratingCount
      */
@@ -36,7 +36,7 @@ class AggregateRating extends Rating {
     /**
      * The count of total number of reviews.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/reviewCount
      */

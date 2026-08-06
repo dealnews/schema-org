@@ -19,7 +19,7 @@ class ClaimReview extends Review {
     /**
      * A short summary of the specific claims reviewed in a ClaimReview.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/claimReviewed
      */

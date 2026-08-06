@@ -18,7 +18,7 @@ class EducationalAudience extends Audience {
     /**
      * An educationalRole of an EducationalAudience.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/educationalRole
      */

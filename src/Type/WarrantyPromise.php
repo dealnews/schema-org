@@ -21,7 +21,7 @@ class WarrantyPromise extends StructuredValue {
      * The duration of the warranty promise. Common unitCode values are ANN for
      * year, MON for months, or DAY for days.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/durationOfWarranty
      */
@@ -30,7 +30,7 @@ class WarrantyPromise extends StructuredValue {
     /**
      * The scope of the warranty promise.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/warrantyScope
      */

@@ -21,7 +21,7 @@ class Comment extends CreativeWork {
      * The number of downvotes this question, answer or comment has received from
      * the community.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/downvoteCount
      */
@@ -33,7 +33,7 @@ class Comment extends CreativeWork {
      * [[Article]] or other [[CreativeWork]]. See also [[comment]] which points
      * from something to a comment about it.
      *
-     * @var Comment|CreativeWork|array|null
+     * @var Comment|CreativeWork|Comment[]|CreativeWork[]|null
      *
      * @see https://schema.org/parentItem
      */
@@ -43,7 +43,7 @@ class Comment extends CreativeWork {
      * A CreativeWork such as an image, video, or audio clip shared as part of this
      * posting.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/sharedContent
      */
@@ -53,7 +53,7 @@ class Comment extends CreativeWork {
      * The number of upvotes this question, answer or comment has received from the
      * community.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/upvoteCount
      */

@@ -20,7 +20,7 @@ class ShippingDeliveryTime extends StructuredValue {
      * Days of the week when the merchant typically operates, indicated via opening
      * hours markup.
      *
-     * @var string|OpeningHoursSpecification|array|null
+     * @var string|OpeningHoursSpecification|string[]|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/businessDays
      */
@@ -36,7 +36,7 @@ class ShippingDeliveryTime extends StructuredValue {
      * Eastern Standard Time (EST) which is 5 hours behind Coordinated Universal
      * Time (UTC).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/cutoffTime
      */
@@ -56,7 +56,7 @@ class ShippingDeliveryTime extends StructuredValue {
      * that contains the same information in a structured form, with cut-off time,
      * business days and duration.
      *
-     * @var QuantitativeValue|string|array|null
+     * @var QuantitativeValue|string|QuantitativeValue[]|string[]|null
      *
      * @see https://schema.org/handlingTime
      */
@@ -73,7 +73,7 @@ class ShippingDeliveryTime extends StructuredValue {
      * has a duration (as a [[QuantitativeValue]]) and also business days and a
      * cut-off time.
      *
-     * @var QuantitativeValue|string|array|null
+     * @var QuantitativeValue|string|QuantitativeValue[]|string[]|null
      *
      * @see https://schema.org/transitTime
      */

@@ -18,7 +18,7 @@ class ActionAccessSpecification extends Intangible {
     /**
      * The end of the availability of the product or service included in the offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availabilityEnds
      */
@@ -28,7 +28,7 @@ class ActionAccessSpecification extends Intangible {
      * The beginning of the availability of the product or service included in the
      * offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availabilityStarts
      */
@@ -38,7 +38,7 @@ class ActionAccessSpecification extends Intangible {
      * A category for the item. Greater signs or slashes can be used to informally
      * indicate a category hierarchy.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/category
      */
@@ -51,7 +51,7 @@ class ActionAccessSpecification extends Intangible {
      *
      * See also [[ineligibleRegion]].
      *
-     * @var GeoShape|Place|string|array|null
+     * @var GeoShape|Place|string|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/eligibleRegion
      */
@@ -61,7 +61,7 @@ class ActionAccessSpecification extends Intangible {
      * An Offer which must be accepted before the user can perform the Action. For
      * example, the user may need to buy a movie before being able to watch it.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/expectsAcceptanceOf
      */
@@ -72,7 +72,7 @@ class ActionAccessSpecification extends Intangible {
      * Allowed values are ```true``` or ```false``` (note that an earlier version
      * had 'yes', 'no').
      *
-     * @var bool|MediaSubscription|array|null
+     * @var bool|MediaSubscription|bool[]|MediaSubscription[]|null
      *
      * @see https://schema.org/requiresSubscription
      */

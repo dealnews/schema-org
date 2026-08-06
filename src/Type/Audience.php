@@ -19,7 +19,7 @@ class Audience extends Intangible {
      * The target group associated with a given audience (e.g. veterans, car
      * owners, musicians, etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/audienceType
      */
@@ -28,7 +28,7 @@ class Audience extends Intangible {
     /**
      * The geographic area associated with the audience.
      *
-     * @var AdministrativeArea|array|null
+     * @var AdministrativeArea|AdministrativeArea[]|null
      *
      * @see https://schema.org/geographicArea
      */

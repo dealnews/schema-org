@@ -23,7 +23,7 @@ class GeoCircle extends GeoShape {
     /**
      * Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle.
      *
-     * @var GeoCoordinates|array|null
+     * @var GeoCoordinates|GeoCoordinates[]|null
      *
      * @see https://schema.org/geoMidpoint
      */
@@ -33,7 +33,7 @@ class GeoCircle extends GeoShape {
      * Indicates the approximate radius of a GeoCircle (metres unless indicated
      * otherwise via Distance notation).
      *
-     * @var string|int|float|array|null
+     * @var string|int|float|string[]|int[]|float[]|null
      *
      * @see https://schema.org/geoRadius
      */

@@ -22,7 +22,7 @@ class HowToTip extends CreativeWork {
      * An entity represented by an entry in a list or data feed (e.g. an 'artist'
      * in a list of 'artists').
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/item
      */
@@ -31,7 +31,7 @@ class HowToTip extends CreativeWork {
     /**
      * A link to the ListItem that follows the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/nextItem
      */
@@ -40,7 +40,7 @@ class HowToTip extends CreativeWork {
     /**
      * A link to the ListItem that precedes the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/previousItem
      */

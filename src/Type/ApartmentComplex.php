@@ -19,7 +19,7 @@ class ApartmentComplex extends Residence {
      * Indicates whether pets are allowed to enter the accommodation or lodging
      * business. More detailed information can be put in a text value.
      *
-     * @var bool|string|array|null
+     * @var bool|string|bool[]|string[]|null
      *
      * @see https://schema.org/petsAllowed
      */

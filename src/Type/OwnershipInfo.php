@@ -19,7 +19,7 @@ class OwnershipInfo extends StructuredValue {
     /**
      * The organization or person from which the product was acquired.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/acquiredFrom
      */
@@ -28,7 +28,7 @@ class OwnershipInfo extends StructuredValue {
     /**
      * The date and time of obtaining the product.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/ownedFrom
      */
@@ -37,7 +37,7 @@ class OwnershipInfo extends StructuredValue {
     /**
      * The date and time of giving up ownership on the product.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/ownedThrough
      */
@@ -46,7 +46,7 @@ class OwnershipInfo extends StructuredValue {
     /**
      * The product that this structured value is referring to.
      *
-     * @var Product|Service|array|null
+     * @var Product|Service|Product[]|Service[]|null
      *
      * @see https://schema.org/typeOfGood
      */

@@ -18,7 +18,7 @@ class APIReference extends TechArticle {
     /**
      * Associated product/technology version. E.g., .NET Framework 4.5.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/assemblyVersion
      */
@@ -27,7 +27,7 @@ class APIReference extends TechArticle {
     /**
      * Library file name, e.g., mscorlib.dll, system.web.dll.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/executableLibraryName
      */
@@ -36,7 +36,7 @@ class APIReference extends TechArticle {
     /**
      * Indicates whether API is managed or unmanaged.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/programmingModel
      */
@@ -45,7 +45,7 @@ class APIReference extends TechArticle {
     /**
      * Type of app development: phone, Metro style, desktop, XBox, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/targetPlatform
      */

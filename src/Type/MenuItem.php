@@ -20,7 +20,7 @@ class MenuItem extends Intangible {
      * that can be added to this menu item. Additionally it can be a menu section
      * containing allowed add-on menu items for this menu item.
      *
-     * @var MenuItem|MenuSection|array|null
+     * @var MenuItem|MenuSection|MenuItem[]|MenuSection[]|null
      *
      * @see https://schema.org/menuAddOn
      */
@@ -29,22 +29,22 @@ class MenuItem extends Intangible {
     /**
      * Nutrition information about the recipe or menu item.
      *
-     * @var NutritionInformation|array|null
+     * @var NutritionInformation|NutritionInformation[]|null
      *
      * @see https://schema.org/nutrition
      */
     public NutritionInformation|array|null $nutrition = null;
 
     /**
-     * An offer to provide this item&#x2014;for example, an offer to sell a
-     * product, rent the DVD of a movie, perform a service, or give away tickets to
-     * an event. Use [[businessFunction]] to indicate the kind of transaction
-     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * An offer to provide this item—for example, an offer to sell a product,
+     * rent the DVD of a movie, perform a service, or give away tickets to an
+     * event. Use [[businessFunction]] to indicate the kind of transaction offered,
+     * i.e. sell, lease, etc. This property can also be used to describe a
      * [[Demand]]. While this property is listed as expected on a number of common
      * types, it can be used in others. In that case, using a second type, such as
      * Product or a subtype of Product, can clarify the nature of the offer.
      *
-     * @var Demand|Offer|array|null
+     * @var Demand|Offer|Demand[]|Offer[]|null
      *
      * @see https://schema.org/offers
      */
@@ -54,7 +54,7 @@ class MenuItem extends Intangible {
      * Indicates a dietary restriction or guideline for which this recipe or menu
      * item is suitable, e.g. diabetic, halal etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/suitableForDiet
      */

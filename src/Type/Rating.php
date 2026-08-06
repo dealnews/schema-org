@@ -20,7 +20,7 @@ class Rating extends Intangible {
      * that HTML 5 provides a special mechanism for indicating authorship via the
      * rel tag. That is equivalent to this and may be used interchangeably.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/author
      */
@@ -29,7 +29,7 @@ class Rating extends Intangible {
     /**
      * The highest value allowed in this rating system.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/bestRating
      */
@@ -45,7 +45,7 @@ class Rating extends Intangible {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/ratingValue
      */
@@ -54,7 +54,7 @@ class Rating extends Intangible {
     /**
      * This Review or Rating is relevant to this part or facet of the itemReviewed.
      *
-     * @var StructuredValue|string|array|null
+     * @var StructuredValue|string|StructuredValue[]|string[]|null
      *
      * @see https://schema.org/reviewAspect
      */
@@ -63,7 +63,7 @@ class Rating extends Intangible {
     /**
      * The lowest value allowed in this rating system.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/worstRating
      */

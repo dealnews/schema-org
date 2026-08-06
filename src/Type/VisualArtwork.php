@@ -20,7 +20,7 @@ class VisualArtwork extends CreativeWork {
      * - e.g. for a limited edition of 20 prints, 'artEdition' refers to the total
      * number of copies (in this example "20").
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/artEdition
      */
@@ -31,7 +31,7 @@ class VisualArtwork extends CreativeWork {
      * Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil,
      * Mixed Media, etc.)
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/artMedium
      */
@@ -41,7 +41,7 @@ class VisualArtwork extends CreativeWork {
      * e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage,
      * etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/artform
      */
@@ -51,7 +51,7 @@ class VisualArtwork extends CreativeWork {
      * The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board,
      * etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/artworkSurface
      */
@@ -60,7 +60,7 @@ class VisualArtwork extends CreativeWork {
     /**
      * The depth of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/depth
      */
@@ -69,7 +69,7 @@ class VisualArtwork extends CreativeWork {
     /**
      * The height of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/height
      */
@@ -78,7 +78,7 @@ class VisualArtwork extends CreativeWork {
     /**
      * The weight of the product or person.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/weight
      */
@@ -87,7 +87,7 @@ class VisualArtwork extends CreativeWork {
     /**
      * The width of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/width
      */

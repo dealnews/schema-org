@@ -27,7 +27,7 @@ class JoinAction extends InteractAction {
     /**
      * Upcoming or past event associated with this place, organization, or action.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/event
      */

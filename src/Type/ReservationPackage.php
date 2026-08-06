@@ -20,7 +20,7 @@ class ReservationPackage extends Reservation {
      * The individual reservations included in the package. Typically a repeated
      * property.
      *
-     * @var Reservation|array|null
+     * @var Reservation|Reservation[]|null
      *
      * @see https://schema.org/subReservation
      */

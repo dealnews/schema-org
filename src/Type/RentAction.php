@@ -20,7 +20,7 @@ class RentAction extends TradeAction {
     /**
      * A sub property of participant. The owner of the real estate property.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/landlord
      */
@@ -29,7 +29,7 @@ class RentAction extends TradeAction {
     /**
      * A sub property of participant. The real estate agent involved in the action.
      *
-     * @var RealEstateAgent|array|null
+     * @var RealEstateAgent|RealEstateAgent[]|null
      *
      * @see https://schema.org/realEstateAgent
      */

@@ -20,7 +20,7 @@ class VideoObject extends MediaObject {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -31,7 +31,7 @@ class VideoObject extends MediaObject {
      * caption, subtitles etc.) use MediaObject and indicate the
      * [[encodingFormat]].
      *
-     * @var MediaObject|string|array|null
+     * @var MediaObject|string|MediaObject[]|string[]|null
      *
      * @see https://schema.org/caption
      */
@@ -42,7 +42,7 @@ class VideoObject extends MediaObject {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -51,7 +51,7 @@ class VideoObject extends MediaObject {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -61,7 +61,7 @@ class VideoObject extends MediaObject {
      * If this MediaObject is an AudioObject or VideoObject, the transcript of that
      * object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/transcript
      */
@@ -70,7 +70,7 @@ class VideoObject extends MediaObject {
     /**
      * The frame size of the video.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/videoFrameSize
      */
@@ -79,7 +79,7 @@ class VideoObject extends MediaObject {
     /**
      * The quality of the video.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/videoQuality
      */

@@ -20,7 +20,7 @@ class PublicationEvent extends Event {
     /**
      * A broadcast service associated with the publication event.
      *
-     * @var BroadcastService|array|null
+     * @var BroadcastService|BroadcastService[]|null
      *
      * @see https://schema.org/publishedOn
      */

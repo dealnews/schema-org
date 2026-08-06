@@ -22,7 +22,7 @@ class PostalAddress extends ContactPoint {
      * alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such
      * as "SGP" or a full country name such as "Singapore" can also be used.
      *
-     * @var Country|string|array|null
+     * @var Country|string|Country[]|string[]|null
      *
      * @see https://schema.org/addressCountry
      */
@@ -32,7 +32,7 @@ class PostalAddress extends ContactPoint {
      * The locality in which the street address is, and which is in the region. For
      * example, Mountain View.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/addressLocality
      */
@@ -44,7 +44,7 @@ class PostalAddress extends ContactPoint {
      * division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country)
      * such as the Province in Italy or Region in Germany.
      *
-     * @var AdministrativeArea|string|array|null
+     * @var AdministrativeArea|string|AdministrativeArea[]|string[]|null
      *
      * @see https://schema.org/addressRegion
      */
@@ -53,7 +53,7 @@ class PostalAddress extends ContactPoint {
     /**
      * An address extension such as an apartment number, C/O or alternative name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/extendedAddress
      */
@@ -62,7 +62,7 @@ class PostalAddress extends ContactPoint {
     /**
      * The post office box number for PO box addresses.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postOfficeBoxNumber
      */
@@ -71,7 +71,7 @@ class PostalAddress extends ContactPoint {
     /**
      * The postal code. For example, 94043.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCode
      */
@@ -80,7 +80,7 @@ class PostalAddress extends ContactPoint {
     /**
      * The street address. For example, 1600 Amphitheatre Pkwy.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/streetAddress
      */

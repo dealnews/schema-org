@@ -19,7 +19,7 @@ class Report extends Article {
      * The number or other unique designator assigned to a Report by the publishing
      * organization.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/reportNumber
      */

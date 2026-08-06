@@ -19,7 +19,7 @@ class Permit extends Intangible {
      * The organization issuing the item, for example a [[Permit]], [[Ticket]], or
      * [[Certification]].
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/issuedBy
      */
@@ -28,7 +28,7 @@ class Permit extends Intangible {
     /**
      * The service through which the permit was granted.
      *
-     * @var Service|array|null
+     * @var Service|Service[]|null
      *
      * @see https://schema.org/issuedThrough
      */
@@ -37,7 +37,7 @@ class Permit extends Intangible {
     /**
      * The target audience for this permit.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/permitAudience
      */
@@ -46,7 +46,7 @@ class Permit extends Intangible {
     /**
      * The duration of validity of a permit or similar thing.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validFor
      */
@@ -55,7 +55,7 @@ class Permit extends Intangible {
     /**
      * The date when the item becomes valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validFrom
      */
@@ -66,7 +66,7 @@ class Permit extends Intangible {
      * [[Permit]], a [[Certification]], or an
      * [[EducationalOccupationalCredential]].
      *
-     * @var AdministrativeArea|array|null
+     * @var AdministrativeArea|AdministrativeArea[]|null
      *
      * @see https://schema.org/validIn
      */
@@ -75,7 +75,7 @@ class Permit extends Intangible {
     /**
      * The date when the item is no longer valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validUntil
      */

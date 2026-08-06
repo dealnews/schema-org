@@ -18,7 +18,7 @@ class EntryPoint extends Intangible {
     /**
      * An application that can complete the request.
      *
-     * @var SoftwareApplication|array|null
+     * @var SoftwareApplication|SoftwareApplication[]|null
      *
      * @see https://schema.org/actionApplication
      */
@@ -29,7 +29,7 @@ class EntryPoint extends Intangible {
      * URL. To specify a specific application or operating system instance, use
      * actionApplication.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/actionPlatform
      */
@@ -38,7 +38,7 @@ class EntryPoint extends Intangible {
     /**
      * The supported content type(s) for an EntryPoint response.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/contentType
      */
@@ -47,7 +47,7 @@ class EntryPoint extends Intangible {
     /**
      * The supported encoding type(s) for an EntryPoint request.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/encodingType
      */
@@ -57,7 +57,7 @@ class EntryPoint extends Intangible {
      * An HTTP method that specifies the appropriate HTTP method for a request to
      * an HTTP EntryPoint. Values are capitalized strings as used in HTTP.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/httpMethod
      */
@@ -67,7 +67,7 @@ class EntryPoint extends Intangible {
      * An url template (RFC6570) that will be used to construct the target of the
      * execution of the action.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/urlTemplate
      */

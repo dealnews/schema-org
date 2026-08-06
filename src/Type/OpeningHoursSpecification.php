@@ -10,7 +10,6 @@ namespace DealNews\SchemaOrg\Type;
  * A structured value providing information about the opening hours of a place
  * or a certain service inside a place.
  *
- *
  * The place is __open__ if the [[opens]] property is specified, and __closed__
  * otherwise.
  *
@@ -26,7 +25,7 @@ class OpeningHoursSpecification extends StructuredValue {
     /**
      * The closing hour of the place or service on the given day(s) of the week.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/closes
      */
@@ -35,7 +34,7 @@ class OpeningHoursSpecification extends StructuredValue {
     /**
      * The day of the week for which these opening hours are valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dayOfWeek
      */
@@ -44,7 +43,7 @@ class OpeningHoursSpecification extends StructuredValue {
     /**
      * The opening hour of the place or service on the given day(s) of the week.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/opens
      */
@@ -53,7 +52,7 @@ class OpeningHoursSpecification extends StructuredValue {
     /**
      * The date when the item becomes valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validFrom
      */
@@ -63,7 +62,7 @@ class OpeningHoursSpecification extends StructuredValue {
      * The date after when the item is not valid. For example the end of an offer,
      * salary period, or a period of opening hours.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validThrough
      */

@@ -19,7 +19,7 @@ class MusicComposition extends CreativeWork {
      * The person or organization who wrote a composition, or who is the composer
      * of a work performed at some event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/composer
      */
@@ -28,7 +28,7 @@ class MusicComposition extends CreativeWork {
     /**
      * The date and place the work was first performed.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/firstPerformance
      */
@@ -37,7 +37,7 @@ class MusicComposition extends CreativeWork {
     /**
      * Smaller compositions included in this work (e.g. a movement in a symphony).
      *
-     * @var MusicComposition|array|null
+     * @var MusicComposition|MusicComposition[]|null
      *
      * @see https://schema.org/includedComposition
      */
@@ -46,7 +46,7 @@ class MusicComposition extends CreativeWork {
     /**
      * The International Standard Musical Work Code for the composition.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/iswcCode
      */
@@ -55,7 +55,7 @@ class MusicComposition extends CreativeWork {
     /**
      * The person who wrote the words.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/lyricist
      */
@@ -64,7 +64,7 @@ class MusicComposition extends CreativeWork {
     /**
      * The words in the song.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/lyrics
      */
@@ -73,7 +73,7 @@ class MusicComposition extends CreativeWork {
     /**
      * An arrangement derived from the composition.
      *
-     * @var MusicComposition|array|null
+     * @var MusicComposition|MusicComposition[]|null
      *
      * @see https://schema.org/musicArrangement
      */
@@ -82,7 +82,7 @@ class MusicComposition extends CreativeWork {
     /**
      * The type of composition (e.g. overture, sonata, symphony, etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/musicCompositionForm
      */
@@ -91,7 +91,7 @@ class MusicComposition extends CreativeWork {
     /**
      * The key, mode, or scale this composition uses.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/musicalKey
      */
@@ -100,7 +100,7 @@ class MusicComposition extends CreativeWork {
     /**
      * An audio recording of the work.
      *
-     * @var MusicRecording|array|null
+     * @var MusicRecording|MusicRecording[]|null
      *
      * @see https://schema.org/recordedAs
      */

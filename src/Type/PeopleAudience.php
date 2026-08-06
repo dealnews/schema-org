@@ -19,7 +19,7 @@ class PeopleAudience extends Audience {
     /**
      * Audiences defined by a person's gender.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/requiredGender
      */
@@ -28,7 +28,7 @@ class PeopleAudience extends Audience {
     /**
      * Audiences defined by a person's maximum age.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/requiredMaxAge
      */
@@ -37,7 +37,7 @@ class PeopleAudience extends Audience {
     /**
      * Audiences defined by a person's minimum age.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/requiredMinAge
      */
@@ -47,7 +47,7 @@ class PeopleAudience extends Audience {
      * The suggested gender of the intended person or audience, for example "male",
      * "female", or "unisex".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/suggestedGender
      */
@@ -56,7 +56,7 @@ class PeopleAudience extends Audience {
     /**
      * Maximum recommended age in years for the audience or user.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/suggestedMaxAge
      */
@@ -65,7 +65,7 @@ class PeopleAudience extends Audience {
     /**
      * Minimum recommended age in years for the audience or user.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/suggestedMinAge
      */

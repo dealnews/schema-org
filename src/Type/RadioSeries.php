@@ -21,7 +21,7 @@ class RadioSeries extends CreativeWorkSeries {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -30,7 +30,7 @@ class RadioSeries extends CreativeWorkSeries {
     /**
      * A season that is part of the media series.
      *
-     * @var CreativeWorkSeason|array|null
+     * @var CreativeWorkSeason|CreativeWorkSeason[]|null
      *
      * @see https://schema.org/containsSeason
      */
@@ -41,7 +41,7 @@ class RadioSeries extends CreativeWorkSeries {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -50,7 +50,7 @@ class RadioSeries extends CreativeWorkSeries {
     /**
      * An episode of a TV, radio or game media within a series or season.
      *
-     * @var Episode|array|null
+     * @var Episode|Episode[]|null
      *
      * @see https://schema.org/episode
      */
@@ -59,7 +59,7 @@ class RadioSeries extends CreativeWorkSeries {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -68,7 +68,7 @@ class RadioSeries extends CreativeWorkSeries {
     /**
      * The number of episodes in this season or series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfEpisodes
      */
@@ -77,7 +77,7 @@ class RadioSeries extends CreativeWorkSeries {
     /**
      * The number of seasons in this series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfSeasons
      */
@@ -87,7 +87,7 @@ class RadioSeries extends CreativeWorkSeries {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -96,7 +96,7 @@ class RadioSeries extends CreativeWorkSeries {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

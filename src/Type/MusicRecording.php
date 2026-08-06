@@ -18,7 +18,7 @@ class MusicRecording extends CreativeWork {
     /**
      * The artist that performed this album or recording.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/byArtist
      */
@@ -28,7 +28,7 @@ class MusicRecording extends CreativeWork {
      * The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
      * duration format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/duration
      */
@@ -37,7 +37,7 @@ class MusicRecording extends CreativeWork {
     /**
      * The album to which this recording belongs.
      *
-     * @var MusicAlbum|array|null
+     * @var MusicAlbum|MusicAlbum[]|null
      *
      * @see https://schema.org/inAlbum
      */
@@ -46,7 +46,7 @@ class MusicRecording extends CreativeWork {
     /**
      * The playlist to which this recording belongs.
      *
-     * @var MusicPlaylist|array|null
+     * @var MusicPlaylist|MusicPlaylist[]|null
      *
      * @see https://schema.org/inPlaylist
      */
@@ -55,7 +55,7 @@ class MusicRecording extends CreativeWork {
     /**
      * The International Standard Recording Code for the recording.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/isrcCode
      */
@@ -64,7 +64,7 @@ class MusicRecording extends CreativeWork {
     /**
      * The composition this track is a recording of.
      *
-     * @var MusicComposition|array|null
+     * @var MusicComposition|MusicComposition[]|null
      *
      * @see https://schema.org/recordingOf
      */

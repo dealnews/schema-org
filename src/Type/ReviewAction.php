@@ -20,7 +20,7 @@ class ReviewAction extends AssessAction {
      * A sub property of result. The review that resulted in the performing of the
      * action.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/resultReview
      */

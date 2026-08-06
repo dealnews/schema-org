@@ -20,7 +20,7 @@ class DigitalDocument extends CreativeWork {
      * or write an electronic document). For a public document, specify a grantee
      * with an Audience with audienceType equal to "public".
      *
-     * @var DigitalDocumentPermission|array|null
+     * @var DigitalDocumentPermission|DigitalDocumentPermission[]|null
      *
      * @see https://schema.org/hasDigitalDocumentPermission
      */

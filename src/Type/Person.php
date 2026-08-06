@@ -18,7 +18,7 @@ class Person extends Thing {
     /**
      * An additional name for a Person, can be used for a middle name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/additionalName
      */
@@ -27,7 +27,7 @@ class Person extends Thing {
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress|string|array|null
+     * @var PostalAddress|string|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/address
      */
@@ -37,7 +37,7 @@ class Person extends Thing {
      * An organization that this person is affiliated with. For example, a
      * school/university, a club, or a team.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/affiliation
      */
@@ -46,7 +46,7 @@ class Person extends Thing {
     /**
      * An organization that the person is an alumni of.
      *
-     * @var EducationalOrganization|Organization|array|null
+     * @var EducationalOrganization|Organization|EducationalOrganization[]|Organization[]|null
      *
      * @see https://schema.org/alumniOf
      */
@@ -55,7 +55,7 @@ class Person extends Thing {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -64,7 +64,7 @@ class Person extends Thing {
     /**
      * Date of birth.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/birthDate
      */
@@ -73,7 +73,7 @@ class Person extends Thing {
     /**
      * The place where the person was born.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/birthPlace
      */
@@ -83,7 +83,7 @@ class Person extends Thing {
      * The brand(s) associated with a product or service, or the brand(s)
      * maintained by an organization or business person.
      *
-     * @var Brand|Organization|array|null
+     * @var Brand|Organization|Brand[]|Organization[]|null
      *
      * @see https://schema.org/brand
      */
@@ -92,7 +92,7 @@ class Person extends Thing {
     /**
      * A child of the person.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/children
      */
@@ -101,7 +101,7 @@ class Person extends Thing {
     /**
      * A colleague of the person.
      *
-     * @var Person|string|array|null
+     * @var Person|string|Person[]|string[]|null
      *
      * @see https://schema.org/colleague
      */
@@ -110,7 +110,7 @@ class Person extends Thing {
     /**
      * A contact point for a person or organization.
      *
-     * @var ContactPoint|array|null
+     * @var ContactPoint|ContactPoint[]|null
      *
      * @see https://schema.org/contactPoint
      */
@@ -119,7 +119,7 @@ class Person extends Thing {
     /**
      * Date of death.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/deathDate
      */
@@ -128,7 +128,7 @@ class Person extends Thing {
     /**
      * The place where the person died.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/deathPlace
      */
@@ -138,7 +138,7 @@ class Person extends Thing {
      * The Dun & Bradstreet DUNS number for identifying an organization or business
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/duns
      */
@@ -147,7 +147,7 @@ class Person extends Thing {
     /**
      * Email address.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/email
      */
@@ -156,7 +156,7 @@ class Person extends Thing {
     /**
      * Family name. In the U.S., the last name of a Person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/familyName
      */
@@ -165,7 +165,7 @@ class Person extends Thing {
     /**
      * The fax number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/faxNumber
      */
@@ -174,7 +174,7 @@ class Person extends Thing {
     /**
      * The most generic uni-directional social relation.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/follows
      */
@@ -184,7 +184,7 @@ class Person extends Thing {
      * A person or organization that supports (sponsors) something through some
      * kind of financial contribution.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/funder
      */
@@ -193,7 +193,7 @@ class Person extends Thing {
     /**
      * Given name. In the U.S., the first name of a Person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/givenName
      */
@@ -205,7 +205,7 @@ class Person extends Thing {
      * organization, person, or place. The GLN is a 13-digit number used to
      * identify parties and physical locations.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/globalLocationNumber
      */
@@ -215,7 +215,7 @@ class Person extends Thing {
      * Certification information about a product, organization, service, place, or
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasCertification
      */
@@ -225,7 +225,7 @@ class Person extends Thing {
      * The Person's occupation. For past professions, use Role for expressing
      * dates.
      *
-     * @var Occupation|array|null
+     * @var Occupation|Occupation[]|null
      *
      * @see https://schema.org/hasOccupation
      */
@@ -234,7 +234,7 @@ class Person extends Thing {
     /**
      * Indicates an OfferCatalog listing for this Organization, Person, or Service.
      *
-     * @var OfferCatalog|array|null
+     * @var OfferCatalog|OfferCatalog[]|null
      *
      * @see https://schema.org/hasOfferCatalog
      */
@@ -243,7 +243,7 @@ class Person extends Thing {
     /**
      * Points-of-Sales operated by the organization or person.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/hasPOS
      */
@@ -252,7 +252,7 @@ class Person extends Thing {
     /**
      * The height of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/height
      */
@@ -261,7 +261,7 @@ class Person extends Thing {
     /**
      * A contact location for a person's residence.
      *
-     * @var ContactPoint|Place|array|null
+     * @var ContactPoint|Place|ContactPoint[]|Place[]|null
      *
      * @see https://schema.org/homeLocation
      */
@@ -270,7 +270,7 @@ class Person extends Thing {
     /**
      * An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/honorificPrefix
      */
@@ -279,7 +279,7 @@ class Person extends Thing {
     /**
      * An honorific suffix following a Person's name such as M.D./PhD/MSCSW.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/honorificSuffix
      */
@@ -290,7 +290,7 @@ class Person extends Thing {
      * SoftwareApplication. The most specific child type of InteractionCounter
      * should be used.
      *
-     * @var InteractionCounter|array|null
+     * @var InteractionCounter|InteractionCounter[]|null
      *
      * @see https://schema.org/interactionStatistic
      */
@@ -301,7 +301,7 @@ class Person extends Thing {
      * Activities (ISIC), Revision 4 code for a particular organization, business
      * person, or place.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/isicV4
      */
@@ -310,7 +310,7 @@ class Person extends Thing {
     /**
      * The most generic bi-directional social/work relation.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/knows
      */
@@ -319,7 +319,7 @@ class Person extends Thing {
     /**
      * A pointer to products or services offered by the organization or person.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/makesOffer
      */
@@ -329,7 +329,7 @@ class Person extends Thing {
      * An Organization (or ProgramMembership) to which this Person or Organization
      * belongs.
      *
-     * @var string|Organization|ProgramMembership|array|null
+     * @var string|Organization|ProgramMembership|string[]|Organization[]|ProgramMembership[]|null
      *
      * @see https://schema.org/memberOf
      */
@@ -339,7 +339,7 @@ class Person extends Thing {
      * The North American Industry Classification System (NAICS) code for a
      * particular organization or business person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/naics
      */
@@ -348,7 +348,7 @@ class Person extends Thing {
     /**
      * Nationality of the person.
      *
-     * @var Country|array|null
+     * @var Country|Country[]|null
      *
      * @see https://schema.org/nationality
      */
@@ -358,7 +358,7 @@ class Person extends Thing {
      * The total financial value of the person as calculated by subtracting the
      * total value of liabilities from the total value of assets.
      *
-     * @var MonetaryAmount|PriceSpecification|array|null
+     * @var MonetaryAmount|PriceSpecification|MonetaryAmount[]|PriceSpecification[]|null
      *
      * @see https://schema.org/netWorth
      */
@@ -367,7 +367,7 @@ class Person extends Thing {
     /**
      * Things owned by the organization or person.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/owns
      */
@@ -376,7 +376,7 @@ class Person extends Thing {
     /**
      * A parent of this person.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/parent
      */
@@ -385,7 +385,7 @@ class Person extends Thing {
     /**
      * Event that this person is a performer or participant in.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/performerIn
      */
@@ -403,7 +403,7 @@ class Person extends Thing {
      * sometimes related information (e.g. indicating a [[funder]]) can be
      * expressed using schema.org terminology.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/publishingPrinciples
      */
@@ -412,7 +412,7 @@ class Person extends Thing {
     /**
      * The most generic familial relation.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/relatedTo
      */
@@ -422,7 +422,7 @@ class Person extends Thing {
      * A pointer to products or services sought by the organization or person
      * (demand).
      *
-     * @var Demand|array|null
+     * @var Demand|Demand[]|null
      *
      * @see https://schema.org/seeks
      */
@@ -431,7 +431,7 @@ class Person extends Thing {
     /**
      * A sibling of the person.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/sibling
      */
@@ -442,7 +442,7 @@ class Person extends Thing {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/skills
      */
@@ -453,7 +453,7 @@ class Person extends Thing {
      * financial contribution. E.g. a sponsor of a Medical Study or a corporate
      * sponsor of an event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/sponsor
      */
@@ -462,7 +462,7 @@ class Person extends Thing {
     /**
      * The person's spouse.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/spouse
      */
@@ -472,7 +472,7 @@ class Person extends Thing {
      * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or
      * the CIF/NIF in Spain.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/taxID
      */
@@ -481,7 +481,7 @@ class Person extends Thing {
     /**
      * The telephone number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/telephone
      */
@@ -492,7 +492,7 @@ class Person extends Thing {
      * (for example IT123456789). Can also be described as [[iso6523Code]] with
      * proper prefix.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vatID
      */
@@ -501,7 +501,7 @@ class Person extends Thing {
     /**
      * The weight of the product or person.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/weight
      */
@@ -510,7 +510,7 @@ class Person extends Thing {
     /**
      * A contact location for a person's place of work.
      *
-     * @var ContactPoint|Place|array|null
+     * @var ContactPoint|Place|ContactPoint[]|Place[]|null
      *
      * @see https://schema.org/workLocation
      */
@@ -519,7 +519,7 @@ class Person extends Thing {
     /**
      * Organizations that the person works for.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/worksFor
      */

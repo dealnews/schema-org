@@ -19,7 +19,7 @@ class DigitalDocumentPermission extends Intangible {
      * The person, organization, contact point, or audience that has been granted
      * this permission.
      *
-     * @var Audience|ContactPoint|Organization|Person|array|null
+     * @var Audience|ContactPoint|Organization|Person|Audience[]|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/grantee
      */
@@ -28,7 +28,7 @@ class DigitalDocumentPermission extends Intangible {
     /**
      * The type of permission granted the person, organization, or audience.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/permissionType
      */

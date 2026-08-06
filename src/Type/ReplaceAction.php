@@ -18,7 +18,7 @@ class ReplaceAction extends UpdateAction {
     /**
      * A sub property of object. The object that is being replaced.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/replacee
      */
@@ -27,7 +27,7 @@ class ReplaceAction extends UpdateAction {
     /**
      * A sub property of object. The object that replaces.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/replacer
      */

@@ -18,7 +18,7 @@ class DeliveryEvent extends Event {
     /**
      * Password, PIN, or access code needed for delivery (e.g. from a locker).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessCode
      */
@@ -27,7 +27,7 @@ class DeliveryEvent extends Event {
     /**
      * When the item is available for pickup from the store, locker, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availableFrom
      */
@@ -36,7 +36,7 @@ class DeliveryEvent extends Event {
     /**
      * After this date, the item will no longer be available for pickup.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availableThrough
      */
@@ -45,7 +45,7 @@ class DeliveryEvent extends Event {
     /**
      * Method used for delivery or shipping.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasDeliveryMethod
      */

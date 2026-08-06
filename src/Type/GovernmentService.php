@@ -21,7 +21,7 @@ class GovernmentService extends Service {
      * the representation of services that are provided by an organization, but
      * operated by another organization like a subcontractor.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/serviceOperator
      */

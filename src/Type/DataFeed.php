@@ -19,7 +19,7 @@ class DataFeed extends Dataset {
     /**
      * An item within a data feed. Data feeds may have many elements.
      *
-     * @var DataFeedItem|string|Thing|array|null
+     * @var DataFeedItem|string|Thing|DataFeedItem[]|string[]|Thing[]|null
      *
      * @see https://schema.org/dataFeedElement
      */

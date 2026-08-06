@@ -18,7 +18,7 @@ class JobPosting extends Intangible {
     /**
      * The base salary of the job or of an employee in an EmployeeRole.
      *
-     * @var MonetaryAmount|int|float|PriceSpecification|array|null
+     * @var MonetaryAmount|int|float|PriceSpecification|MonetaryAmount[]|int[]|float[]|PriceSpecification[]|null
      *
      * @see https://schema.org/baseSalary
      */
@@ -27,7 +27,7 @@ class JobPosting extends Intangible {
     /**
      * Publication date of an online listing.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/datePosted
      */
@@ -37,7 +37,7 @@ class JobPosting extends Intangible {
      * Type of employment (e.g. full-time, part-time, contract, temporary,
      * seasonal, internship).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/employmentType
      */
@@ -49,7 +49,7 @@ class JobPosting extends Intangible {
      * Estimated salaries  are often computed by outside organizations rather than
      * the hiring organization, who may not have committed to the estimated value.
      *
-     * @var MonetaryAmount|MonetaryAmountDistribution|int|float|array|null
+     * @var MonetaryAmount|MonetaryAmountDistribution|int|float|MonetaryAmount[]|MonetaryAmountDistribution[]|int[]|float[]|null
      *
      * @see https://schema.org/estimatedSalary
      */
@@ -58,7 +58,7 @@ class JobPosting extends Intangible {
     /**
      * Description of skills and experience needed for the position or Occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/experienceRequirements
      */
@@ -67,7 +67,7 @@ class JobPosting extends Intangible {
     /**
      * Organization or Person offering the job position.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/hiringOrganization
      */
@@ -76,7 +76,7 @@ class JobPosting extends Intangible {
     /**
      * Description of bonus and commission compensation aspects of the job.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/incentiveCompensation
      */
@@ -85,7 +85,7 @@ class JobPosting extends Intangible {
     /**
      * The industry associated with the job position.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/industry
      */
@@ -94,7 +94,7 @@ class JobPosting extends Intangible {
     /**
      * Description of benefits associated with the job.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/jobBenefits
      */
@@ -103,7 +103,7 @@ class JobPosting extends Intangible {
     /**
      * A (typically single) geographic location associated with the job position.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/jobLocation
      */
@@ -112,7 +112,7 @@ class JobPosting extends Intangible {
     /**
      * The Occupation for the JobPosting.
      *
-     * @var Occupation|array|null
+     * @var Occupation|Occupation[]|null
      *
      * @see https://schema.org/relevantOccupation
      */
@@ -121,7 +121,7 @@ class JobPosting extends Intangible {
     /**
      * Responsibilities associated with this role or Occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/responsibilities
      */
@@ -132,7 +132,7 @@ class JobPosting extends Intangible {
      * used for the main salary information in this job posting or for this
      * employee.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/salaryCurrency
      */
@@ -143,7 +143,7 @@ class JobPosting extends Intangible {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/skills
      */
@@ -153,7 +153,7 @@ class JobPosting extends Intangible {
      * Any special commitments associated with this job posting. Valid entries
      * include VeteranCommit, MilitarySpouseCommit, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/specialCommitments
      */
@@ -162,7 +162,7 @@ class JobPosting extends Intangible {
     /**
      * The title of the job.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/title
      */
@@ -172,7 +172,7 @@ class JobPosting extends Intangible {
      * The date after when the item is not valid. For example the end of an offer,
      * salary period, or a period of opening hours.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validThrough
      */
@@ -182,7 +182,7 @@ class JobPosting extends Intangible {
      * The typical working hours for this job (e.g. 1st shift, night shift,
      * 8am-5pm).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/workHours
      */

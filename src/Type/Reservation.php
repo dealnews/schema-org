@@ -24,7 +24,7 @@ class Reservation extends Intangible {
     /**
      * The date and time the reservation was booked.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/bookingTime
      */
@@ -36,7 +36,7 @@ class Reservation extends Intangible {
      * service involved in an exchange.  If it is not clear whether an entity is a
      * broker, seller, or buyer, the latter two terms are preferred.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/broker
      */
@@ -45,7 +45,7 @@ class Reservation extends Intangible {
     /**
      * The date and time the reservation was modified.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/modifiedTime
      */
@@ -62,7 +62,7 @@ class Reservation extends Intangible {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceCurrency
      */
@@ -72,7 +72,7 @@ class Reservation extends Intangible {
      * Any membership in a frequent flyer, hotel loyalty program, etc. being
      * applied to the reservation.
      *
-     * @var ProgramMembership|array|null
+     * @var ProgramMembership|ProgramMembership[]|null
      *
      * @see https://schema.org/programMembershipUsed
      */
@@ -81,7 +81,7 @@ class Reservation extends Intangible {
     /**
      * The thing -- flight, event, restaurant, etc. being reserved.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/reservationFor
      */
@@ -90,7 +90,7 @@ class Reservation extends Intangible {
     /**
      * A unique identifier for the reservation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/reservationId
      */
@@ -99,7 +99,7 @@ class Reservation extends Intangible {
     /**
      * The current status of the reservation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/reservationStatus
      */
@@ -108,7 +108,7 @@ class Reservation extends Intangible {
     /**
      * A ticket associated with the reservation.
      *
-     * @var Ticket|array|null
+     * @var Ticket|Ticket[]|null
      *
      * @see https://schema.org/reservedTicket
      */
@@ -125,7 +125,7 @@ class Reservation extends Intangible {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var int|float|PriceSpecification|string|array|null
+     * @var int|float|PriceSpecification|string|int[]|float[]|PriceSpecification[]|string[]|null
      *
      * @see https://schema.org/totalPrice
      */
@@ -134,7 +134,7 @@ class Reservation extends Intangible {
     /**
      * The person or organization the reservation or ticket is for.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/underName
      */

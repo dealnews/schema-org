@@ -19,7 +19,7 @@ class DepositAccount extends BankAccount {
     /**
      * The amount of money.
      *
-     * @var MonetaryAmount|int|float|array|null
+     * @var MonetaryAmount|int|float|MonetaryAmount[]|int[]|float[]|null
      *
      * @see https://schema.org/amount
      */

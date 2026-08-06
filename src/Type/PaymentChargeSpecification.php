@@ -19,7 +19,7 @@ class PaymentChargeSpecification extends PriceSpecification {
      * The delivery method(s) to which the delivery charge or payment charge
      * specification applies.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/appliesToDeliveryMethod
      */
@@ -28,7 +28,7 @@ class PaymentChargeSpecification extends PriceSpecification {
     /**
      * The payment method(s) to which the payment charge specification applies.
      *
-     * @var PaymentMethod|array|null
+     * @var PaymentMethod|PaymentMethod[]|null
      *
      * @see https://schema.org/appliesToPaymentMethod
      */

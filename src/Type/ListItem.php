@@ -19,7 +19,7 @@ class ListItem extends Intangible {
      * An entity represented by an entry in a list or data feed (e.g. an 'artist'
      * in a list of 'artists').
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/item
      */
@@ -28,7 +28,7 @@ class ListItem extends Intangible {
     /**
      * A link to the ListItem that follows the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/nextItem
      */
@@ -37,7 +37,7 @@ class ListItem extends Intangible {
     /**
      * The position of an item in a series or sequence of items.
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/position
      */
@@ -46,7 +46,7 @@ class ListItem extends Intangible {
     /**
      * A link to the ListItem that precedes the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/previousItem
      */

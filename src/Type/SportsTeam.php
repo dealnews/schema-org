@@ -19,7 +19,7 @@ class SportsTeam extends SportsOrganization {
      * A person that acts as performing member of a sports team; a player as
      * opposed to a coach.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/athlete
      */
@@ -28,7 +28,7 @@ class SportsTeam extends SportsOrganization {
     /**
      * A person that acts in a coaching role for a sports team.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/coach
      */

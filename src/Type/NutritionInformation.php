@@ -18,7 +18,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of calories.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/calories
      */
@@ -27,7 +27,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of carbohydrates.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/carbohydrateContent
      */
@@ -36,7 +36,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of milligrams of cholesterol.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/cholesterolContent
      */
@@ -45,7 +45,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of fat.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/fatContent
      */
@@ -54,7 +54,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of fiber.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/fiberContent
      */
@@ -63,7 +63,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of protein.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/proteinContent
      */
@@ -72,7 +72,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of saturated fat.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/saturatedFatContent
      */
@@ -81,7 +81,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The serving size, in terms of the number of volume or mass.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/servingSize
      */
@@ -90,7 +90,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of milligrams of sodium.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/sodiumContent
      */
@@ -99,7 +99,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of sugar.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/sugarContent
      */
@@ -108,7 +108,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of trans fat.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/transFatContent
      */
@@ -117,7 +117,7 @@ class NutritionInformation extends StructuredValue {
     /**
      * The number of grams of unsaturated fat.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unsaturatedFatContent
      */

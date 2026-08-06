@@ -20,7 +20,7 @@ class TVSeason extends CreativeWork {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -31,7 +31,7 @@ class TVSeason extends CreativeWork {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -41,7 +41,7 @@ class TVSeason extends CreativeWork {
      * The end date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endDate
      */
@@ -50,7 +50,7 @@ class TVSeason extends CreativeWork {
     /**
      * An episode of a TV, radio or game media within a series or season.
      *
-     * @var Episode|array|null
+     * @var Episode|Episode[]|null
      *
      * @see https://schema.org/episode
      */
@@ -59,7 +59,7 @@ class TVSeason extends CreativeWork {
     /**
      * The number of episodes in this season or series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfEpisodes
      */
@@ -68,7 +68,7 @@ class TVSeason extends CreativeWork {
     /**
      * The series to which this episode or season belongs.
      *
-     * @var CreativeWorkSeries|array|null
+     * @var CreativeWorkSeries|CreativeWorkSeries[]|null
      *
      * @see https://schema.org/partOfSeries
      */
@@ -78,7 +78,7 @@ class TVSeason extends CreativeWork {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -87,7 +87,7 @@ class TVSeason extends CreativeWork {
     /**
      * Position of the season within an ordered group of seasons.
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/seasonNumber
      */
@@ -97,7 +97,7 @@ class TVSeason extends CreativeWork {
      * The start date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startDate
      */
@@ -106,7 +106,7 @@ class TVSeason extends CreativeWork {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

@@ -25,7 +25,7 @@ class Course extends CreativeWork {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/availableLanguage
      */
@@ -35,7 +35,7 @@ class Course extends CreativeWork {
      * The identifier for the [[Course]] used by the course [[provider]] (e.g.
      * CS101 or 6.001).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/courseCode
      */
@@ -46,7 +46,7 @@ class Course extends CreativeWork {
      * or a textual description like "permission of instructor". Requirements may
      * be a pre-requisite competency, referenced using [[AlignmentObject]].
      *
-     * @var AlignmentObject|Course|string|array|null
+     * @var AlignmentObject|Course|string|AlignmentObject[]|Course[]|string[]|null
      *
      * @see https://schema.org/coursePrerequisites
      */
@@ -57,7 +57,7 @@ class Course extends CreativeWork {
      * educational credential awarded as a consequence of successful completion of
      * this course or program.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/educationalCredentialAwarded
      */
@@ -67,7 +67,7 @@ class Course extends CreativeWork {
      * An offering of the course at a specific time and place or through specific
      * media or mode of study or to a specific section of students.
      *
-     * @var CourseInstance|array|null
+     * @var CourseInstance|CourseInstance[]|null
      *
      * @see https://schema.org/hasCourseInstance
      */

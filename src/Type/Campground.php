@@ -11,7 +11,6 @@ namespace DealNews\SchemaOrg\Type;
  * stay in the outdoors, typically containing individual [[CampingPitch]]
  * locations.
  *
- *
  * In British English a campsite is an area, usually divided into a number of
  * pitches, where people can camp overnight using tents or camper vans or
  * caravans; this British English use of the word is synonymous with the
@@ -20,8 +19,6 @@ namespace DealNews\SchemaOrg\Type;
  * military unit can pitch a tent or park a camper; a campground may contain
  * many campsites (source: Wikipedia, see
  * [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite)).
- *
- *
  *
  * See also the dedicated [document on the use of schema.org for marking up
  * hotels and other forms of accommodations](/docs/hotels.html).
@@ -36,7 +33,7 @@ class Campground extends CivicStructure {
      * The payment method(s) that are accepted in general by an organization, or
      * for some specific demand or offer.
      *
-     * @var LoanOrCredit|PaymentMethod|string|array|null
+     * @var LoanOrCredit|PaymentMethod|string|LoanOrCredit[]|PaymentMethod[]|string[]|null
      *
      * @see https://schema.org/acceptedPaymentMethod
      */
@@ -45,7 +42,7 @@ class Campground extends CivicStructure {
     /**
      * Alumni of an organization.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/alumni
      */
@@ -54,7 +51,7 @@ class Campground extends CivicStructure {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
@@ -63,7 +60,7 @@ class Campground extends CivicStructure {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -74,7 +71,7 @@ class Campground extends CivicStructure {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/availableLanguage
      */
@@ -83,7 +80,7 @@ class Campground extends CivicStructure {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -93,7 +90,7 @@ class Campground extends CivicStructure {
      * The brand(s) associated with a product or service, or the brand(s)
      * maintained by an organization or business person.
      *
-     * @var Brand|Organization|array|null
+     * @var Brand|Organization|Brand[]|Organization[]|null
      *
      * @see https://schema.org/brand
      */
@@ -102,7 +99,7 @@ class Campground extends CivicStructure {
     /**
      * The earliest someone may check into a lodging establishment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/checkinTime
      */
@@ -111,7 +108,7 @@ class Campground extends CivicStructure {
     /**
      * The latest someone may check out of a lodging establishment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/checkoutTime
      */
@@ -122,7 +119,7 @@ class Campground extends CivicStructure {
      * organization that issued it such as Company House or Chamber of Commerce in
      * form of a Certification.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/companyRegistration
      */
@@ -131,7 +128,7 @@ class Campground extends CivicStructure {
     /**
      * A contact point for a person or organization.
      *
-     * @var ContactPoint|array|null
+     * @var ContactPoint|ContactPoint[]|null
      *
      * @see https://schema.org/contactPoint
      */
@@ -147,7 +144,7 @@ class Campground extends CivicStructure {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/currenciesAccepted
      */
@@ -159,7 +156,7 @@ class Campground extends CivicStructure {
      * logos, opening hours). For example: a store with a pharmacy, or a bakery
      * with a cafe.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/department
      */
@@ -168,7 +165,7 @@ class Campground extends CivicStructure {
     /**
      * The date that this organization was dissolved.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dissolutionDate
      */
@@ -178,7 +175,7 @@ class Campground extends CivicStructure {
      * The Dun & Bradstreet DUNS number for identifying an organization or business
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/duns
      */
@@ -187,7 +184,7 @@ class Campground extends CivicStructure {
     /**
      * Email address.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/email
      */
@@ -196,7 +193,7 @@ class Campground extends CivicStructure {
     /**
      * Someone working for this organization.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/employee
      */
@@ -205,7 +202,7 @@ class Campground extends CivicStructure {
     /**
      * A person or organization who founded this organization.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/founder
      */
@@ -214,7 +211,7 @@ class Campground extends CivicStructure {
     /**
      * The date that this organization was founded.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/foundingDate
      */
@@ -223,7 +220,7 @@ class Campground extends CivicStructure {
     /**
      * The place where the Organization was founded.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/foundingLocation
      */
@@ -233,7 +230,7 @@ class Campground extends CivicStructure {
      * A person or organization that supports (sponsors) something through some
      * kind of financial contribution.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/funder
      */
@@ -243,7 +240,7 @@ class Campground extends CivicStructure {
      * MemberProgram offered by an Organization, for example an eCommerce merchant
      * or an airline.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasMemberProgram
      */
@@ -252,7 +249,7 @@ class Campground extends CivicStructure {
     /**
      * Indicates an OfferCatalog listing for this Organization, Person, or Service.
      *
-     * @var OfferCatalog|array|null
+     * @var OfferCatalog|OfferCatalog[]|null
      *
      * @see https://schema.org/hasOfferCatalog
      */
@@ -261,7 +258,7 @@ class Campground extends CivicStructure {
     /**
      * Points-of-Sales operated by the organization or person.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/hasPOS
      */
@@ -272,7 +269,7 @@ class Campground extends CivicStructure {
      * SoftwareApplication. The most specific child type of InteractionCounter
      * should be used.
      *
-     * @var InteractionCounter|array|null
+     * @var InteractionCounter|InteractionCounter[]|null
      *
      * @see https://schema.org/interactionStatistic
      */
@@ -284,7 +281,7 @@ class Campground extends CivicStructure {
      * from the place of operations of a business and other addresses can be part
      * of an organization.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/legalAddress
      */
@@ -293,7 +290,7 @@ class Campground extends CivicStructure {
     /**
      * The official name of the organization, e.g. the registered company name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/legalName
      */
@@ -303,7 +300,7 @@ class Campground extends CivicStructure {
      * One or multiple persons who represent this organization legally such as CEO
      * or sole administrator.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/legalRepresentative
      */
@@ -313,7 +310,7 @@ class Campground extends CivicStructure {
      * An organization identifier that uniquely identifies a legal entity as
      * defined in ISO 17442.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/leiCode
      */
@@ -323,7 +320,7 @@ class Campground extends CivicStructure {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/location
      */
@@ -332,7 +329,7 @@ class Campground extends CivicStructure {
     /**
      * A pointer to products or services offered by the organization or person.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/makesOffer
      */
@@ -342,7 +339,7 @@ class Campground extends CivicStructure {
      * A member of an Organization or a ProgramMembership. Organizations can be
      * members of organizations; ProgramMembership is typically for individuals.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/member
      */
@@ -352,7 +349,7 @@ class Campground extends CivicStructure {
      * An Organization (or ProgramMembership) to which this Person or Organization
      * belongs.
      *
-     * @var string|Organization|ProgramMembership|array|null
+     * @var string|Organization|ProgramMembership|string[]|Organization[]|ProgramMembership[]|null
      *
      * @see https://schema.org/memberOf
      */
@@ -362,7 +359,7 @@ class Campground extends CivicStructure {
      * The North American Industry Classification System (NAICS) code for a
      * particular organization or business person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/naics
      */
@@ -371,7 +368,7 @@ class Campground extends CivicStructure {
     /**
      * The number of employees in an organization, e.g. business.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfEmployees
      */
@@ -383,7 +380,7 @@ class Campground extends CivicStructure {
      * Typical unit code(s): ROM for room or C62 for no unit. The type of room can
      * be put in the unitText property of the QuantitativeValue.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfRooms
      */
@@ -392,7 +389,7 @@ class Campground extends CivicStructure {
     /**
      * Things owned by the organization or person.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/owns
      */
@@ -402,7 +399,7 @@ class Campground extends CivicStructure {
      * The larger organization that this organization is a [[subOrganization]] of,
      * if any.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/parentOrganization
      */
@@ -411,7 +408,7 @@ class Campground extends CivicStructure {
     /**
      * Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentAccepted
      */
@@ -421,7 +418,7 @@ class Campground extends CivicStructure {
      * Indicates whether pets are allowed to enter the accommodation or lodging
      * business. More detailed information can be put in a text value.
      *
-     * @var bool|string|array|null
+     * @var bool|string|bool[]|string[]|null
      *
      * @see https://schema.org/petsAllowed
      */
@@ -430,7 +427,7 @@ class Campground extends CivicStructure {
     /**
      * The price range of the business, for example ```$$$```.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceRange
      */
@@ -448,7 +445,7 @@ class Campground extends CivicStructure {
      * sometimes related information (e.g. indicating a [[funder]]) can be
      * expressed using schema.org terminology.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/publishingPrinciples
      */
@@ -458,7 +455,7 @@ class Campground extends CivicStructure {
      * A pointer to products or services sought by the organization or person
      * (demand).
      *
-     * @var Demand|array|null
+     * @var Demand|Demand[]|null
      *
      * @see https://schema.org/seeks
      */
@@ -469,7 +466,7 @@ class Campground extends CivicStructure {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/skills
      */
@@ -480,7 +477,7 @@ class Campground extends CivicStructure {
      * financial contribution. E.g. a sponsor of a Medical Study or a corporate
      * sponsor of an event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/sponsor
      */
@@ -492,7 +489,7 @@ class Campground extends CivicStructure {
      * indicate the rating organization, e.g. as an Organization with name such as
      * (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
      *
-     * @var Rating|array|null
+     * @var Rating|Rating[]|null
      *
      * @see https://schema.org/starRating
      */
@@ -503,7 +500,7 @@ class Campground extends CivicStructure {
      * second, e.g., as a subsidiary. See also: the more specific 'department'
      * property.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/subOrganization
      */
@@ -513,7 +510,7 @@ class Campground extends CivicStructure {
      * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or
      * the CIF/NIF in Spain.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/taxID
      */
@@ -524,7 +521,7 @@ class Campground extends CivicStructure {
      * (for example IT123456789). Can also be described as [[iso6523Code]] with
      * proper prefix.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vatID
      */

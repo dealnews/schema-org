@@ -32,7 +32,7 @@ class AggregateOffer extends Offer {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/highPrice
      */
@@ -48,7 +48,7 @@ class AggregateOffer extends Offer {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/lowPrice
      */
@@ -57,22 +57,22 @@ class AggregateOffer extends Offer {
     /**
      * The number of offers for the product.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/offerCount
      */
     public int|array|null $offerCount = null;
 
     /**
-     * An offer to provide this item&#x2014;for example, an offer to sell a
-     * product, rent the DVD of a movie, perform a service, or give away tickets to
-     * an event. Use [[businessFunction]] to indicate the kind of transaction
-     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * An offer to provide this item—for example, an offer to sell a product,
+     * rent the DVD of a movie, perform a service, or give away tickets to an
+     * event. Use [[businessFunction]] to indicate the kind of transaction offered,
+     * i.e. sell, lease, etc. This property can also be used to describe a
      * [[Demand]]. While this property is listed as expected on a number of common
      * types, it can be used in others. In that case, using a second type, such as
      * Product or a subtype of Product, can clarify the nature of the offer.
      *
-     * @var Demand|Offer|array|null
+     * @var Demand|Offer|Demand[]|Offer[]|null
      *
      * @see https://schema.org/offers
      */

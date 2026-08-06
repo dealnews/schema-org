@@ -20,7 +20,7 @@ class HowToStep extends CreativeWork {
      * An entity represented by an entry in a list or data feed (e.g. an 'artist'
      * in a list of 'artists').
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/item
      */
@@ -40,7 +40,7 @@ class HowToStep extends CreativeWork {
      * the order or elements.  Use ListItem with a 'position' property in such
      * cases.
      *
-     * @var ListItem|string|Thing|array|null
+     * @var ListItem|string|Thing|ListItem[]|string[]|Thing[]|null
      *
      * @see https://schema.org/itemListElement
      */
@@ -49,7 +49,7 @@ class HowToStep extends CreativeWork {
     /**
      * Type of ordering (e.g. Ascending, Descending, Unordered).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/itemListOrder
      */
@@ -58,7 +58,7 @@ class HowToStep extends CreativeWork {
     /**
      * A link to the ListItem that follows the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/nextItem
      */
@@ -69,7 +69,7 @@ class HowToStep extends CreativeWork {
      * fully describe all items in a list (e.g., multi-page pagination); in such
      * cases, the numberOfItems would be for the entire list.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfItems
      */
@@ -78,7 +78,7 @@ class HowToStep extends CreativeWork {
     /**
      * A link to the ListItem that precedes the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/previousItem
      */

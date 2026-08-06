@@ -19,7 +19,7 @@ class DeliveryChargeSpecification extends PriceSpecification {
      * The delivery method(s) to which the delivery charge or payment charge
      * specification applies.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/appliesToDeliveryMethod
      */
@@ -28,7 +28,7 @@ class DeliveryChargeSpecification extends PriceSpecification {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
@@ -41,7 +41,7 @@ class DeliveryChargeSpecification extends PriceSpecification {
      *
      * See also [[ineligibleRegion]].
      *
-     * @var GeoShape|Place|string|array|null
+     * @var GeoShape|Place|string|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/eligibleRegion
      */

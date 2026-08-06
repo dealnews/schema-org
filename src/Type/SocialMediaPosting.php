@@ -20,7 +20,7 @@ class SocialMediaPosting extends Article {
      * A CreativeWork such as an image, video, or audio clip shared as part of this
      * posting.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/sharedContent
      */

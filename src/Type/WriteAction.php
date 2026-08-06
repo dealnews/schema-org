@@ -20,7 +20,7 @@ class WriteAction extends CreateAction {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/inLanguage
      */

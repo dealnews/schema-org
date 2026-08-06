@@ -18,7 +18,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Type of software application, e.g. 'Game, Multimedia'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/applicationCategory
      */
@@ -27,7 +27,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Subcategory of the application, e.g. 'Arcade Game'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/applicationSubCategory
      */
@@ -37,7 +37,7 @@ class SoftwareApplication extends CreativeWork {
      * The name of the application suite to which the application belongs (e.g.
      * Excel belongs to Office).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/applicationSuite
      */
@@ -47,7 +47,7 @@ class SoftwareApplication extends CreativeWork {
      * Device required to run the application. Used in cases where a specific
      * make/model is required to run the application.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availableOnDevice
      */
@@ -57,7 +57,7 @@ class SoftwareApplication extends CreativeWork {
      * Countries for which the application is not supported. You can also provide
      * the two-letter ISO 3166-1 alpha-2 country code.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/countriesNotSupported
      */
@@ -67,7 +67,7 @@ class SoftwareApplication extends CreativeWork {
      * Countries for which the application is supported. You can also provide the
      * two-letter ISO 3166-1 alpha-2 country code.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/countriesSupported
      */
@@ -76,7 +76,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * If the file can be downloaded, URL to download the binary.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/downloadUrl
      */
@@ -86,7 +86,7 @@ class SoftwareApplication extends CreativeWork {
      * Features or modules provided by this application (and possibly required by
      * other applications).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/featureList
      */
@@ -96,7 +96,7 @@ class SoftwareApplication extends CreativeWork {
      * Size of the application / package (e.g. 18MB). In the absence of a unit (MB,
      * KB etc.), KB will be assumed.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/fileSize
      */
@@ -106,7 +106,7 @@ class SoftwareApplication extends CreativeWork {
      * URL at which the app may be installed, if different from the URL of the
      * item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/installUrl
      */
@@ -115,7 +115,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Minimum memory requirements.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/memoryRequirements
      */
@@ -124,7 +124,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Operating systems supported (Windows 7, OS X 10.6, Android 1.6).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/operatingSystem
      */
@@ -134,7 +134,7 @@ class SoftwareApplication extends CreativeWork {
      * Permission(s) required to run the app (for example, a mobile app may require
      * full internet access or may run only on wifi).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/permissions
      */
@@ -143,7 +143,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Processor architecture required to run the application (e.g. IA64).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/processorRequirements
      */
@@ -152,7 +152,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Description of what changed in this version.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/releaseNotes
      */
@@ -162,7 +162,7 @@ class SoftwareApplication extends CreativeWork {
      * Runtime platform or script interpreter dependencies (example: Java v1,
      * Python 2.3, .NET Framework 3.0).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/runtimePlatform
      */
@@ -171,7 +171,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * A link to a screenshot image of the app.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/screenshot
      */
@@ -180,7 +180,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Additional content for a software application.
      *
-     * @var SoftwareApplication|array|null
+     * @var SoftwareApplication|SoftwareApplication[]|null
      *
      * @see https://schema.org/softwareAddOn
      */
@@ -189,7 +189,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Software application help.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/softwareHelp
      */
@@ -201,7 +201,7 @@ class SoftwareApplication extends CreativeWork {
      * distribution package, but required to run the application (examples:
      * DirectX, Java or .NET runtime).
      *
-     * @var SoftwareApplication|string|array|null
+     * @var SoftwareApplication|string|SoftwareApplication[]|string[]|null
      *
      * @see https://schema.org/softwareRequirements
      */
@@ -210,7 +210,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Version of the software instance.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/softwareVersion
      */
@@ -219,7 +219,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Storage requirements (free space required).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/storageRequirements
      */
@@ -228,7 +228,7 @@ class SoftwareApplication extends CreativeWork {
     /**
      * Supporting data for a SoftwareApplication.
      *
-     * @var DataFeed|array|null
+     * @var DataFeed|DataFeed[]|null
      *
      * @see https://schema.org/supportingData
      */

@@ -41,7 +41,7 @@ class TradeAction extends Action {
      * * Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
      * (U+0039)) rather than superficially similar Unicode symbols.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/price
      */
@@ -58,7 +58,7 @@ class TradeAction extends Action {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceCurrency
      */
@@ -68,7 +68,7 @@ class TradeAction extends Action {
      * One or more detailed price specifications, indicating the unit price and
      * delivery or payment charges.
      *
-     * @var PriceSpecification|array|null
+     * @var PriceSpecification|PriceSpecification[]|null
      *
      * @see https://schema.org/priceSpecification
      */

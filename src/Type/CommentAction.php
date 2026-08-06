@@ -19,7 +19,7 @@ class CommentAction extends CommunicateAction {
      * A sub property of result. The Comment created or sent as a result of this
      * action.
      *
-     * @var Comment|array|null
+     * @var Comment|Comment[]|null
      *
      * @see https://schema.org/resultComment
      */

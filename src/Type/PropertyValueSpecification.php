@@ -20,7 +20,7 @@ class PropertyValueSpecification extends Intangible {
      * default is a literal value, for properties that expect an object, it's an ID
      * reference to one of the current values.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/defaultValue
      */
@@ -29,7 +29,7 @@ class PropertyValueSpecification extends Intangible {
     /**
      * The upper value of some characteristic or property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/maxValue
      */
@@ -38,7 +38,7 @@ class PropertyValueSpecification extends Intangible {
     /**
      * The lower value of some characteristic or property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/minValue
      */
@@ -47,7 +47,7 @@ class PropertyValueSpecification extends Intangible {
     /**
      * Whether multiple values are allowed for the property.  Default is false.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/multipleValues
      */
@@ -58,7 +58,7 @@ class PropertyValueSpecification extends Intangible {
      * a property that also has a value makes it act similar to a "hidden" input in
      * an HTML form.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/readonlyValue
      */
@@ -68,7 +68,7 @@ class PropertyValueSpecification extends Intangible {
      * The stepValue attribute indicates the granularity that is expected (and
      * required) of the value in a PropertyValueSpecification.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/stepValue
      */
@@ -77,7 +77,7 @@ class PropertyValueSpecification extends Intangible {
     /**
      * Specifies the allowed range for number of characters in a literal value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/valueMaxLength
      */
@@ -87,7 +87,7 @@ class PropertyValueSpecification extends Intangible {
      * Specifies the minimum allowed range for number of characters in a literal
      * value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/valueMinLength
      */
@@ -97,7 +97,7 @@ class PropertyValueSpecification extends Intangible {
      * Indicates the name of the PropertyValueSpecification to be used in URL
      * templates and form encoding in a manner analogous to HTML's input@name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/valueName
      */
@@ -107,7 +107,7 @@ class PropertyValueSpecification extends Intangible {
      * Specifies a regular expression for testing literal values according to the
      * HTML spec.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/valuePattern
      */
@@ -117,7 +117,7 @@ class PropertyValueSpecification extends Intangible {
      * Whether the property must be filled in to complete the action.  Default is
      * false.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/valueRequired
      */

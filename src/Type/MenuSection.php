@@ -21,7 +21,7 @@ class MenuSection extends CreativeWork {
     /**
      * A food or drink item contained in a menu or menu section.
      *
-     * @var MenuItem|array|null
+     * @var MenuItem|MenuItem[]|null
      *
      * @see https://schema.org/hasMenuItem
      */
@@ -30,7 +30,7 @@ class MenuSection extends CreativeWork {
     /**
      * A subgrouping of the menu (by dishes, course, serving time period, etc.).
      *
-     * @var MenuSection|array|null
+     * @var MenuSection|MenuSection[]|null
      *
      * @see https://schema.org/hasMenuSection
      */

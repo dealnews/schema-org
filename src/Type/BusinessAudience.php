@@ -19,7 +19,7 @@ class BusinessAudience extends Audience {
     /**
      * The number of employees in an organization, e.g. business.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfEmployees
      */
@@ -28,7 +28,7 @@ class BusinessAudience extends Audience {
     /**
      * The size of the business in annual revenue.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/yearlyRevenue
      */
@@ -37,7 +37,7 @@ class BusinessAudience extends Audience {
     /**
      * The age of the business.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/yearsInOperation
      */

@@ -108,3 +108,18 @@ assigns raw values onto plain typed properties with no casting hooks:
   JSON-LD back into fully typed nested objects does not happen
   automatically -- assign a real instance to the property first if you need
   that property's own data hydrated.
+- **Array element types aren't enforced.** A property typed
+  `AggregateRating|array|null` accepts an array of `AggregateRating`
+  objects, but PHP has no generics -- nothing actually checks that the
+  array you assign only contains `AggregateRating` instances. Putting the
+  wrong thing in one of these arrays mostly fails silently: array elements
+  that are plain scalars (strings, numbers) serialize as-is with no error,
+  producing JSON-LD that's syntactically fine but doesn't match the
+  Schema.org spec for that property. Elements that are objects of the
+  wrong class only get caught at serialization time (`toJsonLd*()`/
+  `toArray()`), and only if that object doesn't implement `Export`/
+  `JsonSerializable` at all. Each property's `@var` docblock documents the
+  intended element type as `Type|Type[]|null` (e.g. `AggregateRating|
+  AggregateRating[]|null`) so your IDE can hint it, but this is
+  documentation only -- build these arrays by pushing correctly-typed
+  objects, and don't rely on the library to catch a mistake here.

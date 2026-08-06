@@ -133,7 +133,74 @@ function comment_text(array $node): string {
     // as paragraph breaks.
     $comment = str_replace('\\n', "\n", (string) $comment);
 
-    return trim($comment);
+    return html_to_text($comment);
+}
+
+/**
+ * Converts an rdfs:comment's HTML fragment (schema.org authors comments as
+ * HTML -- links, <code>, <p>/<br>, <ul>/<li>) into plain text suitable for a
+ * docblock, decoding entities along the way. Unrecognized tags are dropped,
+ * keeping their contents.
+ */
+function html_to_text(string $html): string {
+    if (trim($html) === '') {
+        return '';
+    }
+
+    $dom = new \DOMDocument();
+    libxml_use_internal_errors(true);
+    $dom->loadHTML(
+        '<?xml encoding="utf-8"?><div>' . $html . '</div>',
+        LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD,
+    );
+    libxml_clear_errors();
+
+    $root = $dom->getElementsByTagName('div')->item(0);
+    $text = $root !== null ? html_node_to_text($root) : $html;
+
+    // Adjacent <p>/<li> conversions can leave runs of blank lines or
+    // trailing spaces before a break -- tidy those up.
+    $text = preg_replace('/[ \t]+\n/', "\n", $text);
+    $text = preg_replace('/\n{3,}/', "\n\n", $text);
+
+    return trim($text);
+}
+
+/**
+ * Recursively renders one DOM node (and its children) as plain text, per
+ * html_to_text()'s tag conventions: <br> and <p> become line/paragraph
+ * breaks, <li> becomes a "- " bulleted line, <code> becomes `backticks`,
+ * and <a href="URL"> becomes "text (URL)". Any other element (<ul>, <ol>,
+ * or a tag not in this vocabulary's comments today) is unwrapped, keeping
+ * only its children's text.
+ */
+function html_node_to_text(\DOMNode $node): string {
+    if ($node instanceof \DOMText) {
+        return $node->textContent;
+    }
+
+    if (!($node instanceof \DOMElement)) {
+        return '';
+    }
+
+    $inner = '';
+
+    foreach ($node->childNodes as $child) {
+        $inner .= html_node_to_text($child);
+    }
+
+    return match (strtolower($node->tagName)) {
+        'br' => "\n",
+        'p' => "\n\n" . trim($inner) . "\n\n",
+        'li' => "\n- " . trim($inner),
+        'code' => '`' . trim($inner) . '`',
+        'a' => trim($inner) . (
+            $node->getAttribute('href') !== ''
+                ? ' (' . $node->getAttribute('href') . ')'
+                : ''
+        ),
+        default => $inner,
+    };
 }
 
 /**
@@ -336,19 +403,18 @@ function primary_parent(array $class, array $classes): ?string {
 }
 
 /**
- * Resolves one property's Schema.org rangeIncludes into a PHP union type,
- * always allowing a bare array (multiple values) and null (unset).
- * Schema.org itself places no cardinality limit on any property, and
- * Moonspot\ValueObjects has no dedicated single-vs-many property variant,
- * so `|array` is added uniformly rather than per-property.
+ * Resolves one property's Schema.org rangeIncludes into the list of
+ * single-value PHP types it accepts (class names and/or scalars), with no
+ * `array`/`null` yet appended. Shared by property_php_type() (the actual
+ * declared type) and property_phpdoc_type() (the `@var` hint).
  */
-function property_php_type(
+function property_type_parts(
     array $property,
     array $classes,
     array $data_types,
     array $enum_types,
     array &$ancestor_memo,
-): string {
+): array {
     $parts = [];
 
     foreach ($property['ranges'] as $range_id) {
@@ -372,6 +438,31 @@ function property_php_type(
         }
     }
 
+    return $parts;
+}
+
+/**
+ * Resolves one property's Schema.org rangeIncludes into a PHP union type,
+ * always allowing a bare array (multiple values) and null (unset).
+ * Schema.org itself places no cardinality limit on any property, and
+ * Moonspot\ValueObjects has no dedicated single-vs-many property variant,
+ * so `|array` is added uniformly rather than per-property.
+ */
+function property_php_type(
+    array $property,
+    array $classes,
+    array $data_types,
+    array $enum_types,
+    array &$ancestor_memo,
+): string {
+    $parts = property_type_parts(
+        $property,
+        $classes,
+        $data_types,
+        $enum_types,
+        $ancestor_memo,
+    );
+
     if (!in_array('array', $parts, true)) {
         $parts[] = 'array';
     }
@@ -379,6 +470,42 @@ function property_php_type(
     $parts[] = 'null';
 
     return implode('|', $parts);
+}
+
+/**
+ * Renders the `@var` hint for one property. Widens property_php_type()'s
+ * bare `array` into a `Type[]` alternative per accepted type (standard
+ * PHPDoc convention for array element types) -- e.g. `AggregateRating|
+ * AggregateRating[]|null` instead of `AggregateRating|array|null`. This is
+ * documentation only: nothing at runtime checks that an array actually
+ * holds only these types (see README/CLAUDE.md's "array element types
+ * aren't enforced" note) -- it just gives IDEs and readers the intended
+ * element type instead of a bare `array`.
+ */
+function property_phpdoc_type(
+    array $property,
+    array $classes,
+    array $data_types,
+    array $enum_types,
+    array &$ancestor_memo,
+): string {
+    $parts = property_type_parts(
+        $property,
+        $classes,
+        $data_types,
+        $enum_types,
+        $ancestor_memo,
+    );
+
+    $doc_parts = $parts;
+
+    foreach ($parts as $part) {
+        $doc_parts[] = $part . '[]';
+    }
+
+    $doc_parts[] = 'null';
+
+    return implode('|', $doc_parts);
 }
 
 /**
@@ -504,6 +631,13 @@ function render_class(
             $enum_types,
             $ancestor_memo,
         );
+        $phpdoc_type = property_phpdoc_type(
+            $property,
+            $classes,
+            $data_types,
+            $enum_types,
+            $ancestor_memo,
+        );
 
         $lines[] = '';
         $lines[] = '    /**';
@@ -513,7 +647,7 @@ function render_class(
             $lines[] = '     *';
         }
 
-        $lines[] = '     * @var ' . $php_type;
+        $lines[] = '     * @var ' . $phpdoc_type;
         $lines[] = '     *';
         $lines[] = '     * @see https://schema.org/' . $property_name;
         $lines[] = '     */';

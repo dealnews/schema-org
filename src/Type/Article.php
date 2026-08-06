@@ -23,7 +23,7 @@ class Article extends CreativeWork {
     /**
      * The actual body of the article.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/articleBody
      */
@@ -33,7 +33,7 @@ class Article extends CreativeWork {
      * Articles may belong to one or more 'sections' in a magazine or newspaper,
      * such as Sports, Lifestyle, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/articleSection
      */
@@ -42,7 +42,7 @@ class Article extends CreativeWork {
     /**
      * The page on which the work ends; for example "138" or "xvi".
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/pageEnd
      */
@@ -51,7 +51,7 @@ class Article extends CreativeWork {
     /**
      * The page on which the work starts; for example "135" or "xiii".
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/pageStart
      */
@@ -61,7 +61,7 @@ class Article extends CreativeWork {
      * Any description of pages that is not separated into pageStart and pageEnd;
      * for example, "1-6, 9, 55" or "10-12, 46-49".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/pagination
      */
@@ -87,14 +87,13 @@ class Article extends CreativeWork {
      * 3.)  XPaths - addresses content via XPaths (assuming an XML view of the
      * content). Use the [[xpath]] property.
      *
-     *
      * For more sophisticated markup of speakable sections beyond simple ID
      * references, either CSS selectors or XPath expressions to pick out document
      * section(s) as speakable. For this
      * we define a supporting type, [[SpeakableSpecification]]  which is defined to
      * be a possible value of the *speakable* property.
      *
-     * @var SpeakableSpecification|string|array|null
+     * @var SpeakableSpecification|string|SpeakableSpecification[]|string[]|null
      *
      * @see https://schema.org/speakable
      */

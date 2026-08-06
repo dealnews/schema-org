@@ -19,7 +19,7 @@ class PostalCodeRangeSpecification extends StructuredValue {
     /**
      * First postal code in a range (included).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCodeBegin
      */
@@ -29,7 +29,7 @@ class PostalCodeRangeSpecification extends StructuredValue {
      * Last postal code in the range (included). Needs to be after
      * [[postalCodeBegin]].
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCodeEnd
      */

@@ -24,7 +24,7 @@ class FinancialProduct extends Service {
      * cost of funds over the term of a loan. This includes any fees or additional
      * costs associated with the transaction.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/annualPercentageRate
      */
@@ -34,7 +34,7 @@ class FinancialProduct extends Service {
      * Description of fees, commissions, and other terms applied either to a class
      * of financial product, or by a financial service organization.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/feesAndCommissionsSpecification
      */
@@ -44,7 +44,7 @@ class FinancialProduct extends Service {
      * The interest rate, charged or paid, applicable to the financial product.
      * Note: This is different from the calculated annualPercentageRate.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/interestRate
      */

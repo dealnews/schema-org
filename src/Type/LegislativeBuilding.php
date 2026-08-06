@@ -7,7 +7,7 @@ namespace DealNews\SchemaOrg\Type;
 /**
  * LegislativeBuilding.
  *
- * A legislative building&#x2014;for example, the state capitol.
+ * A legislative building—for example, the state capitol.
  *
  * @see https://schema.org/LegislativeBuilding
  */

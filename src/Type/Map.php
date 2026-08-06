@@ -18,7 +18,7 @@ class Map extends CreativeWork {
     /**
      * Indicates the kind of Map, from the MapCategoryType Enumeration.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/mapType
      */

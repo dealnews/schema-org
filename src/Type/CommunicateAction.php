@@ -19,7 +19,7 @@ class CommunicateAction extends InteractAction {
     /**
      * The subject matter of an object.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/about
      */
@@ -30,7 +30,7 @@ class CommunicateAction extends InteractAction {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/inLanguage
      */
@@ -40,7 +40,7 @@ class CommunicateAction extends InteractAction {
      * A sub property of participant. The participant who is at the receiving end
      * of the action.
      *
-     * @var Audience|ContactPoint|Organization|Person|array|null
+     * @var Audience|ContactPoint|Organization|Person|Audience[]|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/recipient
      */

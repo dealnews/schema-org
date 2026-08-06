@@ -19,7 +19,7 @@ class EducationalOrganization extends CivicStructure {
      * The payment method(s) that are accepted in general by an organization, or
      * for some specific demand or offer.
      *
-     * @var LoanOrCredit|PaymentMethod|string|array|null
+     * @var LoanOrCredit|PaymentMethod|string|LoanOrCredit[]|PaymentMethod[]|string[]|null
      *
      * @see https://schema.org/acceptedPaymentMethod
      */
@@ -28,7 +28,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * Alumni of an organization.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/alumni
      */
@@ -37,7 +37,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
@@ -46,7 +46,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -56,7 +56,7 @@ class EducationalOrganization extends CivicStructure {
      * The brand(s) associated with a product or service, or the brand(s)
      * maintained by an organization or business person.
      *
-     * @var Brand|Organization|array|null
+     * @var Brand|Organization|Brand[]|Organization[]|null
      *
      * @see https://schema.org/brand
      */
@@ -67,7 +67,7 @@ class EducationalOrganization extends CivicStructure {
      * organization that issued it such as Company House or Chamber of Commerce in
      * form of a Certification.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/companyRegistration
      */
@@ -76,7 +76,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * A contact point for a person or organization.
      *
-     * @var ContactPoint|array|null
+     * @var ContactPoint|ContactPoint[]|null
      *
      * @see https://schema.org/contactPoint
      */
@@ -88,7 +88,7 @@ class EducationalOrganization extends CivicStructure {
      * logos, opening hours). For example: a store with a pharmacy, or a bakery
      * with a cafe.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/department
      */
@@ -97,7 +97,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * The date that this organization was dissolved.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dissolutionDate
      */
@@ -107,7 +107,7 @@ class EducationalOrganization extends CivicStructure {
      * The Dun & Bradstreet DUNS number for identifying an organization or business
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/duns
      */
@@ -116,7 +116,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * Email address.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/email
      */
@@ -125,7 +125,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * Someone working for this organization.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/employee
      */
@@ -134,7 +134,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * A person or organization who founded this organization.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/founder
      */
@@ -143,7 +143,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * The date that this organization was founded.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/foundingDate
      */
@@ -152,7 +152,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * The place where the Organization was founded.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/foundingLocation
      */
@@ -162,7 +162,7 @@ class EducationalOrganization extends CivicStructure {
      * A person or organization that supports (sponsors) something through some
      * kind of financial contribution.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/funder
      */
@@ -172,7 +172,7 @@ class EducationalOrganization extends CivicStructure {
      * MemberProgram offered by an Organization, for example an eCommerce merchant
      * or an airline.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasMemberProgram
      */
@@ -181,7 +181,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * Indicates an OfferCatalog listing for this Organization, Person, or Service.
      *
-     * @var OfferCatalog|array|null
+     * @var OfferCatalog|OfferCatalog[]|null
      *
      * @see https://schema.org/hasOfferCatalog
      */
@@ -190,7 +190,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * Points-of-Sales operated by the organization or person.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/hasPOS
      */
@@ -201,7 +201,7 @@ class EducationalOrganization extends CivicStructure {
      * SoftwareApplication. The most specific child type of InteractionCounter
      * should be used.
      *
-     * @var InteractionCounter|array|null
+     * @var InteractionCounter|InteractionCounter[]|null
      *
      * @see https://schema.org/interactionStatistic
      */
@@ -213,7 +213,7 @@ class EducationalOrganization extends CivicStructure {
      * from the place of operations of a business and other addresses can be part
      * of an organization.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/legalAddress
      */
@@ -222,7 +222,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * The official name of the organization, e.g. the registered company name.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/legalName
      */
@@ -232,7 +232,7 @@ class EducationalOrganization extends CivicStructure {
      * One or multiple persons who represent this organization legally such as CEO
      * or sole administrator.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/legalRepresentative
      */
@@ -242,7 +242,7 @@ class EducationalOrganization extends CivicStructure {
      * An organization identifier that uniquely identifies a legal entity as
      * defined in ISO 17442.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/leiCode
      */
@@ -252,7 +252,7 @@ class EducationalOrganization extends CivicStructure {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/location
      */
@@ -261,7 +261,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * A pointer to products or services offered by the organization or person.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/makesOffer
      */
@@ -271,7 +271,7 @@ class EducationalOrganization extends CivicStructure {
      * A member of an Organization or a ProgramMembership. Organizations can be
      * members of organizations; ProgramMembership is typically for individuals.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/member
      */
@@ -281,7 +281,7 @@ class EducationalOrganization extends CivicStructure {
      * An Organization (or ProgramMembership) to which this Person or Organization
      * belongs.
      *
-     * @var string|Organization|ProgramMembership|array|null
+     * @var string|Organization|ProgramMembership|string[]|Organization[]|ProgramMembership[]|null
      *
      * @see https://schema.org/memberOf
      */
@@ -291,7 +291,7 @@ class EducationalOrganization extends CivicStructure {
      * The North American Industry Classification System (NAICS) code for a
      * particular organization or business person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/naics
      */
@@ -300,7 +300,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * The number of employees in an organization, e.g. business.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfEmployees
      */
@@ -309,7 +309,7 @@ class EducationalOrganization extends CivicStructure {
     /**
      * Things owned by the organization or person.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/owns
      */
@@ -319,7 +319,7 @@ class EducationalOrganization extends CivicStructure {
      * The larger organization that this organization is a [[subOrganization]] of,
      * if any.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/parentOrganization
      */
@@ -337,7 +337,7 @@ class EducationalOrganization extends CivicStructure {
      * sometimes related information (e.g. indicating a [[funder]]) can be
      * expressed using schema.org terminology.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/publishingPrinciples
      */
@@ -347,7 +347,7 @@ class EducationalOrganization extends CivicStructure {
      * A pointer to products or services sought by the organization or person
      * (demand).
      *
-     * @var Demand|array|null
+     * @var Demand|Demand[]|null
      *
      * @see https://schema.org/seeks
      */
@@ -358,7 +358,7 @@ class EducationalOrganization extends CivicStructure {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/skills
      */
@@ -369,7 +369,7 @@ class EducationalOrganization extends CivicStructure {
      * financial contribution. E.g. a sponsor of a Medical Study or a corporate
      * sponsor of an event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/sponsor
      */
@@ -380,7 +380,7 @@ class EducationalOrganization extends CivicStructure {
      * second, e.g., as a subsidiary. See also: the more specific 'department'
      * property.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/subOrganization
      */
@@ -390,7 +390,7 @@ class EducationalOrganization extends CivicStructure {
      * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or
      * the CIF/NIF in Spain.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/taxID
      */
@@ -401,7 +401,7 @@ class EducationalOrganization extends CivicStructure {
      * (for example IT123456789). Can also be described as [[iso6523Code]] with
      * proper prefix.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vatID
      */

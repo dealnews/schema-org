@@ -19,7 +19,7 @@ class OrderItem extends StructuredValue {
     /**
      * The delivery of the parcel related to this order or order item.
      *
-     * @var ParcelDelivery|array|null
+     * @var ParcelDelivery|ParcelDelivery[]|null
      *
      * @see https://schema.org/orderDelivery
      */
@@ -28,7 +28,7 @@ class OrderItem extends StructuredValue {
     /**
      * The identifier of the order item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/orderItemNumber
      */
@@ -37,7 +37,7 @@ class OrderItem extends StructuredValue {
     /**
      * The current status of the order item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/orderItemStatus
      */
@@ -47,7 +47,7 @@ class OrderItem extends StructuredValue {
      * The number of the item ordered. If the property is not set, assume the
      * quantity is one.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/orderQuantity
      */
@@ -56,7 +56,7 @@ class OrderItem extends StructuredValue {
     /**
      * The item ordered.
      *
-     * @var OrderItem|Product|Service|array|null
+     * @var OrderItem|Product|Service|OrderItem[]|Product[]|Service[]|null
      *
      * @see https://schema.org/orderedItem
      */

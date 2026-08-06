@@ -20,7 +20,7 @@ class TVSeries extends CreativeWork {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -29,7 +29,7 @@ class TVSeries extends CreativeWork {
     /**
      * A season that is part of the media series.
      *
-     * @var CreativeWorkSeason|array|null
+     * @var CreativeWorkSeason|CreativeWorkSeason[]|null
      *
      * @see https://schema.org/containsSeason
      */
@@ -40,7 +40,7 @@ class TVSeries extends CreativeWork {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -50,7 +50,7 @@ class TVSeries extends CreativeWork {
      * The end date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endDate
      */
@@ -59,7 +59,7 @@ class TVSeries extends CreativeWork {
     /**
      * An episode of a TV, radio or game media within a series or season.
      *
-     * @var Episode|array|null
+     * @var Episode|Episode[]|null
      *
      * @see https://schema.org/episode
      */
@@ -70,7 +70,7 @@ class TVSeries extends CreativeWork {
      * publication. You can repeat this property to identify different formats of,
      * or the linking ISSN (ISSN-L) for, this serial publication.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/issn
      */
@@ -79,7 +79,7 @@ class TVSeries extends CreativeWork {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -88,7 +88,7 @@ class TVSeries extends CreativeWork {
     /**
      * The number of episodes in this season or series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfEpisodes
      */
@@ -97,7 +97,7 @@ class TVSeries extends CreativeWork {
     /**
      * The number of seasons in this series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfSeasons
      */
@@ -107,7 +107,7 @@ class TVSeries extends CreativeWork {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -117,7 +117,7 @@ class TVSeries extends CreativeWork {
      * The start date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startDate
      */
@@ -126,7 +126,7 @@ class TVSeries extends CreativeWork {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

@@ -18,7 +18,7 @@ class MusicRelease extends MusicPlaylist {
     /**
      * The catalog number for the release.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/catalogNumber
      */
@@ -29,7 +29,7 @@ class MusicRelease extends MusicPlaylist {
      * example, Red and Blue is credited to "Stefani Germanotta Band", but by Lady
      * Gaga.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/creditedTo
      */
@@ -39,7 +39,7 @@ class MusicRelease extends MusicPlaylist {
      * The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
      * duration format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/duration
      */
@@ -49,7 +49,7 @@ class MusicRelease extends MusicPlaylist {
      * Format of this release (the type of recording media used, i.e. compact disc,
      * digital media, LP, etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/musicReleaseFormat
      */
@@ -58,7 +58,7 @@ class MusicRelease extends MusicPlaylist {
     /**
      * The label that issued the release.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/recordLabel
      */
@@ -67,7 +67,7 @@ class MusicRelease extends MusicPlaylist {
     /**
      * The album this is a release of.
      *
-     * @var MusicAlbum|array|null
+     * @var MusicAlbum|MusicAlbum[]|null
      *
      * @see https://schema.org/releaseOf
      */

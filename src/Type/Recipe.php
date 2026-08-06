@@ -21,7 +21,7 @@ class Recipe extends HowTo {
      * The time it takes to actually cook the dish, in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/cookTime
      */
@@ -30,7 +30,7 @@ class Recipe extends HowTo {
     /**
      * The method of cooking, such as Frying, Steaming, ...
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/cookingMethod
      */
@@ -39,7 +39,7 @@ class Recipe extends HowTo {
     /**
      * Nutrition information about the recipe or menu item.
      *
-     * @var NutritionInformation|array|null
+     * @var NutritionInformation|NutritionInformation[]|null
      *
      * @see https://schema.org/nutrition
      */
@@ -48,7 +48,7 @@ class Recipe extends HowTo {
     /**
      * The category of the recipe—for example, appetizer, entree, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/recipeCategory
      */
@@ -57,7 +57,7 @@ class Recipe extends HowTo {
     /**
      * The cuisine of the recipe (for example, French or Ethiopian).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/recipeCuisine
      */
@@ -68,7 +68,7 @@ class Recipe extends HowTo {
      * in the recipe, e.g. 1 cup of sugar, flour or garlic.  The ingredients can be
      * represented as free text or more structured values.
      *
-     * @var ItemList|PropertyValue|string|array|null
+     * @var ItemList|PropertyValue|string|ItemList[]|PropertyValue[]|string[]|null
      *
      * @see https://schema.org/recipeIngredient
      */
@@ -78,7 +78,7 @@ class Recipe extends HowTo {
      * A step in making the recipe, in the form of a single item (document, video,
      * etc.) or an ordered list with HowToStep and/or HowToSection items.
      *
-     * @var CreativeWork|ItemList|string|array|null
+     * @var CreativeWork|ItemList|string|CreativeWork[]|ItemList[]|string[]|null
      *
      * @see https://schema.org/recipeInstructions
      */
@@ -88,7 +88,7 @@ class Recipe extends HowTo {
      * The quantity produced by the recipe (for example, number of people served,
      * number of servings, etc).
      *
-     * @var QuantitativeValue|string|array|null
+     * @var QuantitativeValue|string|QuantitativeValue[]|string[]|null
      *
      * @see https://schema.org/recipeYield
      */
@@ -98,7 +98,7 @@ class Recipe extends HowTo {
      * Indicates a dietary restriction or guideline for which this recipe or menu
      * item is suitable, e.g. diabetic, halal etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/suitableForDiet
      */

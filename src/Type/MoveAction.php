@@ -24,7 +24,7 @@ class MoveAction extends Action {
      * A sub property of location. The original location of the object or the agent
      * before the action.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/fromLocation
      */
@@ -34,7 +34,7 @@ class MoveAction extends Action {
      * A sub property of location. The final location of the object or the agent
      * after the action.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/toLocation
      */

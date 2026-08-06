@@ -18,7 +18,7 @@ class Ticket extends Intangible {
     /**
      * The date the ticket was issued.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateIssued
      */
@@ -28,7 +28,7 @@ class Ticket extends Intangible {
      * The organization issuing the item, for example a [[Permit]], [[Ticket]], or
      * [[Certification]].
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/issuedBy
      */
@@ -45,7 +45,7 @@ class Ticket extends Intangible {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceCurrency
      */
@@ -54,7 +54,7 @@ class Ticket extends Intangible {
     /**
      * The unique identifier for the ticket.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/ticketNumber
      */
@@ -64,7 +64,7 @@ class Ticket extends Intangible {
      * Reference to an asset (e.g., Barcode, QR code image or PDF) usable for
      * entrance.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/ticketToken
      */
@@ -73,7 +73,7 @@ class Ticket extends Intangible {
     /**
      * The seat associated with the ticket.
      *
-     * @var Seat|array|null
+     * @var Seat|Seat[]|null
      *
      * @see https://schema.org/ticketedSeat
      */
@@ -90,7 +90,7 @@ class Ticket extends Intangible {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var int|float|PriceSpecification|string|array|null
+     * @var int|float|PriceSpecification|string|int[]|float[]|PriceSpecification[]|string[]|null
      *
      * @see https://schema.org/totalPrice
      */
@@ -99,7 +99,7 @@ class Ticket extends Intangible {
     /**
      * The person or organization the reservation or ticket is for.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/underName
      */

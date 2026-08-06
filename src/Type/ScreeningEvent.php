@@ -18,7 +18,7 @@ class ScreeningEvent extends Event {
     /**
      * The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/videoFormat
      */
@@ -27,7 +27,7 @@ class ScreeningEvent extends Event {
     /**
      * The movie presented during this event.
      *
-     * @var Movie|array|null
+     * @var Movie|Movie[]|null
      *
      * @see https://schema.org/workPresented
      */

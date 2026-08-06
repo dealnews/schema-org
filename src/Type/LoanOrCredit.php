@@ -19,7 +19,7 @@ class LoanOrCredit extends FinancialProduct {
     /**
      * The amount of money.
      *
-     * @var MonetaryAmount|int|float|array|null
+     * @var MonetaryAmount|int|float|MonetaryAmount[]|int[]|float[]|null
      *
      * @see https://schema.org/amount
      */
@@ -35,7 +35,7 @@ class LoanOrCredit extends FinancialProduct {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/currency
      */
@@ -44,7 +44,7 @@ class LoanOrCredit extends FinancialProduct {
     /**
      * The duration of the loan or credit agreement.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/loanTerm
      */
@@ -54,7 +54,7 @@ class LoanOrCredit extends FinancialProduct {
      * Assets required to secure loan or credit repayments. It may take form of
      * third party pledge, goods, financial instruments (cash, securities, etc.)
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/requiredCollateral
      */

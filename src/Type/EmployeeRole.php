@@ -18,7 +18,7 @@ class EmployeeRole extends OrganizationRole {
     /**
      * The base salary of the job or of an employee in an EmployeeRole.
      *
-     * @var MonetaryAmount|int|float|PriceSpecification|array|null
+     * @var MonetaryAmount|int|float|PriceSpecification|MonetaryAmount[]|int[]|float[]|PriceSpecification[]|null
      *
      * @see https://schema.org/baseSalary
      */
@@ -29,7 +29,7 @@ class EmployeeRole extends OrganizationRole {
      * used for the main salary information in this job posting or for this
      * employee.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/salaryCurrency
      */

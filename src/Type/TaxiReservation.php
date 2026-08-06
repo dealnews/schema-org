@@ -22,7 +22,7 @@ class TaxiReservation extends Reservation {
     /**
      * Number of people the reservation should accommodate.
      *
-     * @var int|QuantitativeValue|array|null
+     * @var int|QuantitativeValue|int[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/partySize
      */
@@ -31,7 +31,7 @@ class TaxiReservation extends Reservation {
     /**
      * Where a taxi will pick up a passenger or a rental car can be picked up.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/pickupLocation
      */
@@ -40,7 +40,7 @@ class TaxiReservation extends Reservation {
     /**
      * When a taxi will pick up a passenger or a rental car can be picked up.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/pickupTime
      */

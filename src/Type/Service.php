@@ -20,7 +20,7 @@ class Service extends Intangible {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -29,7 +29,7 @@ class Service extends Intangible {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
@@ -38,7 +38,7 @@ class Service extends Intangible {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -48,7 +48,7 @@ class Service extends Intangible {
      * A means of accessing the service (e.g. a phone bank, a web site, a location,
      * etc.).
      *
-     * @var ServiceChannel|array|null
+     * @var ServiceChannel|ServiceChannel[]|null
      *
      * @see https://schema.org/availableChannel
      */
@@ -57,7 +57,7 @@ class Service extends Intangible {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -67,7 +67,7 @@ class Service extends Intangible {
      * The brand(s) associated with a product or service, or the brand(s)
      * maintained by an organization or business person.
      *
-     * @var Brand|Organization|array|null
+     * @var Brand|Organization|Brand[]|Organization[]|null
      *
      * @see https://schema.org/brand
      */
@@ -79,7 +79,7 @@ class Service extends Intangible {
      * service involved in an exchange.  If it is not clear whether an entity is a
      * broker, seller, or buyer, the latter two terms are preferred.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/broker
      */
@@ -89,7 +89,7 @@ class Service extends Intangible {
      * A category for the item. Greater signs or slashes can be used to informally
      * indicate a category hierarchy.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/category
      */
@@ -99,7 +99,7 @@ class Service extends Intangible {
      * Certification information about a product, organization, service, place, or
      * person.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/hasCertification
      */
@@ -108,7 +108,7 @@ class Service extends Intangible {
     /**
      * Indicates an OfferCatalog listing for this Organization, Person, or Service.
      *
-     * @var OfferCatalog|array|null
+     * @var OfferCatalog|OfferCatalog[]|null
      *
      * @see https://schema.org/hasOfferCatalog
      */
@@ -117,7 +117,7 @@ class Service extends Intangible {
     /**
      * The hours during which this service or contact is available.
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/hoursAvailable
      */
@@ -126,7 +126,7 @@ class Service extends Intangible {
     /**
      * A pointer to another, somehow related product (or multiple products).
      *
-     * @var Product|Service|array|null
+     * @var Product|Service|Product[]|Service[]|null
      *
      * @see https://schema.org/isRelatedTo
      */
@@ -135,7 +135,7 @@ class Service extends Intangible {
     /**
      * A pointer to another, functionally similar product (or multiple products).
      *
-     * @var Product|Service|array|null
+     * @var Product|Service|Product[]|Service[]|null
      *
      * @see https://schema.org/isSimilarTo
      */
@@ -144,22 +144,22 @@ class Service extends Intangible {
     /**
      * An associated logo.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/logo
      */
     public ImageObject|string|array|null $logo = null;
 
     /**
-     * An offer to provide this item&#x2014;for example, an offer to sell a
-     * product, rent the DVD of a movie, perform a service, or give away tickets to
-     * an event. Use [[businessFunction]] to indicate the kind of transaction
-     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * An offer to provide this item—for example, an offer to sell a product,
+     * rent the DVD of a movie, perform a service, or give away tickets to an
+     * event. Use [[businessFunction]] to indicate the kind of transaction offered,
+     * i.e. sell, lease, etc. This property can also be used to describe a
      * [[Demand]]. While this property is listed as expected on a number of common
      * types, it can be used in others. In that case, using a second type, such as
      * Product or a subtype of Product, can clarify the nature of the offer.
      *
-     * @var Demand|Offer|array|null
+     * @var Demand|Offer|Demand[]|Offer[]|null
      *
      * @see https://schema.org/offers
      */
@@ -168,7 +168,7 @@ class Service extends Intangible {
     /**
      * Indicates the mobility of a provided service (e.g. 'static', 'dynamic').
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/providerMobility
      */
@@ -177,7 +177,7 @@ class Service extends Intangible {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -186,7 +186,7 @@ class Service extends Intangible {
     /**
      * The tangible thing generated by the service, e.g. a passport, permit, etc.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/serviceOutput
      */
@@ -196,7 +196,7 @@ class Service extends Intangible {
      * The type of service being offered, e.g. veterans' benefits, emergency
      * relief, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/serviceType
      */
@@ -205,7 +205,7 @@ class Service extends Intangible {
     /**
      * A slogan or motto associated with the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/slogan
      */

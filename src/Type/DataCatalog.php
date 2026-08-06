@@ -18,7 +18,7 @@ class DataCatalog extends CreativeWork {
     /**
      * A dataset contained in this catalog.
      *
-     * @var Dataset|array|null
+     * @var Dataset|Dataset[]|null
      *
      * @see https://schema.org/dataset
      */

@@ -18,7 +18,7 @@ class Airport extends CivicStructure {
     /**
      * IATA identifier for an airline or airport.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/iataCode
      */
@@ -27,7 +27,7 @@ class Airport extends CivicStructure {
     /**
      * ICAO identifier for an airport.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/icaoCode
      */

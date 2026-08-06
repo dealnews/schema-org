@@ -19,7 +19,7 @@ class Airline extends Organization {
      * The type of boarding policy used by the airline (e.g. zone-based or
      * group-based).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/boardingPolicy
      */
@@ -28,7 +28,7 @@ class Airline extends Organization {
     /**
      * IATA identifier for an airline or airport.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/iataCode
      */

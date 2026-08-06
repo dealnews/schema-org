@@ -7,7 +7,7 @@ namespace DealNews\SchemaOrg\Type;
 /**
  * GovernmentOffice.
  *
- * A government office&#x2014;for example, an IRS or DMV office.
+ * A government office—for example, an IRS or DMV office.
  *
  * @see https://schema.org/GovernmentOffice
  */

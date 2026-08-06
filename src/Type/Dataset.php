@@ -24,7 +24,7 @@ class Dataset extends CreativeWork {
      * point). Different distributions might include or exclude different subsets
      * of the entire dataset, for example.
      *
-     * @var DataDownload|array|null
+     * @var DataDownload|DataDownload[]|null
      *
      * @see https://schema.org/distribution
      */
@@ -33,7 +33,7 @@ class Dataset extends CreativeWork {
     /**
      * A data catalog which contains this dataset.
      *
-     * @var DataCatalog|array|null
+     * @var DataCatalog|DataCatalog[]|null
      *
      * @see https://schema.org/includedInDataCatalog
      */
@@ -44,7 +44,7 @@ class Dataset extends CreativeWork {
      * publication. You can repeat this property to identify different formats of,
      * or the linking ISSN (ISSN-L) for, this serial publication.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/issn
      */

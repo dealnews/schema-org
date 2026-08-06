@@ -19,7 +19,7 @@ class PlanAction extends OrganizeAction {
     /**
      * The time the object is scheduled to.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/scheduledTime
      */

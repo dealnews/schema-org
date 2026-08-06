@@ -20,7 +20,7 @@ class PerformanceRole extends Role {
      * The name of a character played in some acting or performing role, i.e. in a
      * PerformanceRole.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/characterName
      */

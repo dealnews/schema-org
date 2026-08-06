@@ -7,7 +7,7 @@ namespace DealNews\SchemaOrg\Type;
 /**
  * ContactPoint.
  *
- * A contact point&#x2014;for example, a Customer Complaints department.
+ * A contact point—for example, a Customer Complaints department.
  *
  * @see https://schema.org/ContactPoint
  */
@@ -18,7 +18,7 @@ class ContactPoint extends StructuredValue {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
@@ -29,7 +29,7 @@ class ContactPoint extends StructuredValue {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/availableLanguage
      */
@@ -39,7 +39,7 @@ class ContactPoint extends StructuredValue {
      * An option available on this contact point (e.g. a toll-free number or
      * support for hearing-impaired callers).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/contactOption
      */
@@ -50,7 +50,7 @@ class ContactPoint extends StructuredValue {
      * purposes. For example, a sales contact point, a PR contact point and so on.
      * This property is used to specify the kind of contact point.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/contactType
      */
@@ -59,7 +59,7 @@ class ContactPoint extends StructuredValue {
     /**
      * Email address.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/email
      */
@@ -68,7 +68,7 @@ class ContactPoint extends StructuredValue {
     /**
      * The fax number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/faxNumber
      */
@@ -77,7 +77,7 @@ class ContactPoint extends StructuredValue {
     /**
      * The hours during which this service or contact is available.
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/hoursAvailable
      */
@@ -89,7 +89,7 @@ class ContactPoint extends StructuredValue {
      * product or product line (e.g. "iPhone") or a general category of products or
      * services (e.g. "smartphones").
      *
-     * @var Product|string|array|null
+     * @var Product|string|Product[]|string[]|null
      *
      * @see https://schema.org/productSupported
      */
@@ -98,7 +98,7 @@ class ContactPoint extends StructuredValue {
     /**
      * The telephone number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/telephone
      */

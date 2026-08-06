@@ -20,7 +20,7 @@ class MobileApplication extends SoftwareApplication {
      * Specifies specific carrier(s) requirements for the application (e.g. an
      * application may only work on a specific carrier network).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/carrierRequirements
      */

@@ -20,7 +20,7 @@ class Event extends Thing {
     /**
      * The subject matter of an object.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/about
      */
@@ -31,7 +31,7 @@ class Event extends Thing {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -41,7 +41,7 @@ class Event extends Thing {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -50,7 +50,7 @@ class Event extends Thing {
     /**
      * A person or organization attending the event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/attendee
      */
@@ -59,7 +59,7 @@ class Event extends Thing {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -69,7 +69,7 @@ class Event extends Thing {
      * The person or organization who wrote a composition, or who is the composer
      * of a work performed at some event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/composer
      */
@@ -78,7 +78,7 @@ class Event extends Thing {
     /**
      * A secondary contributor to the CreativeWork or Event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/contributor
      */
@@ -89,7 +89,7 @@ class Event extends Thing {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -98,7 +98,7 @@ class Event extends Thing {
     /**
      * The time admission will commence.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/doorTime
      */
@@ -108,7 +108,7 @@ class Event extends Thing {
      * The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
      * duration format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/duration
      */
@@ -118,7 +118,7 @@ class Event extends Thing {
      * The end date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endDate
      */
@@ -128,7 +128,7 @@ class Event extends Thing {
      * An eventStatus of an event represents its status; particularly useful when
      * an event is cancelled or rescheduled.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/eventStatus
      */
@@ -138,7 +138,7 @@ class Event extends Thing {
      * A person or organization that supports (sponsors) something through some
      * kind of financial contribution.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/funder
      */
@@ -149,7 +149,7 @@ class Event extends Thing {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/inLanguage
      */
@@ -158,7 +158,7 @@ class Event extends Thing {
     /**
      * A flag to signal that the item, event, or place is accessible for free.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isAccessibleForFree
      */
@@ -169,7 +169,7 @@ class Event extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/keywords
      */
@@ -179,7 +179,7 @@ class Event extends Thing {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/location
      */
@@ -188,22 +188,22 @@ class Event extends Thing {
     /**
      * The total number of individuals that may attend an event or venue.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/maximumAttendeeCapacity
      */
     public int|array|null $maximumAttendeeCapacity = null;
 
     /**
-     * An offer to provide this item&#x2014;for example, an offer to sell a
-     * product, rent the DVD of a movie, perform a service, or give away tickets to
-     * an event. Use [[businessFunction]] to indicate the kind of transaction
-     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * An offer to provide this item—for example, an offer to sell a product,
+     * rent the DVD of a movie, perform a service, or give away tickets to an
+     * event. Use [[businessFunction]] to indicate the kind of transaction offered,
+     * i.e. sell, lease, etc. This property can also be used to describe a
      * [[Demand]]. While this property is listed as expected on a number of common
      * types, it can be used in others. In that case, using a second type, such as
      * Product or a subtype of Product, can clarify the nature of the offer.
      *
-     * @var Demand|Offer|array|null
+     * @var Demand|Offer|Demand[]|Offer[]|null
      *
      * @see https://schema.org/offers
      */
@@ -212,17 +212,17 @@ class Event extends Thing {
     /**
      * An organizer of an Event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/organizer
      */
     public Organization|Person|array|null $organizer = null;
 
     /**
-     * A performer at the event&#x2014;for example, a presenter, musician, musical
-     * group or actor.
+     * A performer at the event—for example, a presenter, musician, musical group
+     * or actor.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/performer
      */
@@ -235,7 +235,7 @@ class Event extends Thing {
      * date. In the (rare) case of an event that has been postponed and rescheduled
      * multiple times, this field may be repeated.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/previousStartDate
      */
@@ -244,7 +244,7 @@ class Event extends Thing {
     /**
      * The CreativeWork that captured all or part of this Event.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/recordedIn
      */
@@ -253,7 +253,7 @@ class Event extends Thing {
     /**
      * The number of attendee places for an event that remain unallocated.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/remainingAttendeeCapacity
      */
@@ -262,7 +262,7 @@ class Event extends Thing {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -273,7 +273,7 @@ class Event extends Thing {
      * financial contribution. E.g. a sponsor of a Medical Study or a corporate
      * sponsor of an event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/sponsor
      */
@@ -283,7 +283,7 @@ class Event extends Thing {
      * The start date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startDate
      */
@@ -293,7 +293,7 @@ class Event extends Thing {
      * An Event that is part of this event. For example, a conference event
      * includes many presentations, each of which is a subEvent of the conference.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/subEvent
      */
@@ -304,7 +304,7 @@ class Event extends Thing {
      * individual music performances might each have a music festival as their
      * superEvent.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/superEvent
      */
@@ -315,7 +315,7 @@ class Event extends Thing {
      * regional differences and technical requirements of a target market, or that
      * translates during some event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/translator
      */
@@ -324,7 +324,7 @@ class Event extends Thing {
     /**
      * The typical expected age range, e.g. '7-9', '11-'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/typicalAgeRange
      */
@@ -335,7 +335,7 @@ class Event extends Thing {
      *        Specific subproperties are available for workPerformed (e.g. a play),
      * or a workPresented (a Movie at a ScreeningEvent).
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/workFeatured
      */
@@ -345,7 +345,7 @@ class Event extends Thing {
      * A work performed in some event, for example a play performed in a
      * TheaterEvent.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/workPerformed
      */

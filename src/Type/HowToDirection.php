@@ -20,7 +20,7 @@ class HowToDirection extends CreativeWork {
      * A media object representing the circumstances after performing this
      * direction.
      *
-     * @var MediaObject|string|array|null
+     * @var MediaObject|string|MediaObject[]|string[]|null
      *
      * @see https://schema.org/afterMedia
      */
@@ -30,7 +30,7 @@ class HowToDirection extends CreativeWork {
      * A media object representing the circumstances before performing this
      * direction.
      *
-     * @var MediaObject|string|array|null
+     * @var MediaObject|string|MediaObject[]|string[]|null
      *
      * @see https://schema.org/beforeMedia
      */
@@ -40,7 +40,7 @@ class HowToDirection extends CreativeWork {
      * A media object representing the circumstances while performing this
      * direction.
      *
-     * @var MediaObject|string|array|null
+     * @var MediaObject|string|MediaObject[]|string[]|null
      *
      * @see https://schema.org/duringMedia
      */
@@ -50,7 +50,7 @@ class HowToDirection extends CreativeWork {
      * An entity represented by an entry in a list or data feed (e.g. an 'artist'
      * in a list of 'artists').
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/item
      */
@@ -59,7 +59,7 @@ class HowToDirection extends CreativeWork {
     /**
      * A link to the ListItem that follows the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/nextItem
      */
@@ -70,7 +70,7 @@ class HowToDirection extends CreativeWork {
      * including time to prepare the supplies), in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/performTime
      */
@@ -81,7 +81,7 @@ class HowToDirection extends CreativeWork {
      * or a direction, in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/prepTime
      */
@@ -90,7 +90,7 @@ class HowToDirection extends CreativeWork {
     /**
      * A link to the ListItem that precedes the current one.
      *
-     * @var ListItem|array|null
+     * @var ListItem|ListItem[]|null
      *
      * @see https://schema.org/previousItem
      */
@@ -100,7 +100,7 @@ class HowToDirection extends CreativeWork {
      * A sub-property of instrument. A supply consumed when performing instructions
      * or a direction.
      *
-     * @var HowToSupply|string|array|null
+     * @var HowToSupply|string|HowToSupply[]|string[]|null
      *
      * @see https://schema.org/supply
      */
@@ -110,7 +110,7 @@ class HowToDirection extends CreativeWork {
      * A sub property of instrument. An object used (but not consumed) when
      * performing instructions or a direction.
      *
-     * @var HowToTool|string|array|null
+     * @var HowToTool|string|HowToTool[]|string[]|null
      *
      * @see https://schema.org/tool
      */
@@ -121,7 +121,7 @@ class HowToDirection extends CreativeWork {
      * time to prepare the supplies), in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/totalTime
      */

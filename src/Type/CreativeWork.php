@@ -19,7 +19,7 @@ class CreativeWork extends Thing {
     /**
      * The subject matter of an object.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/about
      */
@@ -32,7 +32,7 @@ class CreativeWork extends Thing {
      * images). Values should be drawn from the [approved
      * vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessMode-vocabulary).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessMode
      */
@@ -44,7 +44,7 @@ class CreativeWork extends Thing {
      * Values should be drawn from the [approved
      * vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessModeSufficient-vocabulary).
      *
-     * @var ItemList|array|null
+     * @var ItemList|ItemList[]|null
      *
      * @see https://schema.org/accessModeSufficient
      */
@@ -55,7 +55,7 @@ class CreativeWork extends Thing {
      * API. Values should be drawn from the [approved
      * vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityAPI-vocabulary).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessibilityAPI
      */
@@ -66,7 +66,7 @@ class CreativeWork extends Thing {
      * resource. Values should be drawn from the [approved
      * vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityControl-vocabulary).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessibilityControl
      */
@@ -78,7 +78,7 @@ class CreativeWork extends Thing {
      * [approved
      * vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityFeature-vocabulary).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessibilityFeature
      */
@@ -90,7 +90,7 @@ class CreativeWork extends Thing {
      * from the [approved
      * vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityHazard-vocabulary).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessibilityHazard
      */
@@ -103,7 +103,7 @@ class CreativeWork extends Thing {
      * for non-visual users" or "short descriptions are present and no long
      * descriptions are needed".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accessibilitySummary
      */
@@ -112,7 +112,7 @@ class CreativeWork extends Thing {
     /**
      * Specifies the Person that is legally accountable for the CreativeWork.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/accountablePerson
      */
@@ -122,7 +122,7 @@ class CreativeWork extends Thing {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -131,7 +131,7 @@ class CreativeWork extends Thing {
     /**
      * A secondary title of the CreativeWork.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/alternativeHeadline
      */
@@ -141,7 +141,7 @@ class CreativeWork extends Thing {
      * A media object that encodes this CreativeWork. This property is a synonym
      * for encoding.
      *
-     * @var MediaObject|array|null
+     * @var MediaObject|MediaObject[]|null
      *
      * @see https://schema.org/associatedMedia
      */
@@ -150,7 +150,7 @@ class CreativeWork extends Thing {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -159,7 +159,7 @@ class CreativeWork extends Thing {
     /**
      * An embedded audio object.
      *
-     * @var AudioObject|Clip|MusicRecording|array|null
+     * @var AudioObject|Clip|MusicRecording|AudioObject[]|Clip[]|MusicRecording[]|null
      *
      * @see https://schema.org/audio
      */
@@ -170,7 +170,7 @@ class CreativeWork extends Thing {
      * that HTML 5 provides a special mechanism for indicating authorship via the
      * rel tag. That is equivalent to this and may be used interchangeably.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/author
      */
@@ -179,7 +179,7 @@ class CreativeWork extends Thing {
     /**
      * An award won by or for this item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/award
      */
@@ -188,7 +188,7 @@ class CreativeWork extends Thing {
     /**
      * Fictional person connected with a creative work.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/character
      */
@@ -198,7 +198,7 @@ class CreativeWork extends Thing {
      * A citation or reference to another creative work, such as another
      * publication, web page, scholarly article, etc.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/citation
      */
@@ -207,7 +207,7 @@ class CreativeWork extends Thing {
     /**
      * Comments, typically from users.
      *
-     * @var Comment|array|null
+     * @var Comment|Comment[]|null
      *
      * @see https://schema.org/comment
      */
@@ -218,7 +218,7 @@ class CreativeWork extends Thing {
      * has received. This is most applicable to works published in Web sites with
      * commenting system; additional comments may exist elsewhere.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/commentCount
      */
@@ -228,16 +228,16 @@ class CreativeWork extends Thing {
      * The location depicted or described in the content. For example, the location
      * in a photograph or painting.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/contentLocation
      */
     public Place|array|null $contentLocation = null;
 
     /**
-     * Official rating of a piece of content&#x2014;for example, 'MPAA PG-13'.
+     * Official rating of a piece of content—for example, 'MPAA PG-13'.
      *
-     * @var Rating|string|array|null
+     * @var Rating|string|Rating[]|string[]|null
      *
      * @see https://schema.org/contentRating
      */
@@ -246,7 +246,7 @@ class CreativeWork extends Thing {
     /**
      * A secondary contributor to the CreativeWork or Event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/contributor
      */
@@ -255,7 +255,7 @@ class CreativeWork extends Thing {
     /**
      * The party holding the legal copyright to the CreativeWork.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/copyrightHolder
      */
@@ -265,7 +265,7 @@ class CreativeWork extends Thing {
      * The year during which the claimed copyright for the CreativeWork was first
      * asserted.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/copyrightYear
      */
@@ -285,7 +285,7 @@ class CreativeWork extends Thing {
      * interpretation of this may vary by context and product type, and cannot be
      * fully enumerated here.
      *
-     * @var Country|array|null
+     * @var Country|Country[]|null
      *
      * @see https://schema.org/countryOfOrigin
      */
@@ -295,7 +295,7 @@ class CreativeWork extends Thing {
      * The creator/author of this CreativeWork. This is the same as the Author
      * property for CreativeWork.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/creator
      */
@@ -305,7 +305,7 @@ class CreativeWork extends Thing {
      * The date on which the CreativeWork was created or the item was added to a
      * DataFeed.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateCreated
      */
@@ -315,7 +315,7 @@ class CreativeWork extends Thing {
      * The date on which the CreativeWork was most recently modified or when the
      * item's entry was modified within a DataFeed.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateModified
      */
@@ -325,7 +325,7 @@ class CreativeWork extends Thing {
      * Date of first publication or broadcast. For example the date a
      * [[CreativeWork]] was broadcast or a [[Certification]] was issued.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/datePublished
      */
@@ -334,7 +334,7 @@ class CreativeWork extends Thing {
     /**
      * A link to the page containing the comments of the CreativeWork.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/discussionUrl
      */
@@ -343,7 +343,7 @@ class CreativeWork extends Thing {
     /**
      * Specifies the Person who edited the CreativeWork.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/editor
      */
@@ -356,7 +356,7 @@ class CreativeWork extends Thing {
      * described using a simple property, for example to express that a resource
      * [[teaches]] or [[assesses]] a competency.
      *
-     * @var AlignmentObject|array|null
+     * @var AlignmentObject|AlignmentObject[]|null
      *
      * @see https://schema.org/educationalAlignment
      */
@@ -366,7 +366,7 @@ class CreativeWork extends Thing {
      * The purpose of a work in the context of education; for example,
      * 'assignment', 'group work'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/educationalUse
      */
@@ -376,7 +376,7 @@ class CreativeWork extends Thing {
      * A media object that encodes this CreativeWork. This property is a synonym
      * for associatedMedia.
      *
-     * @var MediaObject|array|null
+     * @var MediaObject|MediaObject[]|null
      *
      * @see https://schema.org/encoding
      */
@@ -398,7 +398,7 @@ class CreativeWork extends Thing {
      * the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata
      * entry.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/encodingFormat
      */
@@ -408,7 +408,7 @@ class CreativeWork extends Thing {
      * A creative work that this work is an example/instance/realization/derivation
      * of.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/exampleOfWork
      */
@@ -421,7 +421,7 @@ class CreativeWork extends Thing {
      * that it may no longer be relevant (or helpful to highlight) after some date,
      * or a [[Certification]] the validity has expired.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/expires
      */
@@ -431,7 +431,7 @@ class CreativeWork extends Thing {
      * A person or organization that supports (sponsors) something through some
      * kind of financial contribution.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/funder
      */
@@ -440,7 +440,7 @@ class CreativeWork extends Thing {
     /**
      * Genre of the creative work, broadcast channel or group.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/genre
      */
@@ -450,7 +450,7 @@ class CreativeWork extends Thing {
      * Indicates an item or CreativeWork that is part of this item, or CreativeWork
      * (in some sense).
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/hasPart
      */
@@ -459,7 +459,7 @@ class CreativeWork extends Thing {
     /**
      * Headline of the article.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/headline
      */
@@ -470,7 +470,7 @@ class CreativeWork extends Thing {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/inLanguage
      */
@@ -481,7 +481,7 @@ class CreativeWork extends Thing {
      * SoftwareApplication. The most specific child type of InteractionCounter
      * should be used.
      *
-     * @var InteractionCounter|array|null
+     * @var InteractionCounter|InteractionCounter[]|null
      *
      * @see https://schema.org/interactionStatistic
      */
@@ -491,7 +491,7 @@ class CreativeWork extends Thing {
      * The predominant mode of learning supported by the learning resource.
      * Acceptable values are 'active', 'expositive', or 'mixed'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/interactivityType
      */
@@ -500,7 +500,7 @@ class CreativeWork extends Thing {
     /**
      * A flag to signal that the item, event, or place is accessible for free.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isAccessibleForFree
      */
@@ -510,7 +510,7 @@ class CreativeWork extends Thing {
      * A resource from which this work is derived or from which it is a
      * modification or adaptation.
      *
-     * @var CreativeWork|Product|string|array|null
+     * @var CreativeWork|Product|string|CreativeWork[]|Product[]|string[]|null
      *
      * @see https://schema.org/isBasedOn
      */
@@ -519,7 +519,7 @@ class CreativeWork extends Thing {
     /**
      * Indicates whether this content is family friendly.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isFamilyFriendly
      */
@@ -529,7 +529,7 @@ class CreativeWork extends Thing {
      * Indicates an item or CreativeWork that this item, or CreativeWork (in some
      * sense), is part of.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/isPartOf
      */
@@ -540,7 +540,7 @@ class CreativeWork extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/keywords
      */
@@ -550,7 +550,7 @@ class CreativeWork extends Thing {
      * The predominant type or kind characterizing the learning resource. For
      * example, 'presentation', 'handout'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/learningResourceType
      */
@@ -559,7 +559,7 @@ class CreativeWork extends Thing {
     /**
      * A license document that applies to this content, typically indicated by URL.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/license
      */
@@ -569,7 +569,7 @@ class CreativeWork extends Thing {
      * The location where the CreativeWork was created, which may not be the same
      * as the location depicted in the CreativeWork.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/locationCreated
      */
@@ -578,7 +578,7 @@ class CreativeWork extends Thing {
     /**
      * Indicates the primary entity described in some page or other CreativeWork.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/mainEntity
      */
@@ -587,7 +587,7 @@ class CreativeWork extends Thing {
     /**
      * A material that something is made from, e.g. leather, wool, cotton, paper.
      *
-     * @var Product|string|array|null
+     * @var Product|string|Product[]|string[]|null
      *
      * @see https://schema.org/material
      */
@@ -597,22 +597,22 @@ class CreativeWork extends Thing {
      * Indicates that the CreativeWork contains a reference to, but is not
      * necessarily about a concept.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/mentions
      */
     public Thing|array|null $mentions = null;
 
     /**
-     * An offer to provide this item&#x2014;for example, an offer to sell a
-     * product, rent the DVD of a movie, perform a service, or give away tickets to
-     * an event. Use [[businessFunction]] to indicate the kind of transaction
-     * offered, i.e. sell, lease, etc. This property can also be used to describe a
+     * An offer to provide this item—for example, an offer to sell a product,
+     * rent the DVD of a movie, perform a service, or give away tickets to an
+     * event. Use [[businessFunction]] to indicate the kind of transaction offered,
+     * i.e. sell, lease, etc. This property can also be used to describe a
      * [[Demand]]. While this property is listed as expected on a number of common
      * types, it can be used in others. In that case, using a second type, such as
      * Product or a subtype of Product, can clarify the nature of the offer.
      *
-     * @var Demand|Offer|array|null
+     * @var Demand|Offer|Demand[]|Offer[]|null
      *
      * @see https://schema.org/offers
      */
@@ -621,7 +621,7 @@ class CreativeWork extends Thing {
     /**
      * The position of an item in a series or sequence of items.
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/position
      */
@@ -631,7 +631,7 @@ class CreativeWork extends Thing {
      * The person or organization who produced the work (e.g. music album, movie,
      * TV/radio series etc.).
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/producer
      */
@@ -640,7 +640,7 @@ class CreativeWork extends Thing {
     /**
      * A publication event associated with the item.
      *
-     * @var PublicationEvent|array|null
+     * @var PublicationEvent|PublicationEvent[]|null
      *
      * @see https://schema.org/publication
      */
@@ -649,7 +649,7 @@ class CreativeWork extends Thing {
     /**
      * The publisher of the article in question.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/publisher
      */
@@ -667,7 +667,7 @@ class CreativeWork extends Thing {
      * sometimes related information (e.g. indicating a [[funder]]) can be
      * expressed using schema.org terminology.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/publishingPrinciples
      */
@@ -677,7 +677,7 @@ class CreativeWork extends Thing {
      * The Event where the CreativeWork was recorded. The CreativeWork may capture
      * all or part of the event.
      *
-     * @var Event|array|null
+     * @var Event|Event[]|null
      *
      * @see https://schema.org/recordedAt
      */
@@ -686,7 +686,7 @@ class CreativeWork extends Thing {
     /**
      * The place and time the release was issued, expressed as a PublicationEvent.
      *
-     * @var PublicationEvent|array|null
+     * @var PublicationEvent|PublicationEvent[]|null
      *
      * @see https://schema.org/releasedEvent
      */
@@ -695,7 +695,7 @@ class CreativeWork extends Thing {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -711,7 +711,7 @@ class CreativeWork extends Thing {
      * ```http://dublincore.org/specifications/dublin-core/dces/1999-07-02/``` but
      * this has not been carefully explored in the community.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/schemaVersion
      */
@@ -720,7 +720,7 @@ class CreativeWork extends Thing {
     /**
      * The Organization on whose behalf the creator was working.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/sourceOrganization
      */
@@ -731,7 +731,7 @@ class CreativeWork extends Thing {
      * (e.g. [[locationCreated]], [[spatialCoverage]], [[contentLocation]]) are not
      * known to be appropriate.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/spatial
      */
@@ -745,7 +745,7 @@ class CreativeWork extends Thing {
      *       areas that the dataset describes: a dataset of New York weather would
      * have spatialCoverage which was the place: the state of New York.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/spatialCoverage
      */
@@ -756,7 +756,7 @@ class CreativeWork extends Thing {
      * financial contribution. E.g. a sponsor of a Medical Study or a corporate
      * sponsor of an event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/sponsor
      */
@@ -767,7 +767,7 @@ class CreativeWork extends Thing {
      * (e.g. [[temporalCoverage]], [[dateCreated]], [[dateModified]],
      * [[datePublished]]) are not known to be appropriate.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/temporal
      */
@@ -792,7 +792,7 @@ class CreativeWork extends Thing {
      * with no specified final date. This is tentative and might be updated in
      * future when ISO 8601 is officially updated.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/temporalCoverage
      */
@@ -801,7 +801,7 @@ class CreativeWork extends Thing {
     /**
      * The textual content of this CreativeWork.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/text
      */
@@ -810,7 +810,7 @@ class CreativeWork extends Thing {
     /**
      * Thumbnail image for an image or video.
      *
-     * @var ImageObject|array|null
+     * @var ImageObject|ImageObject[]|null
      *
      * @see https://schema.org/thumbnail
      */
@@ -819,7 +819,7 @@ class CreativeWork extends Thing {
     /**
      * A thumbnail image relevant to the Thing.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/thumbnailUrl
      */
@@ -829,7 +829,7 @@ class CreativeWork extends Thing {
      * Approximate or typical time it usually takes to work with or through the
      * content of this work for the typical or target audience.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/timeRequired
      */
@@ -840,7 +840,7 @@ class CreativeWork extends Thing {
      * regional differences and technical requirements of a target market, or that
      * translates during some event.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/translator
      */
@@ -849,7 +849,7 @@ class CreativeWork extends Thing {
     /**
      * The typical expected age range, e.g. '7-9', '11-'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/typicalAgeRange
      */
@@ -858,7 +858,7 @@ class CreativeWork extends Thing {
     /**
      * The version of the CreativeWork embodied by a specified resource.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/version
      */
@@ -867,7 +867,7 @@ class CreativeWork extends Thing {
     /**
      * An embedded video object.
      *
-     * @var Clip|VideoObject|array|null
+     * @var Clip|VideoObject|Clip[]|VideoObject[]|null
      *
      * @see https://schema.org/video
      */
@@ -877,7 +877,7 @@ class CreativeWork extends Thing {
      * The number of words in the text of the CreativeWork such as an Article,
      * Book, etc.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/wordCount
      */
@@ -887,7 +887,7 @@ class CreativeWork extends Thing {
      * Example/instance/realization/derivation of the concept of this creative
      * work. E.g. the paperback edition, first edition, or e-book.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/workExample
      */

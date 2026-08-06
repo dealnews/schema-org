@@ -21,7 +21,7 @@ class GeoShape extends StructuredValue {
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress|string|array|null
+     * @var PostalAddress|string|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/address
      */
@@ -34,7 +34,7 @@ class GeoShape extends StructuredValue {
      * alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such
      * as "SGP" or a full country name such as "Singapore" can also be used.
      *
-     * @var Country|string|array|null
+     * @var Country|string|Country[]|string[]|null
      *
      * @see https://schema.org/addressCountry
      */
@@ -45,7 +45,7 @@ class GeoShape extends StructuredValue {
      * point is the lower corner, the second point is the upper corner. A box is
      * expressed as two points separated by a space character.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/box
      */
@@ -56,7 +56,7 @@ class GeoShape extends StructuredValue {
      * specified latitude and longitude. A circle is expressed as a pair followed
      * by a radius in meters.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/circle
      */
@@ -68,7 +68,7 @@ class GeoShape extends StructuredValue {
      * the form 'NUMBER UNIT\_OF\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while
      * numbers alone should be assumed to be a value in meters.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/elevation
      */
@@ -78,7 +78,7 @@ class GeoShape extends StructuredValue {
      * A line is a point-to-point path consisting of two or more points. A line is
      * expressed as a series of two or more point objects separated by space.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/line
      */
@@ -90,7 +90,7 @@ class GeoShape extends StructuredValue {
      * of four or more space delimited points where the first and final points are
      * identical.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/polygon
      */
@@ -99,7 +99,7 @@ class GeoShape extends StructuredValue {
     /**
      * The postal code. For example, 94043.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCode
      */

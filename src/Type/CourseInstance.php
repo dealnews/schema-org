@@ -24,7 +24,7 @@ class CourseInstance extends Event {
      * term from a controlled vocabulary (e.g.
      * https://ceds.ed.gov/element/001311#Asynchronous).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/courseMode
      */
@@ -34,7 +34,7 @@ class CourseInstance extends Event {
      * A person assigned to instruct or provide instructional assistance for the
      * [[CourseInstance]].
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/instructor
      */

@@ -19,7 +19,7 @@ class FinancialService extends LocalBusiness {
      * Description of fees, commissions, and other terms applied either to a class
      * of financial product, or by a financial service organization.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/feesAndCommissionsSpecification
      */

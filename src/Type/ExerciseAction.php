@@ -19,7 +19,7 @@ class ExerciseAction extends PlayAction {
     /**
      * The distance travelled, e.g. exercising or travelling.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/distance
      */
@@ -28,7 +28,7 @@ class ExerciseAction extends PlayAction {
     /**
      * A sub property of location. The course where this action was taken.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/exerciseCourse
      */
@@ -38,7 +38,7 @@ class ExerciseAction extends PlayAction {
      * A sub property of location. The original location of the object or the agent
      * before the action.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/fromLocation
      */
@@ -47,7 +47,7 @@ class ExerciseAction extends PlayAction {
     /**
      * A sub property of participant. The opponent on this action.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/opponent
      */
@@ -57,7 +57,7 @@ class ExerciseAction extends PlayAction {
      * A sub property of location. The sports activity location where this action
      * occurred.
      *
-     * @var SportsActivityLocation|array|null
+     * @var SportsActivityLocation|SportsActivityLocation[]|null
      *
      * @see https://schema.org/sportsActivityLocation
      */
@@ -66,7 +66,7 @@ class ExerciseAction extends PlayAction {
     /**
      * A sub property of location. The sports event where this action occurred.
      *
-     * @var SportsEvent|array|null
+     * @var SportsEvent|SportsEvent[]|null
      *
      * @see https://schema.org/sportsEvent
      */
@@ -76,7 +76,7 @@ class ExerciseAction extends PlayAction {
      * A sub property of participant. The sports team that participated on this
      * action.
      *
-     * @var SportsTeam|array|null
+     * @var SportsTeam|SportsTeam[]|null
      *
      * @see https://schema.org/sportsTeam
      */
@@ -86,7 +86,7 @@ class ExerciseAction extends PlayAction {
      * A sub property of location. The final location of the object or the agent
      * after the action.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/toLocation
      */

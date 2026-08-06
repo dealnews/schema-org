@@ -19,7 +19,7 @@ class BroadcastChannel extends Intangible {
      * The unique address by which the BroadcastService can be identified in a
      * provider lineup. In US, this is typically a number.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/broadcastChannelId
      */
@@ -30,7 +30,7 @@ class BroadcastChannel extends Intangible {
      * ranges, e.g. 87-99. In addition a shortcut idiom is supported for
      * frequencies of AM and FM radio channels, e.g. "87 FM".
      *
-     * @var BroadcastFrequencySpecification|string|array|null
+     * @var BroadcastFrequencySpecification|string|BroadcastFrequencySpecification[]|string[]|null
      *
      * @see https://schema.org/broadcastFrequency
      */
@@ -40,7 +40,7 @@ class BroadcastChannel extends Intangible {
      * The type of service required to have access to the channel (e.g. Standard or
      * Premium).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/broadcastServiceTier
      */
@@ -49,7 +49,7 @@ class BroadcastChannel extends Intangible {
     /**
      * Genre of the creative work, broadcast channel or group.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/genre
      */
@@ -58,7 +58,7 @@ class BroadcastChannel extends Intangible {
     /**
      * The CableOrSatelliteService offering the channel.
      *
-     * @var CableOrSatelliteService|array|null
+     * @var CableOrSatelliteService|CableOrSatelliteService[]|null
      *
      * @see https://schema.org/inBroadcastLineup
      */
@@ -67,7 +67,7 @@ class BroadcastChannel extends Intangible {
     /**
      * The BroadcastService offered on this channel.
      *
-     * @var BroadcastService|array|null
+     * @var BroadcastService|BroadcastService[]|null
      *
      * @see https://schema.org/providesBroadcastService
      */

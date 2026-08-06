@@ -21,7 +21,7 @@ class Occupation extends Intangible {
      * Estimated salaries  are often computed by outside organizations rather than
      * the hiring organization, who may not have committed to the estimated value.
      *
-     * @var MonetaryAmount|MonetaryAmountDistribution|int|float|array|null
+     * @var MonetaryAmount|MonetaryAmountDistribution|int|float|MonetaryAmount[]|MonetaryAmountDistribution[]|int[]|float[]|null
      *
      * @see https://schema.org/estimatedSalary
      */
@@ -30,7 +30,7 @@ class Occupation extends Intangible {
     /**
      * Description of skills and experience needed for the position or Occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/experienceRequirements
      */
@@ -41,7 +41,7 @@ class Occupation extends Intangible {
      * Note that educational requirements and qualifications can vary between
      * jurisdictions.
      *
-     * @var AdministrativeArea|array|null
+     * @var AdministrativeArea|AdministrativeArea[]|null
      *
      * @see https://schema.org/occupationLocation
      */
@@ -50,7 +50,7 @@ class Occupation extends Intangible {
     /**
      * Responsibilities associated with this role or Occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/responsibilities
      */
@@ -61,7 +61,7 @@ class Occupation extends Intangible {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/skills
      */

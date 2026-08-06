@@ -19,7 +19,7 @@ class TypeAndQuantityNode extends StructuredValue {
     /**
      * The quantity of the goods included in the offer.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/amountOfThisGood
      */
@@ -30,7 +30,7 @@ class TypeAndQuantityNode extends StructuredValue {
      * component of a bundle (TypeAndQuantityNode). The default is
      * http://purl.org/goodrelations/v1#Sell.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/businessFunction
      */
@@ -39,7 +39,7 @@ class TypeAndQuantityNode extends StructuredValue {
     /**
      * The product that this structured value is referring to.
      *
-     * @var Product|Service|array|null
+     * @var Product|Service|Product[]|Service[]|null
      *
      * @see https://schema.org/typeOfGood
      */
@@ -50,7 +50,7 @@ class TypeAndQuantityNode extends StructuredValue {
      * or a URL. Other codes than the UN/CEFACT Common Code may be used with a
      * prefix followed by a colon.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unitCode
      */
@@ -59,9 +59,9 @@ class TypeAndQuantityNode extends StructuredValue {
     /**
      * A string or text indicating the unit of measurement. Useful if you cannot
      * provide a standard unit code for
-     * <a href='unitCode'>unitCode</a>.
+     * unitCode (unitCode).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unitText
      */

@@ -22,7 +22,7 @@ class BedDetails extends Intangible {
      * The quantity of the given bed type available in the HotelRoom, Suite, House,
      * or Apartment.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/numberOfBeds
      */
@@ -32,7 +32,7 @@ class BedDetails extends Intangible {
      * The type of bed to which the BedDetail refers, i.e. the type of bed
      * available in the quantity indicated by quantity.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/typeOfBed
      */

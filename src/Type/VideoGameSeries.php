@@ -20,7 +20,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -30,7 +30,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * A piece of data that represents a particular aspect of a fictional character
      * (skill, power, character points, advantage, disadvantage).
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/characterAttribute
      */
@@ -39,7 +39,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * Cheat codes to the game.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/cheatCode
      */
@@ -48,7 +48,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * A season that is part of the media series.
      *
-     * @var CreativeWorkSeason|array|null
+     * @var CreativeWorkSeason|CreativeWorkSeason[]|null
      *
      * @see https://schema.org/containsSeason
      */
@@ -59,7 +59,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -68,7 +68,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * An episode of a TV, radio or game media within a series or season.
      *
-     * @var Episode|array|null
+     * @var Episode|Episode[]|null
      *
      * @see https://schema.org/episode
      */
@@ -78,7 +78,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * An item is an object within the game world that can be collected by a player
      * or, occasionally, a non-player character.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/gameItem
      */
@@ -87,18 +87,17 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * Real or fictional location of the game (or part of game).
      *
-     * @var Place|PostalAddress|string|array|null
+     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/gameLocation
      */
     public Place|PostalAddress|string|array|null $gameLocation = null;
 
     /**
-     * The electronic systems used to play <a
-     * href="http://en.wikipedia.org/wiki/Category:Video_game_platforms">video
-     * games</a>.
+     * The electronic systems used to play video games
+     * (http://en.wikipedia.org/wiki/Category:Video_game_platforms).
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/gamePlatform
      */
@@ -107,7 +106,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -116,7 +115,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * The number of episodes in this season or series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfEpisodes
      */
@@ -125,7 +124,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * Indicate how many people can play this game (minimum, maximum, or range).
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfPlayers
      */
@@ -134,7 +133,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * The number of seasons in this series.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfSeasons
      */
@@ -145,7 +144,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * game can be marked as multi-player, co-op and single-player at the same
      * time.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/playMode
      */
@@ -155,7 +154,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * The production company or studio responsible for the item, e.g. series,
      * video game, episode etc.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/productionCompany
      */
@@ -165,7 +164,7 @@ class VideoGameSeries extends CreativeWorkSeries {
      * The task that a player-controlled character, or group of characters may
      * complete in order to gain a reward.
      *
-     * @var Thing|array|null
+     * @var Thing|Thing[]|null
      *
      * @see https://schema.org/quest
      */
@@ -174,7 +173,7 @@ class VideoGameSeries extends CreativeWorkSeries {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

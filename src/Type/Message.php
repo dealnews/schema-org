@@ -18,7 +18,7 @@ class Message extends CreativeWork {
     /**
      * A sub property of recipient. The recipient blind copied on a message.
      *
-     * @var ContactPoint|Organization|Person|array|null
+     * @var ContactPoint|Organization|Person|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/bccRecipient
      */
@@ -27,7 +27,7 @@ class Message extends CreativeWork {
     /**
      * A sub property of recipient. The recipient copied on a message.
      *
-     * @var ContactPoint|Organization|Person|array|null
+     * @var ContactPoint|Organization|Person|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/ccRecipient
      */
@@ -37,7 +37,7 @@ class Message extends CreativeWork {
      * The date/time at which the message has been read by the recipient if a
      * single recipient exists.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateRead
      */
@@ -46,7 +46,7 @@ class Message extends CreativeWork {
     /**
      * The date/time the message was received if a single recipient exists.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateReceived
      */
@@ -55,7 +55,7 @@ class Message extends CreativeWork {
     /**
      * The date/time at which the message was sent.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateSent
      */
@@ -64,7 +64,7 @@ class Message extends CreativeWork {
     /**
      * A CreativeWork attached to the message.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/messageAttachment
      */
@@ -74,7 +74,7 @@ class Message extends CreativeWork {
      * A sub property of participant. The participant who is at the receiving end
      * of the action.
      *
-     * @var Audience|ContactPoint|Organization|Person|array|null
+     * @var Audience|ContactPoint|Organization|Person|Audience[]|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/recipient
      */
@@ -84,7 +84,7 @@ class Message extends CreativeWork {
      * A sub property of participant. The participant who is at the sending end of
      * the action.
      *
-     * @var Audience|Organization|Person|array|null
+     * @var Audience|Organization|Person|Audience[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/sender
      */
@@ -94,7 +94,7 @@ class Message extends CreativeWork {
      * A sub property of recipient. The recipient who was directly sent the
      * message.
      *
-     * @var Audience|ContactPoint|Organization|Person|array|null
+     * @var Audience|ContactPoint|Organization|Person|Audience[]|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/toRecipient
      */

@@ -23,7 +23,7 @@ class SearchAction extends Action {
     /**
      * A sub property of instrument. The query used on this action.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/query
      */

@@ -109,6 +109,37 @@ assigned to it verbatim. Building objects up programmatically (set
 supported path; parsing arbitrary third-party JSON-LD back into fully
 typed nested objects does not happen automatically.
 
+### Known limitation: array element types aren't enforced
+
+Every property type ends in `|array|null` (see above), but PHP has no
+generics -- the declared type can only require *that* the value is an
+`array`, not that its elements are all (say) `AggregateRating`. Nothing
+stops `$offer->aggregateRating = ['whatever', 'you', 'want'];` from
+type-checking. The failure mode is also mostly silent:
+`Moonspot\ValueObjects\ValueObject::toArray()` (which every `toJsonLd*()`
+call goes through) only inspects array elements that are themselves
+objects, throwing `\LogicException` if one doesn't implement `Export`/
+`JsonSerializable` -- a scalar in the wrong slot just serializes as-is,
+producing syntactically valid but spec-invalid JSON-LD with no error at
+all.
+
+This was evaluated and deliberately not fixed with a runtime-enforced
+collection type (e.g. wrapping each array-eligible property in a
+`Moonspot\ValueObjects\TypedArray` subclass): doing that properly would
+need ~135 new generated "Set" classes (one per distinct class that appears
+as a `rangeIncludes` target across the vocabulary), would require
+default-constructing those Set instances in every affected class'
+constructor for `fromArray()`/`fromJson()` hydration to keep working (see
+above), and would remove the ability to just assign a plain PHP array
+literal -- all to guard against a mistake that the primary supported
+workflow (building arrays by pushing already-correctly-typed objects) is
+unlikely to make. The generator instead documents the intended element
+type via the `@var Type|Type[]|null` PHPDoc hint (`property_phpdoc_type()`
+in `bin/generate.php`) rather than the bare `@var Type|array|null` that
+mirroring the real declared type would produce -- IDEs get an accurate
+hint, but nothing enforces it. Revisit if this actually produces bad
+JSON-LD in practice.
+
 ### Style deviation from house PHP conventions
 
 Generated property names stay in Schema.org's native camelCase

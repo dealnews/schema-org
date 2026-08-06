@@ -36,7 +36,7 @@ class CreativeWorkSeries extends CreativeWork {
      * The end date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/endDate
      */
@@ -47,7 +47,7 @@ class CreativeWorkSeries extends CreativeWork {
      * publication. You can repeat this property to identify different formats of,
      * or the linking ISSN (ISSN-L) for, this serial publication.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/issn
      */
@@ -57,7 +57,7 @@ class CreativeWorkSeries extends CreativeWork {
      * The start date and time of the item (in [ISO 8601 date
      * format](http://en.wikipedia.org/wiki/ISO_8601)).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/startDate
      */

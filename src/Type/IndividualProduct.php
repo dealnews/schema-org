@@ -21,7 +21,7 @@ class IndividualProduct extends Product {
      * When attached to an offer, it is a shortcut for the serial number of the
      * product included in the offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/serialNumber
      */

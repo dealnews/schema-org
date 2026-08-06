@@ -19,7 +19,7 @@ class MusicAlbum extends MusicPlaylist {
      * Classification of the album by its type of content: soundtrack, live album,
      * studio album, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/albumProductionType
      */
@@ -28,7 +28,7 @@ class MusicAlbum extends MusicPlaylist {
     /**
      * A release of this album.
      *
-     * @var MusicRelease|array|null
+     * @var MusicRelease|MusicRelease[]|null
      *
      * @see https://schema.org/albumRelease
      */
@@ -37,7 +37,7 @@ class MusicAlbum extends MusicPlaylist {
     /**
      * The kind of release which this album is: single, EP or album.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/albumReleaseType
      */
@@ -46,7 +46,7 @@ class MusicAlbum extends MusicPlaylist {
     /**
      * The artist that performed this album or recording.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/byArtist
      */

@@ -25,15 +25,13 @@ class CivicStructure extends Place {
      * ```Tu```, ```We```, ```Th```, ```Fr```, ```Sa```, ```Su```.
      * * Times are specified using 24:00 format. For example, 3pm is specified as
      * ```15:00```, 10am as ```10:00```.
-     * * Here is an example: <code>&lt;time itemprop="openingHours"
-     * datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays
-     * 4-8pm&lt;/time&gt;</code>.
-     * * If a business is open 7 days a week, then it can be specified as
-     * <code>&lt;time itemprop=&quot;openingHours&quot;
-     * datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all
-     * day&lt;/time&gt;</code>.
+     * * Here is an example: `<time itemprop="openingHours" datetime="Tu,Th
+     * 16:00-20:00">Tuesdays and Thursdays 4-8pm</time>`.
+     * * If a business is open 7 days a week, then it can be specified as `<time
+     * itemprop="openingHours" datetime="Mo-Su">Monday through Sunday, all
+     * day</time>`.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/openingHours
      */

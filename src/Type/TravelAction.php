@@ -19,7 +19,7 @@ class TravelAction extends MoveAction {
     /**
      * The distance travelled, e.g. exercising or travelling.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/distance
      */

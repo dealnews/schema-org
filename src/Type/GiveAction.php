@@ -27,7 +27,7 @@ class GiveAction extends TransferAction {
      * A sub property of participant. The participant who is at the receiving end
      * of the action.
      *
-     * @var Audience|ContactPoint|Organization|Person|array|null
+     * @var Audience|ContactPoint|Organization|Person|Audience[]|ContactPoint[]|Organization[]|Person[]|null
      *
      * @see https://schema.org/recipient
      */

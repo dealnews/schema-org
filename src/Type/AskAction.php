@@ -22,7 +22,7 @@ class AskAction extends CommunicateAction {
     /**
      * A sub property of object. A question.
      *
-     * @var Question|array|null
+     * @var Question|Question[]|null
      *
      * @see https://schema.org/question
      */

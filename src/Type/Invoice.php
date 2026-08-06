@@ -18,7 +18,7 @@ class Invoice extends Intangible {
     /**
      * The identifier for the account the payment will be applied to.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/accountId
      */
@@ -27,7 +27,7 @@ class Invoice extends Intangible {
     /**
      * The time interval used to compute the invoice.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/billingPeriod
      */
@@ -39,7 +39,7 @@ class Invoice extends Intangible {
      * service involved in an exchange.  If it is not clear whether an entity is a
      * broker, seller, or buyer, the latter two terms are preferred.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/broker
      */
@@ -49,7 +49,7 @@ class Invoice extends Intangible {
      * A category for the item. Greater signs or slashes can be used to informally
      * indicate a category hierarchy.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/category
      */
@@ -58,7 +58,7 @@ class Invoice extends Intangible {
     /**
      * A number that confirms the given order or payment has been received.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/confirmationNumber
      */
@@ -67,7 +67,7 @@ class Invoice extends Intangible {
     /**
      * Party placing the order or paying the invoice.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/customer
      */
@@ -76,7 +76,7 @@ class Invoice extends Intangible {
     /**
      * The minimum payment required at this time.
      *
-     * @var MonetaryAmount|PriceSpecification|array|null
+     * @var MonetaryAmount|PriceSpecification|MonetaryAmount[]|PriceSpecification[]|null
      *
      * @see https://schema.org/minimumPaymentDue
      */
@@ -85,7 +85,7 @@ class Invoice extends Intangible {
     /**
      * The date that payment is due.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentDueDate
      */
@@ -94,7 +94,7 @@ class Invoice extends Intangible {
     /**
      * The name of the credit card or other method of payment for the order.
      *
-     * @var PaymentMethod|string|array|null
+     * @var PaymentMethod|string|PaymentMethod[]|string[]|null
      *
      * @see https://schema.org/paymentMethod
      */
@@ -104,7 +104,7 @@ class Invoice extends Intangible {
      * An identifier for the method of payment used (e.g. the last 4 digits of the
      * credit card).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentMethodId
      */
@@ -113,7 +113,7 @@ class Invoice extends Intangible {
     /**
      * The status of payment; whether the invoice has been paid or not.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/paymentStatus
      */
@@ -123,7 +123,7 @@ class Invoice extends Intangible {
      * The Order(s) related to this Invoice. One or more Orders may be combined
      * into a single Invoice.
      *
-     * @var Order|array|null
+     * @var Order|Order[]|null
      *
      * @see https://schema.org/referencesOrder
      */
@@ -132,7 +132,7 @@ class Invoice extends Intangible {
     /**
      * The date the invoice is scheduled to be paid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/scheduledPaymentDate
      */
@@ -141,7 +141,7 @@ class Invoice extends Intangible {
     /**
      * The total amount due.
      *
-     * @var MonetaryAmount|PriceSpecification|array|null
+     * @var MonetaryAmount|PriceSpecification|MonetaryAmount[]|PriceSpecification[]|null
      *
      * @see https://schema.org/totalPaymentDue
      */

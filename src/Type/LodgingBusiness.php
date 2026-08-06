@@ -18,7 +18,7 @@ class LodgingBusiness extends LocalBusiness {
     /**
      * An intended audience, i.e. a group for whom something was created.
      *
-     * @var Audience|array|null
+     * @var Audience|Audience[]|null
      *
      * @see https://schema.org/audience
      */
@@ -29,7 +29,7 @@ class LodgingBusiness extends LocalBusiness {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/availableLanguage
      */
@@ -38,7 +38,7 @@ class LodgingBusiness extends LocalBusiness {
     /**
      * The earliest someone may check into a lodging establishment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/checkinTime
      */
@@ -47,7 +47,7 @@ class LodgingBusiness extends LocalBusiness {
     /**
      * The latest someone may check out of a lodging establishment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/checkoutTime
      */
@@ -59,7 +59,7 @@ class LodgingBusiness extends LocalBusiness {
      * Typical unit code(s): ROM for room or C62 for no unit. The type of room can
      * be put in the unitText property of the QuantitativeValue.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfRooms
      */
@@ -69,7 +69,7 @@ class LodgingBusiness extends LocalBusiness {
      * Indicates whether pets are allowed to enter the accommodation or lodging
      * business. More detailed information can be put in a text value.
      *
-     * @var bool|string|array|null
+     * @var bool|string|bool[]|string[]|null
      *
      * @see https://schema.org/petsAllowed
      */
@@ -81,7 +81,7 @@ class LodgingBusiness extends LocalBusiness {
      * indicate the rating organization, e.g. as an Organization with name such as
      * (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
      *
-     * @var Rating|array|null
+     * @var Rating|Rating[]|null
      *
      * @see https://schema.org/starRating
      */

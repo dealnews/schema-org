@@ -9,9 +9,9 @@ namespace DealNews\SchemaOrg\Type;
  *
  * A web page. Every web page is implicitly assumed to be declared to be of
  * type WebPage, so the various properties about that webpage, such as
- * <code>breadcrumb</code> may be used. We recommend explicit declaration if
- * these properties are specified, but if they are found outside of an
- * itemscope, they will be assumed to be about the page.
+ * `breadcrumb` may be used. We recommend explicit declaration if these
+ * properties are specified, but if they are found outside of an itemscope,
+ * they will be assumed to be about the page.
  *
  * @see https://schema.org/WebPage
  */
@@ -23,7 +23,7 @@ class WebPage extends CreativeWork {
      * A set of links that can help a user understand and navigate a website
      * hierarchy.
      *
-     * @var BreadcrumbList|string|array|null
+     * @var BreadcrumbList|string|BreadcrumbList[]|string[]|null
      *
      * @see https://schema.org/breadcrumb
      */
@@ -33,7 +33,7 @@ class WebPage extends CreativeWork {
      * Date on which the content on this web page was last reviewed for accuracy
      * and/or completeness.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/lastReviewed
      */
@@ -42,7 +42,7 @@ class WebPage extends CreativeWork {
     /**
      * Indicates if this web page element is the main subject of the page.
      *
-     * @var WebPageElement|array|null
+     * @var WebPageElement|WebPageElement[]|null
      *
      * @see https://schema.org/mainContentOfPage
      */
@@ -51,7 +51,7 @@ class WebPage extends CreativeWork {
     /**
      * Indicates the main image on the page.
      *
-     * @var ImageObject|array|null
+     * @var ImageObject|ImageObject[]|null
      *
      * @see https://schema.org/primaryImageOfPage
      */
@@ -60,7 +60,7 @@ class WebPage extends CreativeWork {
     /**
      * A link related to this web page, for example to other related web pages.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/relatedLink
      */
@@ -70,7 +70,7 @@ class WebPage extends CreativeWork {
      * People or organizations that have reviewed the content on this web page for
      * accuracy and/or completeness.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/reviewedBy
      */
@@ -80,7 +80,7 @@ class WebPage extends CreativeWork {
      * One of the more significant URLs on the page. Typically, these are the
      * non-navigation links that are clicked on the most.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/significantLink
      */
@@ -106,14 +106,13 @@ class WebPage extends CreativeWork {
      * 3.)  XPaths - addresses content via XPaths (assuming an XML view of the
      * content). Use the [[xpath]] property.
      *
-     *
      * For more sophisticated markup of speakable sections beyond simple ID
      * references, either CSS selectors or XPath expressions to pick out document
      * section(s) as speakable. For this
      * we define a supporting type, [[SpeakableSpecification]]  which is defined to
      * be a possible value of the *speakable* property.
      *
-     * @var SpeakableSpecification|string|array|null
+     * @var SpeakableSpecification|string|SpeakableSpecification[]|string[]|null
      *
      * @see https://schema.org/speakable
      */
@@ -122,7 +121,7 @@ class WebPage extends CreativeWork {
     /**
      * One of the domain specialities to which this web page's content applies.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/specialty
      */

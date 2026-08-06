@@ -25,7 +25,7 @@ class MonetaryAmountDistribution extends QuantitativeValueDistribution {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/currency
      */

@@ -21,7 +21,7 @@ class EngineSpecification extends StructuredValue {
      * vehicle has only one engine, this property can be attached directly to the
      * vehicle.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/fuelType
      */

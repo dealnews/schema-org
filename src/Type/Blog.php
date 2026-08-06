@@ -20,7 +20,7 @@ class Blog extends CreativeWork {
     /**
      * A posting that is part of this blog.
      *
-     * @var BlogPosting|array|null
+     * @var BlogPosting|BlogPosting[]|null
      *
      * @see https://schema.org/blogPost
      */
@@ -31,7 +31,7 @@ class Blog extends CreativeWork {
      * publication. You can repeat this property to identify different formats of,
      * or the linking ISSN (ISSN-L) for, this serial publication.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/issn
      */

@@ -25,10 +25,9 @@ class Thing extends JsonLdNode {
      *     use of rdf:type in RDF. Text values can be used sparingly, for cases
      * where useful information can be added without their being an appropriate
      * schema to reference. In the case of text values, the class label should
-     * follow the schema.org <a
-     * href="https://schema.org/docs/styleguide.html">style guide</a>.
+     * follow the schema.org style guide (https://schema.org/docs/styleguide.html).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/additionalType
      */
@@ -37,7 +36,7 @@ class Thing extends JsonLdNode {
     /**
      * An alias for the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/alternateName
      */
@@ -46,7 +45,7 @@ class Thing extends JsonLdNode {
     /**
      * A description of the item.
      *
-     * @var string|TextObject|array|null
+     * @var string|TextObject|string[]|TextObject[]|null
      *
      * @see https://schema.org/description
      */
@@ -58,7 +57,7 @@ class Thing extends JsonLdNode {
      * (in particular, name) may be necessary for the description to be useful for
      * disambiguation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/disambiguatingDescription
      */
@@ -71,7 +70,7 @@ class Thing extends JsonLdNode {
      * strings or as URL (URI) links. See [background
      * notes](/docs/datamodel.html#identifierBg) for more details.
      *
-     * @var PropertyValue|string|array|null
+     * @var PropertyValue|string|PropertyValue[]|string[]|null
      *
      * @see https://schema.org/identifier
      */
@@ -81,7 +80,7 @@ class Thing extends JsonLdNode {
      * An image of the item. This can be a [[URL]] or a fully described
      * [[ImageObject]].
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/image
      */
@@ -92,7 +91,7 @@ class Thing extends JsonLdNode {
      * entity being described. See [background
      * notes](/docs/datamodel.html#mainEntityBackground) for details.
      *
-     * @var CreativeWork|string|array|null
+     * @var CreativeWork|string|CreativeWork[]|string[]|null
      *
      * @see https://schema.org/mainEntityOfPage
      */
@@ -101,7 +100,7 @@ class Thing extends JsonLdNode {
     /**
      * The name of the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/name
      */
@@ -110,7 +109,7 @@ class Thing extends JsonLdNode {
     /**
      * A person or organization who owns this Thing.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/owner
      */
@@ -120,7 +119,7 @@ class Thing extends JsonLdNode {
      * Indicates a potential Action, which describes an idealized action in which
      * this thing would play an 'object' role.
      *
-     * @var Action|array|null
+     * @var Action|Action[]|null
      *
      * @see https://schema.org/potentialAction
      */
@@ -131,7 +130,7 @@ class Thing extends JsonLdNode {
      * identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or
      * official website.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/sameAs
      */
@@ -140,7 +139,7 @@ class Thing extends JsonLdNode {
     /**
      * A CreativeWork or Event about this Thing.
      *
-     * @var CreativeWork|Event|array|null
+     * @var CreativeWork|Event|CreativeWork[]|Event[]|null
      *
      * @see https://schema.org/subjectOf
      */
@@ -149,7 +148,7 @@ class Thing extends JsonLdNode {
     /**
      * URL of the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/url
      */

@@ -27,7 +27,7 @@ class QualitativeValue extends Enumeration {
      * expect such data to be provided using those properties, rather than using
      * the generic property/value mechanism.
      *
-     * @var PropertyValue|array|null
+     * @var PropertyValue|PropertyValue[]|null
      *
      * @see https://schema.org/additionalProperty
      */
@@ -37,7 +37,7 @@ class QualitativeValue extends Enumeration {
      * This ordering relation for qualitative values indicates that the subject is
      * equal to the object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/equal
      */
@@ -47,7 +47,7 @@ class QualitativeValue extends Enumeration {
      * This ordering relation for qualitative values indicates that the subject is
      * greater than the object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/greater
      */
@@ -57,7 +57,7 @@ class QualitativeValue extends Enumeration {
      * This ordering relation for qualitative values indicates that the subject is
      * greater than or equal to the object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/greaterOrEqual
      */
@@ -67,7 +67,7 @@ class QualitativeValue extends Enumeration {
      * This ordering relation for qualitative values indicates that the subject is
      * lesser than the object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/lesser
      */
@@ -77,7 +77,7 @@ class QualitativeValue extends Enumeration {
      * This ordering relation for qualitative values indicates that the subject is
      * lesser than or equal to the object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/lesserOrEqual
      */
@@ -87,7 +87,7 @@ class QualitativeValue extends Enumeration {
      * This ordering relation for qualitative values indicates that the subject is
      * not equal to the object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/nonEqual
      */
@@ -97,7 +97,7 @@ class QualitativeValue extends Enumeration {
      * A secondary value that provides additional information on the original
      * value, e.g. a reference temperature or a type of measurement.
      *
-     * @var string|PropertyValue|QuantitativeValue|StructuredValue|array|null
+     * @var string|PropertyValue|QuantitativeValue|StructuredValue|string[]|PropertyValue[]|QuantitativeValue[]|StructuredValue[]|null
      *
      * @see https://schema.org/valueReference
      */

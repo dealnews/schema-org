@@ -12,9 +12,9 @@ namespace DealNews\SchemaOrg\Type;
  * overnight stays, but this is not a mandatory requirement.
  * For more specific types of accommodations not defined in schema.org, one can
  * use [[additionalType]] with external vocabularies.
- * <br /><br />
- * See also the <a href="/docs/hotels.html">dedicated document on the use of
- * schema.org for marking up hotels and other forms of accommodations</a>.
+ *
+ * See also the dedicated document on the use of schema.org for marking up
+ * hotels and other forms of accommodations (/docs/hotels.html).
  *
  * @see https://schema.org/Accommodation
  */
@@ -29,7 +29,7 @@ class Accommodation extends Place {
      * instance of BedDetails. For more detailed information, use the
      * amenityFeature property.
      *
-     * @var BedDetails|string|array|null
+     * @var BedDetails|string|BedDetails[]|string[]|null
      *
      * @see https://schema.org/bed
      */
@@ -40,7 +40,7 @@ class Accommodation extends Place {
      * Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for
      * square yard.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/floorSize
      */
@@ -52,7 +52,7 @@ class Accommodation extends Place {
      * Typical unit code(s): ROM for room or C62 for no unit. The type of room can
      * be put in the unitText property of the QuantitativeValue.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfRooms
      */
@@ -65,7 +65,7 @@ class Accommodation extends Place {
      * agreement (e.g. a double room used by a single person).
      * Typical unit code(s): C62 for person.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/occupancy
      */
@@ -74,7 +74,7 @@ class Accommodation extends Place {
     /**
      * Indications regarding the permitted usage of the accommodation.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/permittedUsage
      */
@@ -84,7 +84,7 @@ class Accommodation extends Place {
      * Indicates whether pets are allowed to enter the accommodation or lodging
      * business. More detailed information can be put in a text value.
      *
-     * @var bool|string|array|null
+     * @var bool|string|bool[]|string[]|null
      *
      * @see https://schema.org/petsAllowed
      */

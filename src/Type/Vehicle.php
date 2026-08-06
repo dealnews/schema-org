@@ -24,7 +24,7 @@ class Vehicle extends Product {
      *
      * Note: You can use [[minValue]] and [[maxValue]] to indicate ranges.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/cargoVolume
      */
@@ -34,7 +34,7 @@ class Vehicle extends Product {
      * The date of the first registration of the vehicle with the respective public
      * authorities.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dateVehicleFirstRegistered
      */
@@ -44,7 +44,7 @@ class Vehicle extends Product {
      * The drive wheel configuration, i.e. which roadwheels will receive torque
      * from the vehicle's engine via the drivetrain.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/driveWheelConfiguration
      */
@@ -64,7 +64,7 @@ class Vehicle extends Product {
      * [[valueReference]] to link the value for the fuel consumption to another
      * value.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/fuelConsumption
      */
@@ -84,7 +84,7 @@ class Vehicle extends Product {
      * speed ("at 80 km/h") or usage pattern ("city traffic"). You can use
      * [[valueReference]] to link the value for the fuel economy to another value.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/fuelEfficiency
      */
@@ -95,7 +95,7 @@ class Vehicle extends Product {
      * vehicle has only one engine, this property can be attached directly to the
      * vehicle.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/fuelType
      */
@@ -104,7 +104,7 @@ class Vehicle extends Product {
     /**
      * A textual description of known damages, both repaired and unrepaired.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/knownVehicleDamages
      */
@@ -116,7 +116,7 @@ class Vehicle extends Product {
      *
      * Typical unit code(s): KMT for kilometers, SMI for statute miles.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/mileageFromOdometer
      */
@@ -125,7 +125,7 @@ class Vehicle extends Product {
     /**
      * The number or type of airbags in the vehicle.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/numberOfAirbags
      */
@@ -136,7 +136,7 @@ class Vehicle extends Product {
      *
      * Typical unit code(s): C62.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfAxles
      */
@@ -147,7 +147,7 @@ class Vehicle extends Product {
      *
      * Typical unit code(s): C62.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfDoors
      */
@@ -159,7 +159,7 @@ class Vehicle extends Product {
      *
      * Typical unit code(s): C62.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfForwardGears
      */
@@ -170,7 +170,7 @@ class Vehicle extends Product {
      *
      * Typical unit code(s): C62.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numberOfPreviousOwners
      */
@@ -179,7 +179,7 @@ class Vehicle extends Product {
     /**
      * The position of the steering wheel or similar device (mostly for cars).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/steeringPosition
      */
@@ -189,7 +189,7 @@ class Vehicle extends Product {
      * A short text indicating the configuration of the vehicle, e.g. '5dr
      * hatchback ST 2.5 MT 225 hp' or 'limited edition'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vehicleConfiguration
      */
@@ -198,7 +198,7 @@ class Vehicle extends Product {
     /**
      * Information about the engine or engines of the vehicle.
      *
-     * @var EngineSpecification|array|null
+     * @var EngineSpecification|EngineSpecification[]|null
      *
      * @see https://schema.org/vehicleEngine
      */
@@ -208,7 +208,7 @@ class Vehicle extends Product {
      * The Vehicle Identification Number (VIN) is a unique serial number used by
      * the automotive industry to identify individual motor vehicles.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vehicleIdentificationNumber
      */
@@ -217,7 +217,7 @@ class Vehicle extends Product {
     /**
      * The color or color combination of the interior of the vehicle.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vehicleInteriorColor
      */
@@ -229,7 +229,7 @@ class Vehicle extends Product {
      * material used, an interior type can also be based on vehicle usage or target
      * audience.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vehicleInteriorType
      */
@@ -239,7 +239,7 @@ class Vehicle extends Product {
      * The release date of a vehicle model (often used to differentiate versions of
      * the same make and model).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vehicleModelDate
      */
@@ -251,7 +251,7 @@ class Vehicle extends Product {
      *
      * Typical unit code(s): C62 for persons.
      *
-     * @var int|float|QuantitativeValue|array|null
+     * @var int|float|QuantitativeValue|int[]|float[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/vehicleSeatingCapacity
      */
@@ -261,7 +261,7 @@ class Vehicle extends Product {
      * The type of component used for transmitting the power from a rotating power
      * source to the wheels or other relevant component(s) ("gearbox" for cars).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/vehicleTransmission
      */

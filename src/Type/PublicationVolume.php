@@ -23,7 +23,7 @@ class PublicationVolume extends CreativeWork {
     /**
      * The page on which the work ends; for example "138" or "xvi".
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/pageEnd
      */
@@ -32,7 +32,7 @@ class PublicationVolume extends CreativeWork {
     /**
      * The page on which the work starts; for example "135" or "xiii".
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/pageStart
      */
@@ -42,7 +42,7 @@ class PublicationVolume extends CreativeWork {
      * Any description of pages that is not separated into pageStart and pageEnd;
      * for example, "1-6, 9, 55" or "10-12, 46-49".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/pagination
      */
@@ -52,7 +52,7 @@ class PublicationVolume extends CreativeWork {
      * Identifies the volume of publication or multi-part work; for example, "iii"
      * or "2".
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/volumeNumber
      */

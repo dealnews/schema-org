@@ -25,7 +25,7 @@ class TrackAction extends FindAction {
     /**
      * A sub property of instrument. The method of delivery.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/deliveryMethod
      */

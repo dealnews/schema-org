@@ -18,7 +18,7 @@ class TrainTrip extends Trip {
     /**
      * The platform where the train arrives.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/arrivalPlatform
      */
@@ -27,7 +27,7 @@ class TrainTrip extends Trip {
     /**
      * The station where the train trip ends.
      *
-     * @var TrainStation|array|null
+     * @var TrainStation|TrainStation[]|null
      *
      * @see https://schema.org/arrivalStation
      */
@@ -36,7 +36,7 @@ class TrainTrip extends Trip {
     /**
      * The platform from which the train departs.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/departurePlatform
      */
@@ -45,7 +45,7 @@ class TrainTrip extends Trip {
     /**
      * The station from which the train departs.
      *
-     * @var TrainStation|array|null
+     * @var TrainStation|TrainStation[]|null
      *
      * @see https://schema.org/departureStation
      */
@@ -54,7 +54,7 @@ class TrainTrip extends Trip {
     /**
      * The name of the train (e.g. The Orient Express).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/trainName
      */
@@ -63,7 +63,7 @@ class TrainTrip extends Trip {
     /**
      * The unique identifier for the train.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/trainNumber
      */

@@ -18,7 +18,7 @@ class GeoCoordinates extends StructuredValue {
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress|string|array|null
+     * @var PostalAddress|string|PostalAddress[]|string[]|null
      *
      * @see https://schema.org/address
      */
@@ -31,7 +31,7 @@ class GeoCoordinates extends StructuredValue {
      * alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such
      * as "SGP" or a full country name such as "Singapore" can also be used.
      *
-     * @var Country|string|array|null
+     * @var Country|string|Country[]|string[]|null
      *
      * @see https://schema.org/addressCountry
      */
@@ -43,7 +43,7 @@ class GeoCoordinates extends StructuredValue {
      * the form 'NUMBER UNIT\_OF\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while
      * numbers alone should be assumed to be a value in meters.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/elevation
      */
@@ -53,7 +53,7 @@ class GeoCoordinates extends StructuredValue {
      * The latitude of a location. For example ```37.42242``` ([WGS
      * 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/latitude
      */
@@ -63,7 +63,7 @@ class GeoCoordinates extends StructuredValue {
      * The longitude of a location. For example ```-122.08585``` ([WGS
      * 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/longitude
      */
@@ -72,7 +72,7 @@ class GeoCoordinates extends StructuredValue {
     /**
      * The postal code. For example, 94043.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCode
      */

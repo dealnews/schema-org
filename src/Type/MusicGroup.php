@@ -19,7 +19,7 @@ class MusicGroup extends PerformingGroup {
     /**
      * A music album.
      *
-     * @var MusicAlbum|array|null
+     * @var MusicAlbum|MusicAlbum[]|null
      *
      * @see https://schema.org/album
      */
@@ -28,17 +28,17 @@ class MusicGroup extends PerformingGroup {
     /**
      * Genre of the creative work, broadcast channel or group.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/genre
      */
     public string|array|null $genre = null;
 
     /**
-     * A music recording (track)&#x2014;usually a single song. If an ItemList is
-     * given, the list should contain items of type MusicRecording.
+     * A music recording (track)—usually a single song. If an ItemList is given,
+     * the list should contain items of type MusicRecording.
      *
-     * @var ItemList|MusicRecording|array|null
+     * @var ItemList|MusicRecording|ItemList[]|MusicRecording[]|null
      *
      * @see https://schema.org/track
      */

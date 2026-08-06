@@ -19,7 +19,7 @@ class CookAction extends CreateAction {
      * A sub property of location. The specific food establishment where the action
      * occurred.
      *
-     * @var FoodEstablishment|Place|array|null
+     * @var FoodEstablishment|Place|FoodEstablishment[]|Place[]|null
      *
      * @see https://schema.org/foodEstablishment
      */
@@ -29,7 +29,7 @@ class CookAction extends CreateAction {
      * A sub property of location. The specific food event where the action
      * occurred.
      *
-     * @var FoodEvent|array|null
+     * @var FoodEvent|FoodEvent[]|null
      *
      * @see https://schema.org/foodEvent
      */
@@ -39,7 +39,7 @@ class CookAction extends CreateAction {
      * A sub property of instrument. The recipe/instructions used to perform the
      * action.
      *
-     * @var Recipe|array|null
+     * @var Recipe|Recipe[]|null
      *
      * @see https://schema.org/recipe
      */

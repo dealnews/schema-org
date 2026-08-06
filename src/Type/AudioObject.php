@@ -20,7 +20,7 @@ class AudioObject extends MediaObject {
      * caption, subtitles etc.) use MediaObject and indicate the
      * [[encodingFormat]].
      *
-     * @var MediaObject|string|array|null
+     * @var MediaObject|string|MediaObject[]|string[]|null
      *
      * @see https://schema.org/caption
      */
@@ -30,7 +30,7 @@ class AudioObject extends MediaObject {
      * If this MediaObject is an AudioObject or VideoObject, the transcript of that
      * object.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/transcript
      */

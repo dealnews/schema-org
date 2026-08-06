@@ -33,7 +33,7 @@ class OfferShippingDetails extends StructuredValue {
      * The total delay between the receipt of the order and the goods reaching the
      * final customer.
      *
-     * @var ShippingDeliveryTime|array|null
+     * @var ShippingDeliveryTime|ShippingDeliveryTime[]|null
      *
      * @see https://schema.org/deliveryTime
      */
@@ -42,7 +42,7 @@ class OfferShippingDetails extends StructuredValue {
     /**
      * The depth of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/depth
      */
@@ -52,7 +52,7 @@ class OfferShippingDetails extends StructuredValue {
      * Indicates when shipping to a particular [[shippingDestination]] is not
      * available.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/doesNotShip
      */
@@ -61,7 +61,7 @@ class OfferShippingDetails extends StructuredValue {
     /**
      * The height of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/height
      */
@@ -71,7 +71,7 @@ class OfferShippingDetails extends StructuredValue {
      * indicates (possibly multiple) shipping destinations. These can be defined in
      * several ways, e.g. postalCode ranges.
      *
-     * @var DefinedRegion|array|null
+     * @var DefinedRegion|DefinedRegion[]|null
      *
      * @see https://schema.org/shippingDestination
      */
@@ -80,7 +80,7 @@ class OfferShippingDetails extends StructuredValue {
     /**
      * Indicates the origin of a shipment, i.e. where it should be coming from.
      *
-     * @var DefinedRegion|array|null
+     * @var DefinedRegion|DefinedRegion[]|null
      *
      * @see https://schema.org/shippingOrigin
      */
@@ -91,7 +91,7 @@ class OfferShippingDetails extends StructuredValue {
      * Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are
      * most appropriate.
      *
-     * @var MonetaryAmount|ShippingRateSettings|array|null
+     * @var MonetaryAmount|ShippingRateSettings|MonetaryAmount[]|ShippingRateSettings[]|null
      *
      * @see https://schema.org/shippingRate
      */
@@ -100,7 +100,7 @@ class OfferShippingDetails extends StructuredValue {
     /**
      * The weight of the product or person.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/weight
      */
@@ -109,7 +109,7 @@ class OfferShippingDetails extends StructuredValue {
     /**
      * The width of the item.
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/width
      */

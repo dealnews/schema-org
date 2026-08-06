@@ -18,7 +18,7 @@ class SportsEvent extends Event {
     /**
      * The away team in a sports event.
      *
-     * @var Person|SportsTeam|array|null
+     * @var Person|SportsTeam|Person[]|SportsTeam[]|null
      *
      * @see https://schema.org/awayTeam
      */
@@ -27,7 +27,7 @@ class SportsEvent extends Event {
     /**
      * A competitor in a sports event.
      *
-     * @var Person|SportsTeam|array|null
+     * @var Person|SportsTeam|Person[]|SportsTeam[]|null
      *
      * @see https://schema.org/competitor
      */
@@ -36,7 +36,7 @@ class SportsEvent extends Event {
     /**
      * The home team in a sports event.
      *
-     * @var Person|SportsTeam|array|null
+     * @var Person|SportsTeam|Person[]|SportsTeam[]|null
      *
      * @see https://schema.org/homeTeam
      */
@@ -47,7 +47,7 @@ class SportsEvent extends Event {
      * arbitrate on matters arising from the play such as referees, umpires or
      * judges. The name of the effective function can vary according to the sport.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/referee
      */

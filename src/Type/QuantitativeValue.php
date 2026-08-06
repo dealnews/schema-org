@@ -26,7 +26,7 @@ class QuantitativeValue extends StructuredValue {
      * expect such data to be provided using those properties, rather than using
      * the generic property/value mechanism.
      *
-     * @var PropertyValue|array|null
+     * @var PropertyValue|PropertyValue[]|null
      *
      * @see https://schema.org/additionalProperty
      */
@@ -35,7 +35,7 @@ class QuantitativeValue extends StructuredValue {
     /**
      * The upper value of some characteristic or property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/maxValue
      */
@@ -44,7 +44,7 @@ class QuantitativeValue extends StructuredValue {
     /**
      * The lower value of some characteristic or property.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/minValue
      */
@@ -55,7 +55,7 @@ class QuantitativeValue extends StructuredValue {
      * or a URL. Other codes than the UN/CEFACT Common Code may be used with a
      * prefix followed by a colon.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unitCode
      */
@@ -64,9 +64,9 @@ class QuantitativeValue extends StructuredValue {
     /**
      * A string or text indicating the unit of measurement. Useful if you cannot
      * provide a standard unit code for
-     * <a href='unitCode'>unitCode</a>.
+     * unitCode (unitCode).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/unitText
      */
@@ -85,7 +85,7 @@ class QuantitativeValue extends StructuredValue {
      * * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
      * decimal point. Avoid using these symbols as a readability separator.
      *
-     * @var bool|int|float|StructuredValue|string|array|null
+     * @var bool|int|float|StructuredValue|string|bool[]|int[]|float[]|StructuredValue[]|string[]|null
      *
      * @see https://schema.org/value
      */
@@ -95,7 +95,7 @@ class QuantitativeValue extends StructuredValue {
      * A secondary value that provides additional information on the original
      * value, e.g. a reference temperature or a type of measurement.
      *
-     * @var string|PropertyValue|QuantitativeValue|StructuredValue|array|null
+     * @var string|PropertyValue|QuantitativeValue|StructuredValue|string[]|PropertyValue[]|QuantitativeValue[]|StructuredValue[]|null
      *
      * @see https://schema.org/valueReference
      */

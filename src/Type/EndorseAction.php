@@ -18,7 +18,7 @@ class EndorseAction extends ReactAction {
     /**
      * A sub property of participant. The person/organization being supported.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/endorsee
      */

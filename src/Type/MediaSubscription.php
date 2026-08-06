@@ -21,7 +21,7 @@ class MediaSubscription extends Intangible {
      * example, many media apps require a cable/satellite provider to authenticate
      * your subscription before playing media.
      *
-     * @var Organization|array|null
+     * @var Organization|Organization[]|null
      *
      * @see https://schema.org/authenticator
      */
@@ -31,7 +31,7 @@ class MediaSubscription extends Intangible {
      * An Offer which must be accepted before the user can perform the Action. For
      * example, the user may need to buy a movie before being able to watch it.
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/expectsAcceptanceOf
      */

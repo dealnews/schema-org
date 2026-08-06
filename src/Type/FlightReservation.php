@@ -22,7 +22,7 @@ class FlightReservation extends Reservation {
     /**
      * The airline-specific indicator of boarding order / preference.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/boardingGroup
      */
@@ -32,7 +32,7 @@ class FlightReservation extends Reservation {
      * The priority status assigned to a passenger for security or boarding (e.g.
      * FastTrack or Priority).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/passengerPriorityStatus
      */
@@ -41,7 +41,7 @@ class FlightReservation extends Reservation {
     /**
      * The passenger's sequence number as assigned by the airline.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/passengerSequenceNumber
      */
@@ -50,7 +50,7 @@ class FlightReservation extends Reservation {
     /**
      * The type of security screening the passenger is subject to.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/securityScreening
      */

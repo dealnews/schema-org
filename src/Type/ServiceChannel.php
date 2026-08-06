@@ -21,7 +21,7 @@ class ServiceChannel extends Intangible {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/availableLanguage
      */
@@ -30,7 +30,7 @@ class ServiceChannel extends Intangible {
     /**
      * Estimated processing time for the service using this channel.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/processingTime
      */
@@ -39,7 +39,7 @@ class ServiceChannel extends Intangible {
     /**
      * The service provided by this channel.
      *
-     * @var Service|array|null
+     * @var Service|Service[]|null
      *
      * @see https://schema.org/providesService
      */
@@ -49,7 +49,7 @@ class ServiceChannel extends Intangible {
      * The location (e.g. civic structure, local business, etc.) where a person can
      * go to access the service.
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/serviceLocation
      */
@@ -58,7 +58,7 @@ class ServiceChannel extends Intangible {
     /**
      * The phone number to use to access the service.
      *
-     * @var ContactPoint|array|null
+     * @var ContactPoint|ContactPoint[]|null
      *
      * @see https://schema.org/servicePhone
      */
@@ -67,7 +67,7 @@ class ServiceChannel extends Intangible {
     /**
      * The address for accessing the service by mail.
      *
-     * @var PostalAddress|array|null
+     * @var PostalAddress|PostalAddress[]|null
      *
      * @see https://schema.org/servicePostalAddress
      */
@@ -76,7 +76,7 @@ class ServiceChannel extends Intangible {
     /**
      * The number to access the service by text message.
      *
-     * @var ContactPoint|array|null
+     * @var ContactPoint|ContactPoint[]|null
      *
      * @see https://schema.org/serviceSmsNumber
      */
@@ -85,7 +85,7 @@ class ServiceChannel extends Intangible {
     /**
      * The website to access the service.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/serviceUrl
      */

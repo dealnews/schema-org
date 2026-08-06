@@ -7,8 +7,7 @@ namespace DealNews\SchemaOrg\Type;
 /**
  * DanceGroup.
  *
- * A dance group&#x2014;for example, the Alvin Ailey Dance Theater or
- * Riverdance.
+ * A dance group—for example, the Alvin Ailey Dance Theater or Riverdance.
  *
  * @see https://schema.org/DanceGroup
  */

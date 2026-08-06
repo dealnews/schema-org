@@ -18,7 +18,7 @@ class Flight extends Trip {
     /**
      * The kind of aircraft (e.g., "Boeing 747").
      *
-     * @var string|Vehicle|array|null
+     * @var string|Vehicle|string[]|Vehicle[]|null
      *
      * @see https://schema.org/aircraft
      */
@@ -27,7 +27,7 @@ class Flight extends Trip {
     /**
      * The airport where the flight terminates.
      *
-     * @var Airport|array|null
+     * @var Airport|Airport[]|null
      *
      * @see https://schema.org/arrivalAirport
      */
@@ -36,7 +36,7 @@ class Flight extends Trip {
     /**
      * Identifier of the flight's arrival gate.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/arrivalGate
      */
@@ -45,7 +45,7 @@ class Flight extends Trip {
     /**
      * Identifier of the flight's arrival terminal.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/arrivalTerminal
      */
@@ -55,7 +55,7 @@ class Flight extends Trip {
      * The type of boarding policy used by the airline (e.g. zone-based or
      * group-based).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/boardingPolicy
      */
@@ -64,7 +64,7 @@ class Flight extends Trip {
     /**
      * The airport where the flight originates.
      *
-     * @var Airport|array|null
+     * @var Airport|Airport[]|null
      *
      * @see https://schema.org/departureAirport
      */
@@ -73,7 +73,7 @@ class Flight extends Trip {
     /**
      * Identifier of the flight's departure gate.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/departureGate
      */
@@ -82,7 +82,7 @@ class Flight extends Trip {
     /**
      * Identifier of the flight's departure terminal.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/departureTerminal
      */
@@ -91,7 +91,7 @@ class Flight extends Trip {
     /**
      * The estimated time the flight will take.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/estimatedFlightDuration
      */
@@ -100,7 +100,7 @@ class Flight extends Trip {
     /**
      * The distance of the flight.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/flightDistance
      */
@@ -111,7 +111,7 @@ class Flight extends Trip {
      * example, if describing United flight 110, where the IATA code for United is
      * 'UA', the flightNumber is 'UA110'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/flightNumber
      */
@@ -120,7 +120,7 @@ class Flight extends Trip {
     /**
      * Description of the meals that will be provided or available for purchase.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/mealService
      */
@@ -130,7 +130,7 @@ class Flight extends Trip {
      * An entity which offers (sells / leases / lends / loans) the services /
      * goods.  A seller may also be a provider.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/seller
      */
@@ -139,7 +139,7 @@ class Flight extends Trip {
     /**
      * The time when a passenger can check into the flight online.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/webCheckinTime
      */

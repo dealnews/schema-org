@@ -23,7 +23,7 @@ class ShippingRateSettings extends StructuredValue {
      * Indicates when shipping to a particular [[shippingDestination]] is not
      * available.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/doesNotShip
      */
@@ -34,7 +34,7 @@ class ShippingRateSettings extends StructuredValue {
      * Intended to be used via an [[OfferShippingDetails]] with
      * [[shippingSettingsLink]] matching this [[ShippingRateSettings]].
      *
-     * @var DeliveryChargeSpecification|MonetaryAmount|array|null
+     * @var DeliveryChargeSpecification|MonetaryAmount|DeliveryChargeSpecification[]|MonetaryAmount[]|null
      *
      * @see https://schema.org/freeShippingThreshold
      */
@@ -50,7 +50,7 @@ class ShippingRateSettings extends StructuredValue {
      * [[ShippingRateSettings]]), since this property is for use with unlabelled
      * settings.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isUnlabelledFallback
      */
@@ -60,7 +60,7 @@ class ShippingRateSettings extends StructuredValue {
      * indicates (possibly multiple) shipping destinations. These can be defined in
      * several ways, e.g. postalCode ranges.
      *
-     * @var DefinedRegion|array|null
+     * @var DefinedRegion|DefinedRegion[]|null
      *
      * @see https://schema.org/shippingDestination
      */
@@ -71,7 +71,7 @@ class ShippingRateSettings extends StructuredValue {
      * Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are
      * most appropriate.
      *
-     * @var MonetaryAmount|ShippingRateSettings|array|null
+     * @var MonetaryAmount|ShippingRateSettings|MonetaryAmount[]|ShippingRateSettings[]|null
      *
      * @see https://schema.org/shippingRate
      */

@@ -20,7 +20,7 @@ class RsvpAction extends InformAction {
      * If responding yes, the number of guests who will attend in addition to the
      * invitee.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/additionalNumberOfGuests
      */
@@ -29,7 +29,7 @@ class RsvpAction extends InformAction {
     /**
      * Comments, typically from users.
      *
-     * @var Comment|array|null
+     * @var Comment|Comment[]|null
      *
      * @see https://schema.org/comment
      */
@@ -38,7 +38,7 @@ class RsvpAction extends InformAction {
     /**
      * The response (yes, no, maybe) to the RSVP.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/rsvpResponse
      */

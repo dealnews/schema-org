@@ -21,7 +21,7 @@ class VideoGame extends Game {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -30,7 +30,7 @@ class VideoGame extends Game {
     /**
      * Type of software application, e.g. 'Game, Multimedia'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/applicationCategory
      */
@@ -39,7 +39,7 @@ class VideoGame extends Game {
     /**
      * Subcategory of the application, e.g. 'Arcade Game'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/applicationSubCategory
      */
@@ -49,7 +49,7 @@ class VideoGame extends Game {
      * The name of the application suite to which the application belongs (e.g.
      * Excel belongs to Office).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/applicationSuite
      */
@@ -59,7 +59,7 @@ class VideoGame extends Game {
      * Device required to run the application. Used in cases where a specific
      * make/model is required to run the application.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availableOnDevice
      */
@@ -68,7 +68,7 @@ class VideoGame extends Game {
     /**
      * Cheat codes to the game.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/cheatCode
      */
@@ -78,7 +78,7 @@ class VideoGame extends Game {
      * Countries for which the application is not supported. You can also provide
      * the two-letter ISO 3166-1 alpha-2 country code.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/countriesNotSupported
      */
@@ -88,7 +88,7 @@ class VideoGame extends Game {
      * Countries for which the application is supported. You can also provide the
      * two-letter ISO 3166-1 alpha-2 country code.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/countriesSupported
      */
@@ -99,7 +99,7 @@ class VideoGame extends Game {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -108,7 +108,7 @@ class VideoGame extends Game {
     /**
      * If the file can be downloaded, URL to download the binary.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/downloadUrl
      */
@@ -118,7 +118,7 @@ class VideoGame extends Game {
      * Features or modules provided by this application (and possibly required by
      * other applications).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/featureList
      */
@@ -128,7 +128,7 @@ class VideoGame extends Game {
      * Size of the application / package (e.g. 18MB). In the absence of a unit (MB,
      * KB etc.), KB will be assumed.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/fileSize
      */
@@ -137,18 +137,17 @@ class VideoGame extends Game {
     /**
      * The edition of a video game.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gameEdition
      */
     public string|array|null $gameEdition = null;
 
     /**
-     * The electronic systems used to play <a
-     * href="http://en.wikipedia.org/wiki/Category:Video_game_platforms">video
-     * games</a>.
+     * The electronic systems used to play video games
+     * (http://en.wikipedia.org/wiki/Category:Video_game_platforms).
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/gamePlatform
      */
@@ -157,7 +156,7 @@ class VideoGame extends Game {
     /**
      * The server on which  it is possible to play the game.
      *
-     * @var GameServer|array|null
+     * @var GameServer|GameServer[]|null
      *
      * @see https://schema.org/gameServer
      */
@@ -166,7 +165,7 @@ class VideoGame extends Game {
     /**
      * Links to tips, tactics, etc.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/gameTip
      */
@@ -176,7 +175,7 @@ class VideoGame extends Game {
      * URL at which the app may be installed, if different from the URL of the
      * item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/installUrl
      */
@@ -185,7 +184,7 @@ class VideoGame extends Game {
     /**
      * Minimum memory requirements.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/memoryRequirements
      */
@@ -194,7 +193,7 @@ class VideoGame extends Game {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -203,7 +202,7 @@ class VideoGame extends Game {
     /**
      * Operating systems supported (Windows 7, OS X 10.6, Android 1.6).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/operatingSystem
      */
@@ -213,7 +212,7 @@ class VideoGame extends Game {
      * Permission(s) required to run the app (for example, a mobile app may require
      * full internet access or may run only on wifi).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/permissions
      */
@@ -224,7 +223,7 @@ class VideoGame extends Game {
      * game can be marked as multi-player, co-op and single-player at the same
      * time.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/playMode
      */
@@ -233,7 +232,7 @@ class VideoGame extends Game {
     /**
      * Processor architecture required to run the application (e.g. IA64).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/processorRequirements
      */
@@ -242,7 +241,7 @@ class VideoGame extends Game {
     /**
      * Description of what changed in this version.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/releaseNotes
      */
@@ -252,7 +251,7 @@ class VideoGame extends Game {
      * Runtime platform or script interpreter dependencies (example: Java v1,
      * Python 2.3, .NET Framework 3.0).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/runtimePlatform
      */
@@ -261,7 +260,7 @@ class VideoGame extends Game {
     /**
      * A link to a screenshot image of the app.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/screenshot
      */
@@ -270,7 +269,7 @@ class VideoGame extends Game {
     /**
      * Additional content for a software application.
      *
-     * @var SoftwareApplication|array|null
+     * @var SoftwareApplication|SoftwareApplication[]|null
      *
      * @see https://schema.org/softwareAddOn
      */
@@ -279,7 +278,7 @@ class VideoGame extends Game {
     /**
      * Software application help.
      *
-     * @var CreativeWork|array|null
+     * @var CreativeWork|CreativeWork[]|null
      *
      * @see https://schema.org/softwareHelp
      */
@@ -291,7 +290,7 @@ class VideoGame extends Game {
      * distribution package, but required to run the application (examples:
      * DirectX, Java or .NET runtime).
      *
-     * @var SoftwareApplication|string|array|null
+     * @var SoftwareApplication|string|SoftwareApplication[]|string[]|null
      *
      * @see https://schema.org/softwareRequirements
      */
@@ -300,7 +299,7 @@ class VideoGame extends Game {
     /**
      * Version of the software instance.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/softwareVersion
      */
@@ -309,7 +308,7 @@ class VideoGame extends Game {
     /**
      * Storage requirements (free space required).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/storageRequirements
      */
@@ -318,7 +317,7 @@ class VideoGame extends Game {
     /**
      * Supporting data for a SoftwareApplication.
      *
-     * @var DataFeed|array|null
+     * @var DataFeed|DataFeed[]|null
      *
      * @see https://schema.org/supportingData
      */
@@ -327,7 +326,7 @@ class VideoGame extends Game {
     /**
      * The trailer of a movie or TV/radio series, season, episode, etc.
      *
-     * @var VideoObject|array|null
+     * @var VideoObject|VideoObject[]|null
      *
      * @see https://schema.org/trailer
      */

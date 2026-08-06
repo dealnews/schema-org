@@ -38,7 +38,7 @@ class DefinedRegion extends Place {
      * alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such
      * as "SGP" or a full country name such as "Singapore" can also be used.
      *
-     * @var Country|string|array|null
+     * @var Country|string|Country[]|string[]|null
      *
      * @see https://schema.org/addressCountry
      */
@@ -50,7 +50,7 @@ class DefinedRegion extends Place {
      * division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country)
      * such as the Province in Italy or Region in Germany.
      *
-     * @var AdministrativeArea|string|array|null
+     * @var AdministrativeArea|string|AdministrativeArea[]|string[]|null
      *
      * @see https://schema.org/addressRegion
      */
@@ -59,7 +59,7 @@ class DefinedRegion extends Place {
     /**
      * The postal code. For example, 94043.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCode
      */
@@ -69,7 +69,7 @@ class DefinedRegion extends Place {
      * A defined range of postal codes indicated by a common textual prefix. Used
      * for non-numeric systems such as UK.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/postalCodePrefix
      */
@@ -78,7 +78,7 @@ class DefinedRegion extends Place {
     /**
      * A defined range of postal codes.
      *
-     * @var PostalCodeRangeSpecification|array|null
+     * @var PostalCodeRangeSpecification|PostalCodeRangeSpecification[]|null
      *
      * @see https://schema.org/postalCodeRange
      */

@@ -19,7 +19,7 @@ class QuantitativeValueDistribution extends StructuredValue {
      * The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
      * duration format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|QuantitativeValue|array|null
+     * @var string|QuantitativeValue|string[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/duration
      */
@@ -28,7 +28,7 @@ class QuantitativeValueDistribution extends StructuredValue {
     /**
      * The median value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/median
      */
@@ -37,7 +37,7 @@ class QuantitativeValueDistribution extends StructuredValue {
     /**
      * The 10th percentile value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/percentile10
      */
@@ -46,7 +46,7 @@ class QuantitativeValueDistribution extends StructuredValue {
     /**
      * The 25th percentile value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/percentile25
      */
@@ -55,7 +55,7 @@ class QuantitativeValueDistribution extends StructuredValue {
     /**
      * The 75th percentile value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/percentile75
      */
@@ -64,7 +64,7 @@ class QuantitativeValueDistribution extends StructuredValue {
     /**
      * The 90th percentile value.
      *
-     * @var int|float|array|null
+     * @var int|float|int[]|float[]|null
      *
      * @see https://schema.org/percentile90
      */

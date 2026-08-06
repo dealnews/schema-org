@@ -18,7 +18,7 @@ class SomeProducts extends Product {
     /**
      * The current approximate inventory level for the item or items.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/inventoryLevel
      */

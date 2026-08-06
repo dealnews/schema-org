@@ -24,7 +24,7 @@ class AlignmentObject extends Intangible {
      * node. Recommended values include: 'requires', 'textComplexity',
      * 'readingLevel', and 'educationalSubject'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/alignmentType
      */
@@ -33,7 +33,7 @@ class AlignmentObject extends Intangible {
     /**
      * The framework to which the resource being described is aligned.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/educationalFramework
      */
@@ -42,7 +42,7 @@ class AlignmentObject extends Intangible {
     /**
      * The description of a node in an established educational framework.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/targetDescription
      */
@@ -51,7 +51,7 @@ class AlignmentObject extends Intangible {
     /**
      * The name of a node in an established educational framework.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/targetName
      */
@@ -60,7 +60,7 @@ class AlignmentObject extends Intangible {
     /**
      * The URL of a node in an established educational framework.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/targetUrl
      */

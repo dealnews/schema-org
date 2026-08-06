@@ -20,7 +20,7 @@ class HowTo extends CreativeWork {
      * The estimated cost of the supply or supplies consumed when performing
      * instructions.
      *
-     * @var MonetaryAmount|string|array|null
+     * @var MonetaryAmount|string|MonetaryAmount[]|string[]|null
      *
      * @see https://schema.org/estimatedCost
      */
@@ -31,7 +31,7 @@ class HowTo extends CreativeWork {
      * including time to prepare the supplies), in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/performTime
      */
@@ -42,7 +42,7 @@ class HowTo extends CreativeWork {
      * or a direction, in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/prepTime
      */
@@ -52,7 +52,7 @@ class HowTo extends CreativeWork {
      * A single step item (as HowToStep, text, document, video, etc.) or a
      * HowToSection.
      *
-     * @var CreativeWork|HowToSection|HowToStep|string|array|null
+     * @var CreativeWork|HowToSection|HowToStep|string|CreativeWork[]|HowToSection[]|HowToStep[]|string[]|null
      *
      * @see https://schema.org/step
      */
@@ -62,7 +62,7 @@ class HowTo extends CreativeWork {
      * A sub-property of instrument. A supply consumed when performing instructions
      * or a direction.
      *
-     * @var HowToSupply|string|array|null
+     * @var HowToSupply|string|HowToSupply[]|string[]|null
      *
      * @see https://schema.org/supply
      */
@@ -72,7 +72,7 @@ class HowTo extends CreativeWork {
      * A sub property of instrument. An object used (but not consumed) when
      * performing instructions or a direction.
      *
-     * @var HowToTool|string|array|null
+     * @var HowToTool|string|HowToTool[]|string[]|null
      *
      * @see https://schema.org/tool
      */
@@ -83,7 +83,7 @@ class HowTo extends CreativeWork {
      * time to prepare the supplies), in [ISO 8601 duration
      * format](http://en.wikipedia.org/wiki/ISO_8601).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/totalTime
      */
@@ -93,7 +93,7 @@ class HowTo extends CreativeWork {
      * The quantity that results by performing instructions. For example, a paper
      * airplane, 10 personalized candles.
      *
-     * @var QuantitativeValue|string|array|null
+     * @var QuantitativeValue|string|QuantitativeValue[]|string[]|null
      *
      * @see https://schema.org/yield
      */

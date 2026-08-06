@@ -18,17 +18,17 @@ class MusicPlaylist extends CreativeWork {
     /**
      * The number of tracks in this album or playlist.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numTracks
      */
     public int|array|null $numTracks = null;
 
     /**
-     * A music recording (track)&#x2014;usually a single song. If an ItemList is
-     * given, the list should contain items of type MusicRecording.
+     * A music recording (track)—usually a single song. If an ItemList is given,
+     * the list should contain items of type MusicRecording.
      *
-     * @var ItemList|MusicRecording|array|null
+     * @var ItemList|MusicRecording|ItemList[]|MusicRecording[]|null
      *
      * @see https://schema.org/track
      */

@@ -25,7 +25,7 @@ class TouristAttraction extends Place {
      * one of the language codes from the [IETF BCP 47
      * standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].
      *
-     * @var Language|string|array|null
+     * @var Language|string|Language[]|string[]|null
      *
      * @see https://schema.org/availableLanguage
      */
@@ -35,7 +35,7 @@ class TouristAttraction extends Place {
      * Attraction suitable for type(s) of tourist. E.g. children, visitors from a
      * particular country, etc.
      *
-     * @var Audience|string|array|null
+     * @var Audience|string|Audience[]|string[]|null
      *
      * @see https://schema.org/touristType
      */

@@ -18,7 +18,7 @@ class WinAction extends AchieveAction {
     /**
      * A sub property of participant. The loser of the action.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/loser
      */

@@ -18,7 +18,7 @@ class Seat extends Intangible {
     /**
      * The location of the reserved seat (e.g., 27).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/seatNumber
      */
@@ -27,7 +27,7 @@ class Seat extends Intangible {
     /**
      * The row location of the reserved seat (e.g., B).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/seatRow
      */
@@ -36,7 +36,7 @@ class Seat extends Intangible {
     /**
      * The section location of the reserved seat (e.g. Orchestra).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/seatSection
      */
@@ -45,7 +45,7 @@ class Seat extends Intangible {
     /**
      * The type/class of the seat.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/seatingType
      */

@@ -34,7 +34,7 @@ class Offer extends Intangible {
      * The payment method(s) that are accepted in general by an organization, or
      * for some specific demand or offer.
      *
-     * @var LoanOrCredit|PaymentMethod|string|array|null
+     * @var LoanOrCredit|PaymentMethod|string|LoanOrCredit[]|PaymentMethod[]|string[]|null
      *
      * @see https://schema.org/acceptedPaymentMethod
      */
@@ -45,7 +45,7 @@ class Offer extends Intangible {
      * base offer (e.g. supplements and extensions that are available for a
      * surcharge).
      *
-     * @var Offer|array|null
+     * @var Offer|Offer[]|null
      *
      * @see https://schema.org/addOn
      */
@@ -62,7 +62,7 @@ class Offer extends Intangible {
      * expect such data to be provided using those properties, rather than using
      * the generic property/value mechanism.
      *
-     * @var PropertyValue|array|null
+     * @var PropertyValue|PropertyValue[]|null
      *
      * @see https://schema.org/additionalProperty
      */
@@ -72,7 +72,7 @@ class Offer extends Intangible {
      * The amount of time that is required between accepting the offer and the
      * actual usage of the resource or service.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/advanceBookingRequirement
      */
@@ -82,7 +82,7 @@ class Offer extends Intangible {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -91,17 +91,17 @@ class Offer extends Intangible {
     /**
      * The geographic area where a service or offered item is provided.
      *
-     * @var AdministrativeArea|GeoShape|Place|string|array|null
+     * @var AdministrativeArea|GeoShape|Place|string|AdministrativeArea[]|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/areaServed
      */
     public AdministrativeArea|GeoShape|Place|string|array|null $areaServed = null;
 
     /**
-     * The availability of this item&#x2014;for example In stock, Out of stock,
+     * The availability of this item—for example In stock, Out of stock,
      * Pre-order, etc.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availability
      */
@@ -110,7 +110,7 @@ class Offer extends Intangible {
     /**
      * The end of the availability of the product or service included in the offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availabilityEnds
      */
@@ -120,7 +120,7 @@ class Offer extends Intangible {
      * The beginning of the availability of the product or service included in the
      * offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availabilityStarts
      */
@@ -129,7 +129,7 @@ class Offer extends Intangible {
     /**
      * The place(s) from which the offer can be obtained (e.g. store locations).
      *
-     * @var Place|array|null
+     * @var Place|Place[]|null
      *
      * @see https://schema.org/availableAtOrFrom
      */
@@ -138,7 +138,7 @@ class Offer extends Intangible {
     /**
      * The delivery method(s) available for this offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/availableDeliveryMethod
      */
@@ -149,7 +149,7 @@ class Offer extends Intangible {
      * component of a bundle (TypeAndQuantityNode). The default is
      * http://purl.org/goodrelations/v1#Sell.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/businessFunction
      */
@@ -159,7 +159,7 @@ class Offer extends Intangible {
      * A category for the item. Greater signs or slashes can be used to informally
      * indicate a category hierarchy.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/category
      */
@@ -170,7 +170,7 @@ class Offer extends Intangible {
      * leaving the warehouse or being prepared for pickup, in case the delivery
      * method is on site pickup.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/deliveryLeadTime
      */
@@ -179,7 +179,7 @@ class Offer extends Intangible {
     /**
      * The type(s) of customers for which the given offer is valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/eligibleCustomerType
      */
@@ -188,7 +188,7 @@ class Offer extends Intangible {
     /**
      * The duration for which the given offer is valid.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/eligibleDuration
      */
@@ -199,7 +199,7 @@ class Offer extends Intangible {
      * offer or price specification is valid. This allows e.g. specifying that a
      * certain freight charge is valid only for a certain quantity.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/eligibleQuantity
      */
@@ -212,7 +212,7 @@ class Offer extends Intangible {
      *
      * See also [[ineligibleRegion]].
      *
-     * @var GeoShape|Place|string|array|null
+     * @var GeoShape|Place|string|GeoShape[]|Place[]|string[]|null
      *
      * @see https://schema.org/eligibleRegion
      */
@@ -224,7 +224,7 @@ class Offer extends Intangible {
      * express free shipping above a certain order volume, or to limit the
      * acceptance of credit cards to purchases to a certain minimal amount.
      *
-     * @var PriceSpecification|array|null
+     * @var PriceSpecification|PriceSpecification[]|null
      *
      * @see https://schema.org/eligibleTransactionVolume
      */
@@ -238,7 +238,7 @@ class Offer extends Intangible {
      * Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
      * details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin12
      */
@@ -252,7 +252,7 @@ class Offer extends Intangible {
      * Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
      * details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin13
      */
@@ -263,7 +263,7 @@ class Offer extends Intangible {
      * See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin)
      * for more details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin14
      */
@@ -275,7 +275,7 @@ class Offer extends Intangible {
      * Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
      * details.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/gtin8
      */
@@ -285,7 +285,7 @@ class Offer extends Intangible {
      * This links to a node or nodes indicating the exact quantity of the products
      * included in  an [[Offer]] or [[ProductCollection]].
      *
-     * @var TypeAndQuantityNode|array|null
+     * @var TypeAndQuantityNode|TypeAndQuantityNode[]|null
      *
      * @see https://schema.org/includesObject
      */
@@ -294,7 +294,7 @@ class Offer extends Intangible {
     /**
      * The current approximate inventory level for the item or items.
      *
-     * @var QuantitativeValue|array|null
+     * @var QuantitativeValue|QuantitativeValue[]|null
      *
      * @see https://schema.org/inventoryLevel
      */
@@ -303,7 +303,7 @@ class Offer extends Intangible {
     /**
      * Indicates whether this content is family friendly.
      *
-     * @var bool|array|null
+     * @var bool|bool[]|null
      *
      * @see https://schema.org/isFamilyFriendly
      */
@@ -315,7 +315,7 @@ class Offer extends Intangible {
      * used for product return policies to specify the condition of products
      * accepted for returns.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/itemCondition
      */
@@ -328,7 +328,7 @@ class Offer extends Intangible {
      * definition, others can be used. Using a second type, such as Product or a
      * subtype of Product, can clarify the nature of the offer.
      *
-     * @var AggregateOffer|CreativeWork|Event|MenuItem|Product|Service|Trip|array|null
+     * @var AggregateOffer|CreativeWork|Event|MenuItem|Product|Service|Trip|AggregateOffer[]|CreativeWork[]|Event[]|MenuItem[]|Product[]|Service[]|Trip[]|null
      *
      * @see https://schema.org/itemOffered
      */
@@ -338,7 +338,7 @@ class Offer extends Intangible {
      * The Manufacturer Part Number (MPN) of the product, or the product to which
      * the offer refers.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/mpn
      */
@@ -347,7 +347,7 @@ class Offer extends Intangible {
     /**
      * A pointer to the organization or person making the offer.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/offeredBy
      */
@@ -377,7 +377,7 @@ class Offer extends Intangible {
      * * Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
      * (U+0039)) rather than superficially similar Unicode symbols.
      *
-     * @var int|float|string|array|null
+     * @var int|float|string|int[]|float[]|string[]|null
      *
      * @see https://schema.org/price
      */
@@ -394,7 +394,7 @@ class Offer extends Intangible {
      * Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS)
      * and other currency types, e.g. "Ithaca HOUR".
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceCurrency
      */
@@ -404,7 +404,7 @@ class Offer extends Intangible {
      * One or more detailed price specifications, indicating the unit price and
      * delivery or payment charges.
      *
-     * @var PriceSpecification|array|null
+     * @var PriceSpecification|PriceSpecification[]|null
      *
      * @see https://schema.org/priceSpecification
      */
@@ -413,7 +413,7 @@ class Offer extends Intangible {
     /**
      * The date after which the price is no longer available.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceValidUntil
      */
@@ -422,7 +422,7 @@ class Offer extends Intangible {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -432,7 +432,7 @@ class Offer extends Intangible {
      * An entity which offers (sells / leases / lends / loans) the services /
      * goods.  A seller may also be a provider.
      *
-     * @var Organization|Person|array|null
+     * @var Organization|Person|Organization[]|Person[]|null
      *
      * @see https://schema.org/seller
      */
@@ -443,7 +443,7 @@ class Offer extends Intangible {
      * When attached to an offer, it is a shortcut for the serial number of the
      * product included in the offer.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/serialNumber
      */
@@ -453,7 +453,7 @@ class Offer extends Intangible {
      * Indicates information about the shipping policies and options associated
      * with an [[Offer]].
      *
-     * @var OfferShippingDetails|array|null
+     * @var OfferShippingDetails|OfferShippingDetails[]|null
      *
      * @see https://schema.org/shippingDetails
      */
@@ -463,7 +463,7 @@ class Offer extends Intangible {
      * The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a
      * product or service, or the product to which the offer refers.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/sku
      */
@@ -472,7 +472,7 @@ class Offer extends Intangible {
     /**
      * The date when the item becomes valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validFrom
      */
@@ -482,7 +482,7 @@ class Offer extends Intangible {
      * The date after when the item is not valid. For example the end of an offer,
      * salary period, or a period of opening hours.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validThrough
      */
@@ -491,7 +491,7 @@ class Offer extends Intangible {
     /**
      * The warranty promise(s) included in the offer.
      *
-     * @var WarrantyPromise|array|null
+     * @var WarrantyPromise|WarrantyPromise[]|null
      *
      * @see https://schema.org/warranty
      */

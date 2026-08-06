@@ -24,7 +24,7 @@ class LendAction extends TransferAction {
      * A sub property of participant. The person that borrows the object being
      * lent.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/borrower
      */

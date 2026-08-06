@@ -20,7 +20,7 @@ class Clip extends CreativeWork {
      * etc., or in an event. Actors can be associated with individual items or with
      * a series, episode, clip.
      *
-     * @var PerformingGroup|Person|array|null
+     * @var PerformingGroup|Person|PerformingGroup[]|Person[]|null
      *
      * @see https://schema.org/actor
      */
@@ -29,7 +29,7 @@ class Clip extends CreativeWork {
     /**
      * Position of the clip within an ordered group of clips.
      *
-     * @var int|string|array|null
+     * @var int|string|int[]|string[]|null
      *
      * @see https://schema.org/clipNumber
      */
@@ -40,7 +40,7 @@ class Clip extends CreativeWork {
      * event. Directors can be associated with individual items or with a series,
      * episode, clip.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/director
      */
@@ -49,7 +49,7 @@ class Clip extends CreativeWork {
     /**
      * The composer of the soundtrack.
      *
-     * @var MusicGroup|Person|array|null
+     * @var MusicGroup|Person|MusicGroup[]|Person[]|null
      *
      * @see https://schema.org/musicBy
      */
@@ -58,7 +58,7 @@ class Clip extends CreativeWork {
     /**
      * The episode to which this clip belongs.
      *
-     * @var Episode|array|null
+     * @var Episode|Episode[]|null
      *
      * @see https://schema.org/partOfEpisode
      */
@@ -67,7 +67,7 @@ class Clip extends CreativeWork {
     /**
      * The season to which this episode belongs.
      *
-     * @var CreativeWorkSeason|array|null
+     * @var CreativeWorkSeason|CreativeWorkSeason[]|null
      *
      * @see https://schema.org/partOfSeason
      */
@@ -76,7 +76,7 @@ class Clip extends CreativeWork {
     /**
      * The series to which this episode or season belongs.
      *
-     * @var CreativeWorkSeries|array|null
+     * @var CreativeWorkSeries|CreativeWorkSeries[]|null
      *
      * @see https://schema.org/partOfSeries
      */

@@ -19,7 +19,7 @@ class ChooseAction extends AssessAction {
     /**
      * A sub property of object. The options subject to this action.
      *
-     * @var string|Thing|array|null
+     * @var string|Thing|string[]|Thing[]|null
      *
      * @see https://schema.org/actionOption
      */

@@ -20,7 +20,7 @@ class LocationFeatureSpecification extends PropertyValue {
     /**
      * The hours during which this service or contact is available.
      *
-     * @var OpeningHoursSpecification|array|null
+     * @var OpeningHoursSpecification|OpeningHoursSpecification[]|null
      *
      * @see https://schema.org/hoursAvailable
      */
@@ -29,7 +29,7 @@ class LocationFeatureSpecification extends PropertyValue {
     /**
      * The date when the item becomes valid.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validFrom
      */
@@ -39,7 +39,7 @@ class LocationFeatureSpecification extends PropertyValue {
      * The date after when the item is not valid. For example the end of an offer,
      * salary period, or a period of opening hours.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/validThrough
      */

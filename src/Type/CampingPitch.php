@@ -10,7 +10,6 @@ namespace DealNews\SchemaOrg\Type;
  * A [[CampingPitch]] is an individual place for overnight stay in the
  * outdoors, typically being part of a larger camping site, or [[Campground]].
  *
- *
  * In British English a campsite, or campground, is an area, usually divided
  * into a number of pitches, where people can camp overnight using tents or
  * camper vans or caravans; this British English use of the word is synonymous
@@ -20,7 +19,6 @@ namespace DealNews\SchemaOrg\Type;
  * many campsites.
  * (Source: Wikipedia, see
  * [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite).)
- *
  *
  * See also the dedicated [document on the use of schema.org for marking up
  * hotels and other forms of accommodations](/docs/hotels.html).

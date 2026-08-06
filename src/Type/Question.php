@@ -21,7 +21,7 @@ class Question extends Comment {
      * site. Sites vary in their selection mechanisms, e.g. drawing on community
      * opinion and/or the view of the Question author.
      *
-     * @var Answer|ItemList|array|null
+     * @var Answer|ItemList|Answer[]|ItemList[]|null
      *
      * @see https://schema.org/acceptedAnswer
      */
@@ -30,7 +30,7 @@ class Question extends Comment {
     /**
      * The number of answers this question has received.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/answerCount
      */
@@ -40,7 +40,7 @@ class Question extends Comment {
      * An answer (possibly one of several, possibly incorrect) to a Question, e.g.
      * on a Question/Answer site.
      *
-     * @var Answer|ItemList|array|null
+     * @var Answer|ItemList|Answer[]|ItemList[]|null
      *
      * @see https://schema.org/suggestedAnswer
      */

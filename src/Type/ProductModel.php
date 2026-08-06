@@ -20,7 +20,7 @@ class ProductModel extends Product {
      * A pointer from a previous, often discontinued variant of the product to its
      * newer variant.
      *
-     * @var ProductModel|array|null
+     * @var ProductModel|ProductModel[]|null
      *
      * @see https://schema.org/predecessorOf
      */
@@ -30,7 +30,7 @@ class ProductModel extends Product {
      * A pointer from a newer variant of a product  to its previous, often
      * discontinued predecessor.
      *
-     * @var ProductModel|array|null
+     * @var ProductModel|ProductModel[]|null
      *
      * @see https://schema.org/successorOf
      */

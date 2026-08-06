@@ -22,7 +22,7 @@ class CompoundPriceSpecification extends PriceSpecification {
      * This property links to all [[UnitPriceSpecification]] nodes that apply in
      * parallel for the [[CompoundPriceSpecification]] node.
      *
-     * @var PriceSpecification|array|null
+     * @var PriceSpecification|PriceSpecification[]|null
      *
      * @see https://schema.org/priceComponent
      */
@@ -38,7 +38,7 @@ class CompoundPriceSpecification extends PriceSpecification {
      * string for price types that are not already predefined in
      * PriceTypeEnumeration.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/priceType
      */

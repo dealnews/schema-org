@@ -18,7 +18,7 @@ class Book extends CreativeWork {
     /**
      * The edition of the book.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/bookEdition
      */
@@ -27,7 +27,7 @@ class Book extends CreativeWork {
     /**
      * The format of the book.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/bookFormat
      */
@@ -36,7 +36,7 @@ class Book extends CreativeWork {
     /**
      * The illustrator of the book.
      *
-     * @var Person|array|null
+     * @var Person|Person[]|null
      *
      * @see https://schema.org/illustrator
      */
@@ -45,7 +45,7 @@ class Book extends CreativeWork {
     /**
      * The ISBN of the book.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/isbn
      */
@@ -54,7 +54,7 @@ class Book extends CreativeWork {
     /**
      * The number of pages in the book.
      *
-     * @var int|array|null
+     * @var int|int[]|null
      *
      * @see https://schema.org/numberOfPages
      */

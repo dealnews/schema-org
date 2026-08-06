@@ -22,7 +22,7 @@ class LodgingReservation extends Reservation {
     /**
      * The earliest someone may check into a lodging establishment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/checkinTime
      */
@@ -31,7 +31,7 @@ class LodgingReservation extends Reservation {
     /**
      * The latest someone may check out of a lodging establishment.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/checkoutTime
      */
@@ -40,7 +40,7 @@ class LodgingReservation extends Reservation {
     /**
      * A full description of the lodging unit.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/lodgingUnitDescription
      */
@@ -50,7 +50,7 @@ class LodgingReservation extends Reservation {
      * Textual description of the unit type (including suite vs. room, size of bed,
      * etc.).
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/lodgingUnitType
      */
@@ -59,7 +59,7 @@ class LodgingReservation extends Reservation {
     /**
      * The number of adults staying in the unit.
      *
-     * @var int|QuantitativeValue|array|null
+     * @var int|QuantitativeValue|int[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numAdults
      */
@@ -68,7 +68,7 @@ class LodgingReservation extends Reservation {
     /**
      * The number of children staying in the unit.
      *
-     * @var int|QuantitativeValue|array|null
+     * @var int|QuantitativeValue|int[]|QuantitativeValue[]|null
      *
      * @see https://schema.org/numChildren
      */

@@ -20,7 +20,7 @@ class Brand extends Intangible {
      * The overall rating, based on a collection of reviews or ratings, of the
      * item.
      *
-     * @var AggregateRating|array|null
+     * @var AggregateRating|AggregateRating[]|null
      *
      * @see https://schema.org/aggregateRating
      */
@@ -29,7 +29,7 @@ class Brand extends Intangible {
     /**
      * An associated logo.
      *
-     * @var ImageObject|string|array|null
+     * @var ImageObject|string|ImageObject[]|string[]|null
      *
      * @see https://schema.org/logo
      */
@@ -38,7 +38,7 @@ class Brand extends Intangible {
     /**
      * A review of the item.
      *
-     * @var Review|array|null
+     * @var Review|Review[]|null
      *
      * @see https://schema.org/review
      */
@@ -47,7 +47,7 @@ class Brand extends Intangible {
     /**
      * A slogan or motto associated with the item.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/slogan
      */

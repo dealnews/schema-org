@@ -19,7 +19,7 @@ class HowToItem extends ListItem {
     /**
      * The required quantity of the item(s).
      *
-     * @var int|float|QuantitativeValue|string|array|null
+     * @var int|float|QuantitativeValue|string|int[]|float[]|QuantitativeValue[]|string[]|null
      *
      * @see https://schema.org/requiredQuantity
      */

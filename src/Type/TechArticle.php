@@ -19,7 +19,7 @@ class TechArticle extends Article {
     /**
      * Prerequisites needed to fulfill steps in article.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/dependencies
      */
@@ -28,7 +28,7 @@ class TechArticle extends Article {
     /**
      * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
      *
-     * @var string|array|null
+     * @var string|string[]|null
      *
      * @see https://schema.org/proficiencyLevel
      */
