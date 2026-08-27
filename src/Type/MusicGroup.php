@@ -28,11 +28,11 @@ class MusicGroup extends PerformingGroup {
     /**
      * Genre of the creative work, broadcast channel or group.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/genre
      */
-    public string|array|null $genre = null;
+    public DefinedTerm|string|array|null $genre = null;
 
     /**
      * A music recording (track)—usually a single song. If an ItemList is given,

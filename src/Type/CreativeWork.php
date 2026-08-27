@@ -366,11 +366,11 @@ class CreativeWork extends Thing {
      * The purpose of a work in the context of education; for example,
      * 'assignment', 'group work'.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/educationalUse
      */
-    public string|array|null $educationalUse = null;
+    public DefinedTerm|string|array|null $educationalUse = null;
 
     /**
      * A media object that encodes this CreativeWork. This property is a synonym
@@ -440,11 +440,11 @@ class CreativeWork extends Thing {
     /**
      * Genre of the creative work, broadcast channel or group.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/genre
      */
-    public string|array|null $genre = null;
+    public DefinedTerm|string|array|null $genre = null;
 
     /**
      * Indicates an item or CreativeWork that is part of this item, or CreativeWork
@@ -540,21 +540,21 @@ class CreativeWork extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/keywords
      */
-    public string|array|null $keywords = null;
+    public DefinedTerm|string|array|null $keywords = null;
 
     /**
      * The predominant type or kind characterizing the learning resource. For
      * example, 'presentation', 'handout'.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/learningResourceType
      */
-    public string|array|null $learningResourceType = null;
+    public DefinedTerm|string|array|null $learningResourceType = null;
 
     /**
      * A license document that applies to this content, typically indicated by URL.

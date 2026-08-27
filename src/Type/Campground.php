@@ -276,6 +276,18 @@ class Campground extends CivicStructure {
     public InteractionCounter|array|null $interactionStatistic = null;
 
     /**
+     * Of a [[Person]], and less typically of an [[Organization]], to indicate a
+     * topic that is known about - suggesting possible expertise but not implying
+     * it. We do not distinguish skill levels here, or relate this to educational
+     * content, events, objectives or [[JobPosting]] descriptions.
+     *
+     * @var string|Thing|string[]|Thing[]|null
+     *
+     * @see https://schema.org/knowsAbout
+     */
+    public string|Thing|array|null $knowsAbout = null;
+
+    /**
      * The legal address of an organization which acts as the officially registered
      * address used for legal and tax purposes. The legal address can be different
      * from the place of operations of a business and other addresses can be part
@@ -466,11 +478,11 @@ class Campground extends CivicStructure {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/skills
      */
-    public string|array|null $skills = null;
+    public DefinedTerm|string|array|null $skills = null;
 
     /**
      * A person or organization that supports a thing through a pledge, promise, or

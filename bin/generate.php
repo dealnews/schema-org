@@ -11,7 +11,7 @@ declare(strict_types=1);
  * (superseded), health-lifesci, bib, auto, and meta layers are excluded, as
  * is anything outside the schema: namespace (e.g. GS1, FIBO terms mixed
  * into the same graph), except for the small allowlist of pending terms in
- * INCLUDED_PENDING_TYPES. Re-run after refreshing the vocabulary snapshot.
+ * INCLUDED_PENDING_TERMS. Re-run after refreshing the vocabulary snapshot.
  */
 
 const VOCAB_PATH  = __DIR__ . '/../resources/schemaorg-current-https.jsonld';
@@ -26,13 +26,25 @@ const EXCLUDED_LAYERS = [
 ];
 
 /**
- * Pending-layer terms included despite EXCLUDED_LAYERS: still tagged
- * pending upstream, but already the de facto range for a core property
- * (VirtualLocation is schema:location's documented range for virtual/
- * hybrid Events) and in wide real-world use.
+ * Pending-layer classes and properties included despite EXCLUDED_LAYERS:
+ * still tagged pending upstream, but already in wide real-world use.
+ *
+ * - VirtualLocation is schema:location's documented range for virtual/
+ *   hybrid Events.
+ * - jobTitle and knowsAbout are established Person/Organization
+ *   properties (jobTitle domainIncludes Person, rangeIncludes
+ *   DefinedTerm/Text; knowsAbout domainIncludes Person and
+ *   Organization, rangeIncludes Text/Thing/URL).
+ * - DefinedTerm is jobTitle's documented non-Text range; it's stuck
+ *   pending upstream despite being a long-established, widely-used
+ *   classification type (keywords, about, and dozens of other core
+ *   properties also range over it).
  */
-const INCLUDED_PENDING_TYPES = [
+const INCLUDED_PENDING_TERMS = [
     'schema:VirtualLocation',
+    'schema:jobTitle',
+    'schema:knowsAbout',
+    'schema:DefinedTerm',
 ];
 
 /**
@@ -68,7 +80,7 @@ function load_graph(string $path): array {
  * a pending proposal, a retired/superseded term, or an opt-in extension.
  */
 function is_excluded(array $node): bool {
-    if (in_array($node['@id'] ?? '', INCLUDED_PENDING_TYPES, true)) {
+    if (in_array($node['@id'] ?? '', INCLUDED_PENDING_TERMS, true)) {
         return false;
     }
 

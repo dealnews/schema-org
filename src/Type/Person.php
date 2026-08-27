@@ -308,6 +308,15 @@ class Person extends Thing {
     public string|array|null $isicV4 = null;
 
     /**
+     * The job title of the person (for example, Financial Manager).
+     *
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
+     *
+     * @see https://schema.org/jobTitle
+     */
+    public DefinedTerm|string|array|null $jobTitle = null;
+
+    /**
      * The most generic bi-directional social/work relation.
      *
      * @var Person|Person[]|null
@@ -315,6 +324,18 @@ class Person extends Thing {
      * @see https://schema.org/knows
      */
     public Person|array|null $knows = null;
+
+    /**
+     * Of a [[Person]], and less typically of an [[Organization]], to indicate a
+     * topic that is known about - suggesting possible expertise but not implying
+     * it. We do not distinguish skill levels here, or relate this to educational
+     * content, events, objectives or [[JobPosting]] descriptions.
+     *
+     * @var string|Thing|string[]|Thing[]|null
+     *
+     * @see https://schema.org/knowsAbout
+     */
+    public string|Thing|array|null $knowsAbout = null;
 
     /**
      * A pointer to products or services offered by the organization or person.
@@ -442,11 +463,11 @@ class Person extends Thing {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/skills
      */
-    public string|array|null $skills = null;
+    public DefinedTerm|string|array|null $skills = null;
 
     /**
      * A person or organization that supports a thing through a pledge, promise, or

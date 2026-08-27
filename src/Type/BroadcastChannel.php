@@ -49,11 +49,11 @@ class BroadcastChannel extends Intangible {
     /**
      * Genre of the creative work, broadcast channel or group.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/genre
      */
-    public string|array|null $genre = null;
+    public DefinedTerm|string|array|null $genre = null;
 
     /**
      * The CableOrSatelliteService offering the channel.

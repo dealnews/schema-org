@@ -104,9 +104,9 @@ class PropertyValue extends StructuredValue {
      * A secondary value that provides additional information on the original
      * value, e.g. a reference temperature or a type of measurement.
      *
-     * @var string|PropertyValue|QuantitativeValue|StructuredValue|string[]|PropertyValue[]|QuantitativeValue[]|StructuredValue[]|null
+     * @var DefinedTerm|string|PropertyValue|QuantitativeValue|StructuredValue|DefinedTerm[]|string[]|PropertyValue[]|QuantitativeValue[]|StructuredValue[]|null
      *
      * @see https://schema.org/valueReference
      */
-    public string|PropertyValue|QuantitativeValue|StructuredValue|array|null $valueReference = null;
+    public DefinedTerm|string|PropertyValue|QuantitativeValue|StructuredValue|array|null $valueReference = null;
 }

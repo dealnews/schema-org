@@ -169,11 +169,11 @@ class Event extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/keywords
      */
-    public string|array|null $keywords = null;
+    public DefinedTerm|string|array|null $keywords = null;
 
     /**
      * The location of, for example, where an event is happening, where an

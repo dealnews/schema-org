@@ -61,9 +61,9 @@ class Occupation extends Intangible {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/skills
      */
-    public string|array|null $skills = null;
+    public DefinedTerm|string|array|null $skills = null;
 }
