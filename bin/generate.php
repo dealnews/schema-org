@@ -10,7 +10,8 @@ declare(strict_types=1);
  * Scope: the core Schema.org vocabulary only -- the "pending", "attic"
  * (superseded), health-lifesci, bib, auto, and meta layers are excluded, as
  * is anything outside the schema: namespace (e.g. GS1, FIBO terms mixed
- * into the same graph). Re-run after refreshing the vocabulary snapshot.
+ * into the same graph), except for the small allowlist of pending terms in
+ * INCLUDED_PENDING_TYPES. Re-run after refreshing the vocabulary snapshot.
  */
 
 const VOCAB_PATH  = __DIR__ . '/../resources/schemaorg-current-https.jsonld';
@@ -22,6 +23,16 @@ const EXCLUDED_LAYERS = [
     'bib.schema',
     'auto.schema',
     'meta.schema',
+];
+
+/**
+ * Pending-layer terms included despite EXCLUDED_LAYERS: still tagged
+ * pending upstream, but already the de facto range for a core property
+ * (VirtualLocation is schema:location's documented range for virtual/
+ * hybrid Events) and in wide real-world use.
+ */
+const INCLUDED_PENDING_TYPES = [
+    'schema:VirtualLocation',
 ];
 
 /**
@@ -57,6 +68,10 @@ function load_graph(string $path): array {
  * a pending proposal, a retired/superseded term, or an opt-in extension.
  */
 function is_excluded(array $node): bool {
+    if (in_array($node['@id'] ?? '', INCLUDED_PENDING_TYPES, true)) {
+        return false;
+    }
+
     if (isset($node['schema:supersededBy'])) {
         return true;
     }

@@ -333,11 +333,11 @@ class Organization extends Thing {
      * The location of, for example, where an event is happening, where an
      * organization is located, or where an action takes place.
      *
-     * @var Place|PostalAddress|string|Place[]|PostalAddress[]|string[]|null
+     * @var Place|PostalAddress|string|VirtualLocation|Place[]|PostalAddress[]|string[]|VirtualLocation[]|null
      *
      * @see https://schema.org/location
      */
-    public Place|PostalAddress|string|array|null $location = null;
+    public Place|PostalAddress|string|VirtualLocation|array|null $location = null;
 
     /**
      * An associated logo.
