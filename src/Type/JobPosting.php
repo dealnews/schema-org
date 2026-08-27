@@ -85,11 +85,11 @@ class JobPosting extends Intangible {
     /**
      * The industry associated with the job position.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/industry
      */
-    public string|array|null $industry = null;
+    public DefinedTerm|string|array|null $industry = null;
 
     /**
      * Description of benefits associated with the job.
@@ -143,11 +143,11 @@ class JobPosting extends Intangible {
      * expressing a competency that is either claimed by a person, an organization
      * or desired or required to fulfill a role or to work in an occupation.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/skills
      */
-    public string|array|null $skills = null;
+    public DefinedTerm|string|array|null $skills = null;
 
     /**
      * Any special commitments associated with this job posting. Valid entries

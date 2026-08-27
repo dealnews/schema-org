@@ -300,11 +300,11 @@ class Place extends Thing {
      * keywords list are typically delimited by commas, or by repeating the
      * property.
      *
-     * @var string|string[]|null
+     * @var DefinedTerm|string|DefinedTerm[]|string[]|null
      *
      * @see https://schema.org/keywords
      */
-    public string|array|null $keywords = null;
+    public DefinedTerm|string|array|null $keywords = null;
 
     /**
      * The latitude of a location. For example ```37.42242``` ([WGS
