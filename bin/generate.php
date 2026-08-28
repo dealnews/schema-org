@@ -45,6 +45,7 @@ const INCLUDED_PENDING_TERMS = [
     'schema:jobTitle',
     'schema:knowsAbout',
     'schema:DefinedTerm',
+    'schema:eventAttendanceMode',
 ];
 
 /**

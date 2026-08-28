@@ -125,6 +125,16 @@ class Event extends Thing {
     public string|array|null $endDate = null;
 
     /**
+     * The eventAttendanceMode of an event indicates whether it occurs online,
+     * offline, or a mix.
+     *
+     * @var string|string[]|null
+     *
+     * @see https://schema.org/eventAttendanceMode
+     */
+    public string|array|null $eventAttendanceMode = null;
+
+    /**
      * An eventStatus of an event represents its status; particularly useful when
      * an event is cancelled or rescheduled.
      *
